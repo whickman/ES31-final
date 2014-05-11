@@ -88,9 +88,9 @@ begin
 	    elsif (row >= 437) and (row <= 462) then
 		   row_box <= "1111";
 		   row_enable <= '1';
-	    else row_enable <= '0';
+		else row_enable <= '0';
 		   row_box <= "0000";
-	    end if;
+		   end if;
 		   
 
 	    if (column >= 97) and (column <= 123) then
@@ -146,19 +146,19 @@ begin
 	    end if;
 		   
 		   
-    	    if ((row_enable = '1') and (column_enable = '1')) then
-	       cell_address <= row_box & column_box;
-	       color_shade <= cell_data;
-	    else cell_address <= "00000000";
-	       color_shade <= "11111111";
-	    end if;
-   
-	    if color_shade = "00000000" then color <= red;
-	    elsif color_shade < "00001000" then color <= yellow;
-	    elsif color_shade < "00010000" then color <= cyan;
-	    elsif color_shade < "11111111" then color <= gray1;
-	    else color <= black;
-	    end if;
+		if ((row_enable = '1') and (column_enable = '1')) then
+		   cell_address <= row_box & column_box;
+		   color_shade <= cell_data;
+		else cell_address <= "00000000";
+		      color_shade <= "11111111";
+		end if;
+	   
+		if color_shade = "00000000" then color <= red;
+		elsif color_shade < "00001000" then color <= yellow;
+		elsif color_shade < "00010000" then color <= cyan;
+		elsif color_shade < "11111111" then color <= gray1;
+		else color <= black;
+		end if;
 
 	end process;
 
