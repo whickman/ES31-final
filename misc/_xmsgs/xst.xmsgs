@@ -5,5 +5,62 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="17" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 91: <arg fmt="%s" index="1">output</arg> designator <arg fmt="%s" index="2">data_out</arg> cannot contain an actual type-conversion
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 289: Type error near <arg fmt="%s" index="1">serial_col_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">integer</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 291: Type error near <arg fmt="%s" index="1">data_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">unsigned</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 293: Type error near <arg fmt="%s" index="1">data_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">unsigned</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 295: Type error near <arg fmt="%s" index="1">col_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">integer</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 297: Type error near <arg fmt="%s" index="1">col_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">integer</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 299: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="837" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 299: Type <arg fmt="%s" index="1"> void</arg> does not match with a string literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 301: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="837" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 301: Type <arg fmt="%s" index="1"> void</arg> does not match with a string literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 302: Type error near <arg fmt="%s" index="1">col_in</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">integer</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1731" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 300: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 305: Syntax error near &quot;<arg fmt="%s" index="1">when</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 306: Syntax error near &quot;<arg fmt="%s" index="1">case</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1731" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 298: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 308: Syntax error near &quot;<arg fmt="%s" index="1">if</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 326: Character <arg fmt="%s" index="1">&apos;0&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 342: Syntax error near &quot;<arg fmt="%s" index="1">then</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 345: Syntax error near &quot;<arg fmt="%s" index="1">;</arg>&quot;.
+</msg>
+
 </messages>
 

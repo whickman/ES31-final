@@ -1,0 +1,2 @@
+vhdl isim_temp "../node.vhd"
+vhdl isim_temp "../node_test.vhd"

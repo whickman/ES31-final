@@ -12,7 +12,7 @@ Parameter xsthdpdir set to /home/will/Code/VHDL/final/misc/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 Reading design: node_matrix.prj
@@ -48,17 +48,32 @@ Parsing architecture <Behavioral> of entity <node>.
 Parsing VHDL file "/home/will/Code/VHDL/final/node_matrix.vhd" into library work
 Parsing entity <node_matrix>.
 Parsing architecture <Behavioral> of entity <node_matrix>.
-
-
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.94 secs
- 
+ERROR:HDLCompiler:17 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 91: output designator data_out cannot contain an actual type-conversion
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 289: Type error near serial_col_in ; current type std_logic_vector; expected type integer
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 291: Type error near data_in ; current type std_logic_vector; expected type unsigned
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 293: Type error near data_in ; current type std_logic_vector; expected type unsigned
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 295: Type error near col_in ; current type std_logic_vector; expected type integer
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 297: Type error near col_in ; current type std_logic_vector; expected type integer
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 299: Syntax error near "=".
+ERROR:HDLCompiler:837 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 299: Type  void does not match with a string literal
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 301: Syntax error near "=".
+ERROR:HDLCompiler:837 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 301: Type  void does not match with a string literal
+ERROR:HDLCompiler:1728 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 302: Type error near col_in ; current type std_logic_vector; expected type integer
+ERROR:HDLCompiler:1731 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 300: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 305: Syntax error near "when".
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 306: Syntax error near "case".
+ERROR:HDLCompiler:1731 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 298: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 308: Syntax error near "if".
+ERROR:HDLCompiler:303 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 326: Character '0' is not in type std_logic_vector
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 342: Syntax error near "then".
+ERROR:HDLCompiler:806 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 345: Syntax error near ";".
+Sorry, too many errors..
 --> 
 
 
 Total memory usage is 301992 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :   19 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

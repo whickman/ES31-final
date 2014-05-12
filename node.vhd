@@ -63,7 +63,7 @@ begin
         end if;
     end process;
 
-    state_process : process(state,counter,in_ping_start,in_ping_N,in_ping_E,in_ping_S,in_ping_W)
+    state_process : process(state,counter,in_ping_start,in_ping_N,in_ping_E,in_ping_S,in_ping_W,reset)
     begin
 
         out_ping<='0';
@@ -88,12 +88,17 @@ begin
                     pinged_by<="11";
                 end if;
             when countdown =>
-                if (counter<=0) then
+                if (reset='1') then
+                    next_state<=waiting;
+                elsif (counter<=0) then
                     next_state<=ping;
                 end if;
             when ping =>
                 out_ping<='1';
                 next_state<=done;
+                if (reset='1') then
+                    next_state<=waiting;
+                end if;
             when done =>
                 if (reset='1') then
                     next_state<=waiting;

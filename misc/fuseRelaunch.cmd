@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/will/Code/VHDL/final/misc/node_test_isim_beh.exe" -prj "/home/will/Code/VHDL/final/misc/node_test_beh.prj" "work.node_test" 
