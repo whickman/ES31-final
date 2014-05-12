@@ -74,10 +74,11 @@ architecture Behavioral of node_matrix is
     signal backtrace : backtrace_array;
     signal weights : weight_array;
     signal beg_loc,end_loc,path_loc_w,path_loc_r : unsigned(7 downto 0) := (others=>'0');
-    signal pointer : STD_LOGIC_VECTOR(1 downto 0);
+    signal path_vect_r : std_logic_vector(7 downto 0);
+    signal pointer : std_logic_vector(1 downto 0);
     signal back_temp_col,back_temp_row : integer;
     signal reset,path_reg_clear : std_logic := '0';
-    signal col,row : integer;
+    signal col,row,serial_col,serial_row : integer;
     signal state,next_state : state_type;
     signal back_state,next_back_state : back_state_type;
 
@@ -88,8 +89,7 @@ begin
         clk,
         std_logic_vector(path_loc_w),
         path_reg_clear,
-        std_logic_vector(path_loc_r));
-
+        path_vect_r);
 
     node_matrix_full:
     for I in 0 to 255 generate
@@ -283,23 +283,29 @@ begin
         if rising_edge(clk) then
             weight_out<=(others=>'0');
             in_path<=(others=>'0');
+            serial_col<=to_integer(unsigned(serial_col_in));
+            serial_row<=to_integer(unsigned(serial_row_in));
+            col<=to_integer(unsigned(col_in));
+            row<=to_integer(unsigned(row_in));
             if (data_tick='1') then
                 case state is
                     when receiving =>
-                        weights(serial_col_in)(serial_col_in)<=data_in;
+                        weights(serial_col)(serial_row)<=data_in;
                     when re_beg =>
-                        beg_loc<=data_in;
+                        beg_loc<=unsigned(data_in);
                     when re_end =>
-                        end_loc<=data_in;
+                        end_loc<=unsigned(data_in);
                     when loaded =>
-                        weight_out<=weights(col_in)(row_in);
+                        weight_out<=weights(col)(row);
                     when done =>
-                        weight_out<=weights(col_in)(row_in);
-                        if ((col_in=beg_loc(3 downto 0)) and (row_in=beg_loc(7 downto 4))) then
-                            in_path="01";
-                        if ((col_in=end_loc(3 downto 0)) and (row_in=end_loc(7 downto 4))) then
-                            in_path="11";
-                        elsif (path_back(col_in)(row_in)='1') then
+                        weight_out<=weights(col)(row);
+                        if ((col_in=(std_logic_vector(beg_loc(3 downto 0)))) and 
+                        (row_in=(std_logic_vector(beg_loc(7 downto 4))))) then
+                            in_path<="01";
+                        elsif ((col_in=(std_logic_vector(end_loc(3 downto 0)))) and 
+                        (row_in=(std_logic_vector(end_loc(7 downto 4))))) then
+                            in_path<="11";
+                        elsif (path_back(col)(row)='1') then
                             in_path<="10";
                         end if;
                     when others => NULL;
@@ -310,7 +316,7 @@ begin
 
     start_process : process (state)
     begin
-        start_ping<=(others=>'0');
+        start_ping<=(others=>(others=>'0'));
         if (state=running) then
             start_ping(to_integer(beg_loc(3 downto 0)))(to_integer(beg_loc(7 downto 4)))<='1';
         end if;
@@ -323,7 +329,7 @@ begin
         case back_state is
             when waiting =>
                 pointer<=(others=>'0');
-                path_back<=(others=>'0');
+                path_back<=(others=>(others=>'0'));
                 path_loc_w<=end_loc;
                 if (state=done) then
                     next_back_state<=get_pointer;
@@ -339,7 +345,7 @@ begin
                 if (reset='1') then
                     next_back_state<=waiting;
                 elsif ((back_temp_col/=end_loc(3 downto 0)) or 
-                (back_temp_row/=end_loc(7 downto 4)) then
+                (back_temp_row/=end_loc(7 downto 4))) then
                     case pointer is
                         when "00" =>
                             path_loc_w<=(path_loc_w(3 downto 0)-"0001") & path_loc_w(7 downto 4);
@@ -365,7 +371,7 @@ begin
 
 
 
-                        
+    path_loc_r<=unsigned(path_vect_r);        
 
 
 end Behavioral;
