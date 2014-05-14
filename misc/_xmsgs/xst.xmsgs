@@ -5,5 +5,1424 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 80: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">path_reg_clear</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 323: Assignment to <arg fmt="%s" index="1">pointer</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 73: Net &lt;<arg fmt="%s" index="1">pings[0][14]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">143</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[0].UL_corner_node.NC1</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[2].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[3].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[4].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[5].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[6].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[7].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[8].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[9].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[10].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[11].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[12].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[13].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[14].top_row_nodes.NTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[15].UR_corner_node.NC2</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[17].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[18].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[19].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[20].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[21].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[22].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[23].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[24].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[25].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[26].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[27].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[28].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[29].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[30].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[33].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[34].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[35].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[36].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[37].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[38].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[39].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[40].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[41].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[42].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[43].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[44].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[45].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[46].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[49].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[50].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[51].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[52].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[53].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[54].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[55].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[56].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[57].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[58].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[59].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[60].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[61].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[62].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[65].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[66].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[67].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[68].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[69].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[70].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[71].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[72].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[73].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[74].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[75].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[76].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[77].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[78].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[81].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[82].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[83].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[84].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[85].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[86].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[87].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[88].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[89].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[90].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[91].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[92].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[93].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[94].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[97].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[98].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[99].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[100].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[101].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[102].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[103].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[104].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[105].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[106].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[107].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[108].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[109].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[110].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[113].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[114].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[115].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[116].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[117].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[118].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[119].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[120].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[121].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[122].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[123].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[124].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[125].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[126].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[129].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[130].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[131].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[132].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[133].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[134].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[135].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[136].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[137].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[138].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[139].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[140].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[141].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[142].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[145].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[146].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[147].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[148].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[149].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[150].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[151].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[152].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[153].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[154].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[155].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[156].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[157].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[158].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[161].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[162].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[163].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[164].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[165].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[166].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[167].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[168].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[169].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[170].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[171].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[172].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[173].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[174].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[177].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[178].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[179].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[180].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[181].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[182].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[183].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[184].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[185].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[186].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[187].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[188].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[189].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[190].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[193].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[194].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[195].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[196].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[197].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[198].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[199].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[200].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[201].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[202].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[203].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[204].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[205].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[206].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[209].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[210].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[211].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[212].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[213].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[214].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[215].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[216].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[217].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[218].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[219].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[220].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[221].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[222].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[225].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[226].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[227].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[228].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[229].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[230].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[231].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[232].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[233].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[234].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[235].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[236].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[237].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[238].main_nodes.NX</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">173</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[240].LL_corner_node.NC3</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[241].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[242].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[243].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[244].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[245].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[246].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[247].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[248].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[249].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[250].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[251].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[252].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[253].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[254].bottow_row_nodes.NBR</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%d" index="2">188</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">node_matrix_full[255].LR_corner_node.NC4</arg>&gt; of block &lt;<arg fmt="%s" index="4">node</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">node_matrix</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">143</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[0].UL_corner_node.NC1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">143</arg>: Output port &lt;<arg fmt="%s" index="3">out_ping</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[0].UL_corner_node.NC1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[2].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[3].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[4].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[5].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[6].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[7].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[8].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[9].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[10].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[11].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[12].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[13].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">113</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[14].top_row_nodes.NTR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">158</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[15].UR_corner_node.NC2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[17].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[18].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[19].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[20].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[21].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[22].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[23].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[24].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[25].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[26].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[27].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[28].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[29].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[30].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[33].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[34].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[35].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[36].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[37].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[38].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[39].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[40].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[41].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[42].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[43].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[44].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[45].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[46].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[49].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[50].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[51].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[52].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[53].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[54].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[55].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[56].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[57].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[58].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[59].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[60].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[61].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[62].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[65].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[66].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[67].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[68].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[69].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[70].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[71].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[72].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[73].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[74].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[75].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[76].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[77].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[78].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[81].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[82].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[83].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[84].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[85].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[86].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[87].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[88].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[89].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[90].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[91].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[92].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[93].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[94].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[97].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[98].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[99].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[100].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[101].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[102].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[103].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[104].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[105].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[106].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[107].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[108].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[109].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[110].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[113].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[114].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[115].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[116].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[117].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[118].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[119].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[120].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[121].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[122].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[123].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[124].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[125].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[126].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[129].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[130].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[131].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[132].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[133].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[134].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[135].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[136].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[137].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[138].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[139].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[140].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[141].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[142].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[145].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[146].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[147].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[148].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[149].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[150].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[151].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[152].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[153].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[154].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[155].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[156].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[157].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[158].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[161].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[162].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[163].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[164].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[165].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[166].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[167].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[168].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[169].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[170].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[171].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[172].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[173].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[174].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[177].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[178].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[179].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[180].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[181].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[182].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[183].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[184].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[185].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[186].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[187].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[188].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[189].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[190].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[193].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[194].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[195].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[196].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[197].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[198].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[199].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[200].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[201].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[202].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[203].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[204].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[205].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[206].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[209].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[210].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[211].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[212].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[213].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[214].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[215].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[216].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[217].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[218].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[219].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[220].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[221].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[222].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[225].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[226].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[227].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[228].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[229].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[230].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[231].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[232].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[233].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[234].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[235].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[236].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[237].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[238].main_nodes.NX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">173</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[240].LL_corner_node.NC3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[241].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[242].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[243].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[244].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[245].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[246].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[247].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[248].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[249].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[250].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[251].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[252].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[253].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[254].bottow_row_nodes.NBR</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/will/Code/VHDL/final/node_matrix.vhd</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">pinged_by</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">node_matrix_full[255].LR_corner_node.NC4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pings&lt;0&gt;&lt;14:1&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pings&lt;1&gt;&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pings&lt;15&gt;&lt;14:1&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="old" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">col_0</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="old" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">col_1</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="old" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">col_2</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">col_3</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="old" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">row_0</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="old" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">row_1</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">row_2</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">serial_col_0</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">serial_col_1</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">serial_col_2</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">serial_col_3</arg> connected to a primary input has been replicated
+</msg>
+
+<msg type="info" file="Xst" num="1843" delta="new" >HDL ADVISOR - FlipFlop <arg fmt="%s" index="1">serial_row_0</arg> connected to a primary input has been replicated
+</msg>
+
 </messages>
 

@@ -1,0 +1,4 @@
+vhdl isim_temp "../path_reg.vhd"
+vhdl isim_temp "../node.vhd"
+vhdl isim_temp "../node_matrix.vhd"
+vhdl isim_temp "../node_matrix_tb.vhd"

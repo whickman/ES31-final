@@ -1,1 +1,3 @@
 work	"../node.vhd"
+work	"../node_matrix.vhd"
+work	"../path_reg.vhd"

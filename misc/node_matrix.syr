@@ -1,0 +1,1474 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: node_matrix.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "node_matrix.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "node_matrix"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : node_matrix
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/will/Code/VHDL/final/path_reg.vhd" into library work
+Parsing entity <path_reg>.
+Parsing architecture <Behavioral> of entity <path_reg>.
+Parsing VHDL file "/home/will/Code/VHDL/final/node.vhd" into library work
+Parsing entity <node>.
+Parsing architecture <Behavioral> of entity <node>.
+Parsing VHDL file "/home/will/Code/VHDL/final/node_matrix.vhd" into library work
+Parsing entity <node_matrix>.
+Parsing architecture <Behavioral> of entity <node_matrix>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <node_matrix> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 80: Using initial value '0' for path_reg_clear since it is never assigned
+
+Elaborating entity <path_reg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <node> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 273. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 323: Assignment to pointer ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 73: Net <pings[0][14]> does not have a driver.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 143. All outputs of instance <node_matrix_full[0].UL_corner_node.NC1> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[2].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[3].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[4].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[5].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[6].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[7].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[8].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[9].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[10].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[11].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[12].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[13].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113. All outputs of instance <node_matrix_full[14].top_row_nodes.NTR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 158. All outputs of instance <node_matrix_full[15].UR_corner_node.NC2> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[17].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[18].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[19].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[20].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[21].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[22].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[23].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[24].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[25].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[26].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[27].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[28].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[29].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[30].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[33].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[34].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[35].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[36].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[37].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[38].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[39].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[40].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[41].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[42].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[43].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[44].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[45].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[46].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[49].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[50].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[51].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[52].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[53].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[54].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[55].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[56].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[57].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[58].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[59].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[60].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[61].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[62].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[65].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[66].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[67].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[68].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[69].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[70].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[71].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[72].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[73].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[74].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[75].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[76].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[77].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[78].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[81].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[82].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[83].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[84].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[85].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[86].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[87].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[88].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[89].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[90].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[91].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[92].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[93].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[94].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[97].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[98].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[99].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[100].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[101].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[102].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[103].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[104].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[105].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[106].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[107].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[108].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[109].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[110].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[113].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[114].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[115].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[116].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[117].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[118].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[119].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[120].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[121].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[122].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[123].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[124].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[125].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[126].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[129].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[130].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[131].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[132].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[133].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[134].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[135].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[136].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[137].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[138].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[139].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[140].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[141].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[142].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[145].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[146].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[147].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[148].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[149].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[150].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[151].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[152].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[153].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[154].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[155].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[156].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[157].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[158].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[161].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[162].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[163].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[164].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[165].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[166].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[167].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[168].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[169].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[170].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[171].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[172].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[173].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[174].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[177].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[178].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[179].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[180].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[181].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[182].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[183].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[184].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[185].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[186].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[187].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[188].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[189].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[190].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[193].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[194].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[195].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[196].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[197].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[198].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[199].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[200].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[201].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[202].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[203].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[204].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[205].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[206].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[209].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[210].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[211].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[212].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[213].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[214].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[215].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[216].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[217].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[218].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[219].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[220].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[221].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[222].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[225].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[226].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[227].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[228].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[229].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[230].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[231].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[232].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[233].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[234].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[235].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[236].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[237].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98. All outputs of instance <node_matrix_full[238].main_nodes.NX> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 173. All outputs of instance <node_matrix_full[240].LL_corner_node.NC3> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[241].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[242].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[243].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[244].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[245].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[246].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[247].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[248].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[249].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[250].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[251].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[252].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[253].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128. All outputs of instance <node_matrix_full[254].bottow_row_nodes.NBR> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 188. All outputs of instance <node_matrix_full[255].LR_corner_node.NC4> of block <node> are unconnected in block <node_matrix>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <node_matrix>.
+    Related source file is "/home/will/Code/VHDL/final/node_matrix.vhd".
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 143: Output port <pinged_by> of the instance <node_matrix_full[0].UL_corner_node.NC1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 143: Output port <out_ping> of the instance <node_matrix_full[0].UL_corner_node.NC1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[2].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[3].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[4].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[5].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[6].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[7].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[8].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[9].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[10].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[11].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[12].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[13].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 113: Output port <pinged_by> of the instance <node_matrix_full[14].top_row_nodes.NTR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 158: Output port <pinged_by> of the instance <node_matrix_full[15].UR_corner_node.NC2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[17].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[18].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[19].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[20].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[21].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[22].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[23].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[24].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[25].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[26].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[27].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[28].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[29].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[30].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[33].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[34].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[35].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[36].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[37].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[38].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[39].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[40].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[41].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[42].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[43].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[44].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[45].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[46].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[49].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[50].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[51].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[52].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[53].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[54].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[55].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[56].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[57].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[58].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[59].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[60].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[61].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[62].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[65].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[66].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[67].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[68].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[69].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[70].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[71].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[72].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[73].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[74].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[75].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[76].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[77].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[78].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[81].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[82].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[83].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[84].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[85].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[86].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[87].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[88].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[89].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[90].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[91].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[92].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[93].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[94].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[97].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[98].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[99].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[100].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[101].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[102].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[103].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[104].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[105].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[106].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[107].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[108].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[109].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[110].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[113].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[114].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[115].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[116].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[117].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[118].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[119].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[120].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[121].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[122].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[123].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[124].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[125].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[126].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[129].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[130].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[131].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[132].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[133].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[134].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[135].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[136].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[137].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[138].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[139].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[140].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[141].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[142].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[145].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[146].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[147].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[148].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[149].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[150].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[151].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[152].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[153].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[154].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[155].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[156].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[157].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[158].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[161].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[162].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[163].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[164].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[165].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[166].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[167].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[168].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[169].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[170].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[171].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[172].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[173].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[174].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[177].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[178].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[179].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[180].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[181].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[182].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[183].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[184].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[185].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[186].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[187].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[188].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[189].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[190].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[193].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[194].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[195].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[196].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[197].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[198].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[199].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[200].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[201].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[202].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[203].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[204].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[205].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[206].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[209].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[210].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[211].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[212].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[213].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[214].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[215].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[216].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[217].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[218].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[219].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[220].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[221].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[222].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[225].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[226].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[227].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[228].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[229].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[230].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[231].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[232].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[233].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[234].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[235].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[236].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[237].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 98: Output port <pinged_by> of the instance <node_matrix_full[238].main_nodes.NX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 173: Output port <pinged_by> of the instance <node_matrix_full[240].LL_corner_node.NC3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[241].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[242].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[243].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[244].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[245].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[246].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[247].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[248].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[249].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[250].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[251].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[252].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[253].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 128: Output port <pinged_by> of the instance <node_matrix_full[254].bottow_row_nodes.NBR> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/will/Code/VHDL/final/node_matrix.vhd" line 188: Output port <pinged_by> of the instance <node_matrix_full[255].LR_corner_node.NC4> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <pings<0><14:1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <pings<1><0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <pings<15><14:1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <weight_out>.
+    Found 2-bit register for signal <in_path>.
+    Found 4-bit register for signal <serial_col<3:0>>.
+    Found 4-bit register for signal <serial_row<3:0>>.
+    Found 4-bit register for signal <col<3:0>>.
+    Found 4-bit register for signal <row<3:0>>.
+    Found 8-bit register for signal <weights<0><0>>.
+    Found 8-bit register for signal <weights<0><1>>.
+    Found 8-bit register for signal <weights<0><2>>.
+    Found 8-bit register for signal <weights<0><3>>.
+    Found 8-bit register for signal <weights<0><4>>.
+    Found 8-bit register for signal <weights<0><5>>.
+    Found 8-bit register for signal <weights<0><6>>.
+    Found 8-bit register for signal <weights<0><7>>.
+    Found 8-bit register for signal <weights<0><8>>.
+    Found 8-bit register for signal <weights<0><9>>.
+    Found 8-bit register for signal <weights<0><10>>.
+    Found 8-bit register for signal <weights<0><11>>.
+    Found 8-bit register for signal <weights<0><12>>.
+    Found 8-bit register for signal <weights<0><13>>.
+    Found 8-bit register for signal <weights<0><14>>.
+    Found 8-bit register for signal <weights<0><15>>.
+    Found 8-bit register for signal <weights<1><0>>.
+    Found 8-bit register for signal <weights<1><1>>.
+    Found 8-bit register for signal <weights<1><2>>.
+    Found 8-bit register for signal <weights<1><3>>.
+    Found 8-bit register for signal <weights<1><4>>.
+    Found 8-bit register for signal <weights<1><5>>.
+    Found 8-bit register for signal <weights<1><6>>.
+    Found 8-bit register for signal <weights<1><7>>.
+    Found 8-bit register for signal <weights<1><8>>.
+    Found 8-bit register for signal <weights<1><9>>.
+    Found 8-bit register for signal <weights<1><10>>.
+    Found 8-bit register for signal <weights<1><11>>.
+    Found 8-bit register for signal <weights<1><12>>.
+    Found 8-bit register for signal <weights<1><13>>.
+    Found 8-bit register for signal <weights<1><14>>.
+    Found 8-bit register for signal <weights<1><15>>.
+    Found 8-bit register for signal <weights<2><0>>.
+    Found 8-bit register for signal <weights<2><1>>.
+    Found 8-bit register for signal <weights<2><2>>.
+    Found 8-bit register for signal <weights<2><3>>.
+    Found 8-bit register for signal <weights<2><4>>.
+    Found 8-bit register for signal <weights<2><5>>.
+    Found 8-bit register for signal <weights<2><6>>.
+    Found 8-bit register for signal <weights<2><7>>.
+    Found 8-bit register for signal <weights<2><8>>.
+    Found 8-bit register for signal <weights<2><9>>.
+    Found 8-bit register for signal <weights<2><10>>.
+    Found 8-bit register for signal <weights<2><11>>.
+    Found 8-bit register for signal <weights<2><12>>.
+    Found 8-bit register for signal <weights<2><13>>.
+    Found 8-bit register for signal <weights<2><14>>.
+    Found 8-bit register for signal <weights<2><15>>.
+    Found 8-bit register for signal <weights<3><0>>.
+    Found 8-bit register for signal <weights<3><1>>.
+    Found 8-bit register for signal <weights<3><2>>.
+    Found 8-bit register for signal <weights<3><3>>.
+    Found 8-bit register for signal <weights<3><4>>.
+    Found 8-bit register for signal <weights<3><5>>.
+    Found 8-bit register for signal <weights<3><6>>.
+    Found 8-bit register for signal <weights<3><7>>.
+    Found 8-bit register for signal <weights<3><8>>.
+    Found 8-bit register for signal <weights<3><9>>.
+    Found 8-bit register for signal <weights<3><10>>.
+    Found 8-bit register for signal <weights<3><11>>.
+    Found 8-bit register for signal <weights<3><12>>.
+    Found 8-bit register for signal <weights<3><13>>.
+    Found 8-bit register for signal <weights<3><14>>.
+    Found 8-bit register for signal <weights<3><15>>.
+    Found 8-bit register for signal <weights<4><0>>.
+    Found 8-bit register for signal <weights<4><1>>.
+    Found 8-bit register for signal <weights<4><2>>.
+    Found 8-bit register for signal <weights<4><3>>.
+    Found 8-bit register for signal <weights<4><4>>.
+    Found 8-bit register for signal <weights<4><5>>.
+    Found 8-bit register for signal <weights<4><6>>.
+    Found 8-bit register for signal <weights<4><7>>.
+    Found 8-bit register for signal <weights<4><8>>.
+    Found 8-bit register for signal <weights<4><9>>.
+    Found 8-bit register for signal <weights<4><10>>.
+    Found 8-bit register for signal <weights<4><11>>.
+    Found 8-bit register for signal <weights<4><12>>.
+    Found 8-bit register for signal <weights<4><13>>.
+    Found 8-bit register for signal <weights<4><14>>.
+    Found 8-bit register for signal <weights<4><15>>.
+    Found 8-bit register for signal <weights<5><0>>.
+    Found 8-bit register for signal <weights<5><1>>.
+    Found 8-bit register for signal <weights<5><2>>.
+    Found 8-bit register for signal <weights<5><3>>.
+    Found 8-bit register for signal <weights<5><4>>.
+    Found 8-bit register for signal <weights<5><5>>.
+    Found 8-bit register for signal <weights<5><6>>.
+    Found 8-bit register for signal <weights<5><7>>.
+    Found 8-bit register for signal <weights<5><8>>.
+    Found 8-bit register for signal <weights<5><9>>.
+    Found 8-bit register for signal <weights<5><10>>.
+    Found 8-bit register for signal <weights<5><11>>.
+    Found 8-bit register for signal <weights<5><12>>.
+    Found 8-bit register for signal <weights<5><13>>.
+    Found 8-bit register for signal <weights<5><14>>.
+    Found 8-bit register for signal <weights<5><15>>.
+    Found 8-bit register for signal <weights<6><0>>.
+    Found 8-bit register for signal <weights<6><1>>.
+    Found 8-bit register for signal <weights<6><2>>.
+    Found 8-bit register for signal <weights<6><3>>.
+    Found 8-bit register for signal <weights<6><4>>.
+    Found 8-bit register for signal <weights<6><5>>.
+    Found 8-bit register for signal <weights<6><6>>.
+    Found 8-bit register for signal <weights<6><7>>.
+    Found 8-bit register for signal <weights<6><8>>.
+    Found 8-bit register for signal <weights<6><9>>.
+    Found 8-bit register for signal <weights<6><10>>.
+    Found 8-bit register for signal <weights<6><11>>.
+    Found 8-bit register for signal <weights<6><12>>.
+    Found 8-bit register for signal <weights<6><13>>.
+    Found 8-bit register for signal <weights<6><14>>.
+    Found 8-bit register for signal <weights<6><15>>.
+    Found 8-bit register for signal <weights<7><0>>.
+    Found 8-bit register for signal <weights<7><1>>.
+    Found 8-bit register for signal <weights<7><2>>.
+    Found 8-bit register for signal <weights<7><3>>.
+    Found 8-bit register for signal <weights<7><4>>.
+    Found 8-bit register for signal <weights<7><5>>.
+    Found 8-bit register for signal <weights<7><6>>.
+    Found 8-bit register for signal <weights<7><7>>.
+    Found 8-bit register for signal <weights<7><8>>.
+    Found 8-bit register for signal <weights<7><9>>.
+    Found 8-bit register for signal <weights<7><10>>.
+    Found 8-bit register for signal <weights<7><11>>.
+    Found 8-bit register for signal <weights<7><12>>.
+    Found 8-bit register for signal <weights<7><13>>.
+    Found 8-bit register for signal <weights<7><14>>.
+    Found 8-bit register for signal <weights<7><15>>.
+    Found 8-bit register for signal <weights<8><0>>.
+    Found 8-bit register for signal <weights<8><1>>.
+    Found 8-bit register for signal <weights<8><2>>.
+    Found 8-bit register for signal <weights<8><3>>.
+    Found 8-bit register for signal <weights<8><4>>.
+    Found 8-bit register for signal <weights<8><5>>.
+    Found 8-bit register for signal <weights<8><6>>.
+    Found 8-bit register for signal <weights<8><7>>.
+    Found 8-bit register for signal <weights<8><8>>.
+    Found 8-bit register for signal <weights<8><9>>.
+    Found 8-bit register for signal <weights<8><10>>.
+    Found 8-bit register for signal <weights<8><11>>.
+    Found 8-bit register for signal <weights<8><12>>.
+    Found 8-bit register for signal <weights<8><13>>.
+    Found 8-bit register for signal <weights<8><14>>.
+    Found 8-bit register for signal <weights<8><15>>.
+    Found 8-bit register for signal <weights<9><0>>.
+    Found 8-bit register for signal <weights<9><1>>.
+    Found 8-bit register for signal <weights<9><2>>.
+    Found 8-bit register for signal <weights<9><3>>.
+    Found 8-bit register for signal <weights<9><4>>.
+    Found 8-bit register for signal <weights<9><5>>.
+    Found 8-bit register for signal <weights<9><6>>.
+    Found 8-bit register for signal <weights<9><7>>.
+    Found 8-bit register for signal <weights<9><8>>.
+    Found 8-bit register for signal <weights<9><9>>.
+    Found 8-bit register for signal <weights<9><10>>.
+    Found 8-bit register for signal <weights<9><11>>.
+    Found 8-bit register for signal <weights<9><12>>.
+    Found 8-bit register for signal <weights<9><13>>.
+    Found 8-bit register for signal <weights<9><14>>.
+    Found 8-bit register for signal <weights<9><15>>.
+    Found 8-bit register for signal <weights<10><0>>.
+    Found 8-bit register for signal <weights<10><1>>.
+    Found 8-bit register for signal <weights<10><2>>.
+    Found 8-bit register for signal <weights<10><3>>.
+    Found 8-bit register for signal <weights<10><4>>.
+    Found 8-bit register for signal <weights<10><5>>.
+    Found 8-bit register for signal <weights<10><6>>.
+    Found 8-bit register for signal <weights<10><7>>.
+    Found 8-bit register for signal <weights<10><8>>.
+    Found 8-bit register for signal <weights<10><9>>.
+    Found 8-bit register for signal <weights<10><10>>.
+    Found 8-bit register for signal <weights<10><11>>.
+    Found 8-bit register for signal <weights<10><12>>.
+    Found 8-bit register for signal <weights<10><13>>.
+    Found 8-bit register for signal <weights<10><14>>.
+    Found 8-bit register for signal <weights<10><15>>.
+    Found 8-bit register for signal <weights<11><0>>.
+    Found 8-bit register for signal <weights<11><1>>.
+    Found 8-bit register for signal <weights<11><2>>.
+    Found 8-bit register for signal <weights<11><3>>.
+    Found 8-bit register for signal <weights<11><4>>.
+    Found 8-bit register for signal <weights<11><5>>.
+    Found 8-bit register for signal <weights<11><6>>.
+    Found 8-bit register for signal <weights<11><7>>.
+    Found 8-bit register for signal <weights<11><8>>.
+    Found 8-bit register for signal <weights<11><9>>.
+    Found 8-bit register for signal <weights<11><10>>.
+    Found 8-bit register for signal <weights<11><11>>.
+    Found 8-bit register for signal <weights<11><12>>.
+    Found 8-bit register for signal <weights<11><13>>.
+    Found 8-bit register for signal <weights<11><14>>.
+    Found 8-bit register for signal <weights<11><15>>.
+    Found 8-bit register for signal <weights<12><0>>.
+    Found 8-bit register for signal <weights<12><1>>.
+    Found 8-bit register for signal <weights<12><2>>.
+    Found 8-bit register for signal <weights<12><3>>.
+    Found 8-bit register for signal <weights<12><4>>.
+    Found 8-bit register for signal <weights<12><5>>.
+    Found 8-bit register for signal <weights<12><6>>.
+    Found 8-bit register for signal <weights<12><7>>.
+    Found 8-bit register for signal <weights<12><8>>.
+    Found 8-bit register for signal <weights<12><9>>.
+    Found 8-bit register for signal <weights<12><10>>.
+    Found 8-bit register for signal <weights<12><11>>.
+    Found 8-bit register for signal <weights<12><12>>.
+    Found 8-bit register for signal <weights<12><13>>.
+    Found 8-bit register for signal <weights<12><14>>.
+    Found 8-bit register for signal <weights<12><15>>.
+    Found 8-bit register for signal <weights<13><0>>.
+    Found 8-bit register for signal <weights<13><1>>.
+    Found 8-bit register for signal <weights<13><2>>.
+    Found 8-bit register for signal <weights<13><3>>.
+    Found 8-bit register for signal <weights<13><4>>.
+    Found 8-bit register for signal <weights<13><5>>.
+    Found 8-bit register for signal <weights<13><6>>.
+    Found 8-bit register for signal <weights<13><7>>.
+    Found 8-bit register for signal <weights<13><8>>.
+    Found 8-bit register for signal <weights<13><9>>.
+    Found 8-bit register for signal <weights<13><10>>.
+    Found 8-bit register for signal <weights<13><11>>.
+    Found 8-bit register for signal <weights<13><12>>.
+    Found 8-bit register for signal <weights<13><13>>.
+    Found 8-bit register for signal <weights<13><14>>.
+    Found 8-bit register for signal <weights<13><15>>.
+    Found 8-bit register for signal <weights<14><0>>.
+    Found 8-bit register for signal <weights<14><1>>.
+    Found 8-bit register for signal <weights<14><2>>.
+    Found 8-bit register for signal <weights<14><3>>.
+    Found 8-bit register for signal <weights<14><4>>.
+    Found 8-bit register for signal <weights<14><5>>.
+    Found 8-bit register for signal <weights<14><6>>.
+    Found 8-bit register for signal <weights<14><7>>.
+    Found 8-bit register for signal <weights<14><8>>.
+    Found 8-bit register for signal <weights<14><9>>.
+    Found 8-bit register for signal <weights<14><10>>.
+    Found 8-bit register for signal <weights<14><11>>.
+    Found 8-bit register for signal <weights<14><12>>.
+    Found 8-bit register for signal <weights<14><13>>.
+    Found 8-bit register for signal <weights<14><14>>.
+    Found 8-bit register for signal <weights<14><15>>.
+    Found 8-bit register for signal <weights<15><0>>.
+    Found 8-bit register for signal <weights<15><1>>.
+    Found 8-bit register for signal <weights<15><2>>.
+    Found 8-bit register for signal <weights<15><3>>.
+    Found 8-bit register for signal <weights<15><4>>.
+    Found 8-bit register for signal <weights<15><5>>.
+    Found 8-bit register for signal <weights<15><6>>.
+    Found 8-bit register for signal <weights<15><7>>.
+    Found 8-bit register for signal <weights<15><8>>.
+    Found 8-bit register for signal <weights<15><9>>.
+    Found 8-bit register for signal <weights<15><10>>.
+    Found 8-bit register for signal <weights<15><11>>.
+    Found 8-bit register for signal <weights<15><12>>.
+    Found 8-bit register for signal <weights<15><13>>.
+    Found 8-bit register for signal <weights<15><14>>.
+    Found 8-bit register for signal <weights<15><15>>.
+    Found 8-bit register for signal <beg_loc>.
+    Found 8-bit register for signal <end_loc>.
+    Found 8-bit register for signal <path_loc_w>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <path_back_ff_0>.
+    Found 1-bit register for signal <path_back_ff_1>.
+    Found 1-bit register for signal <path_back_ff_2>.
+    Found 1-bit register for signal <path_back_ff_3>.
+    Found 1-bit register for signal <path_back_ff_4>.
+    Found 1-bit register for signal <path_back_ff_5>.
+    Found 1-bit register for signal <path_back_ff_6>.
+    Found 1-bit register for signal <path_back_ff_7>.
+    Found 1-bit register for signal <path_back_ff_8>.
+    Found 1-bit register for signal <path_back_ff_9>.
+    Found 1-bit register for signal <path_back_ff_10>.
+    Found 1-bit register for signal <path_back_ff_11>.
+    Found 1-bit register for signal <path_back_ff_12>.
+    Found 1-bit register for signal <path_back_ff_13>.
+    Found 1-bit register for signal <path_back_ff_14>.
+    Found 1-bit register for signal <path_back_ff_15>.
+    Found 1-bit register for signal <path_back_ff_16>.
+    Found 1-bit register for signal <path_back_ff_17>.
+    Found 1-bit register for signal <path_back_ff_18>.
+    Found 1-bit register for signal <path_back_ff_19>.
+    Found 1-bit register for signal <path_back_ff_20>.
+    Found 1-bit register for signal <path_back_ff_21>.
+    Found 1-bit register for signal <path_back_ff_22>.
+    Found 1-bit register for signal <path_back_ff_23>.
+    Found 1-bit register for signal <path_back_ff_24>.
+    Found 1-bit register for signal <path_back_ff_25>.
+    Found 1-bit register for signal <path_back_ff_26>.
+    Found 1-bit register for signal <path_back_ff_27>.
+    Found 1-bit register for signal <path_back_ff_28>.
+    Found 1-bit register for signal <path_back_ff_29>.
+    Found 1-bit register for signal <path_back_ff_30>.
+    Found 1-bit register for signal <path_back_ff_31>.
+    Found 1-bit register for signal <path_back_ff_32>.
+    Found 1-bit register for signal <path_back_ff_33>.
+    Found 1-bit register for signal <path_back_ff_34>.
+    Found 1-bit register for signal <path_back_ff_35>.
+    Found 1-bit register for signal <path_back_ff_36>.
+    Found 1-bit register for signal <path_back_ff_37>.
+    Found 1-bit register for signal <path_back_ff_38>.
+    Found 1-bit register for signal <path_back_ff_39>.
+    Found 1-bit register for signal <path_back_ff_40>.
+    Found 1-bit register for signal <path_back_ff_41>.
+    Found 1-bit register for signal <path_back_ff_42>.
+    Found 1-bit register for signal <path_back_ff_43>.
+    Found 1-bit register for signal <path_back_ff_44>.
+    Found 1-bit register for signal <path_back_ff_45>.
+    Found 1-bit register for signal <path_back_ff_46>.
+    Found 1-bit register for signal <path_back_ff_47>.
+    Found 1-bit register for signal <path_back_ff_48>.
+    Found 1-bit register for signal <path_back_ff_49>.
+    Found 1-bit register for signal <path_back_ff_50>.
+    Found 1-bit register for signal <path_back_ff_51>.
+    Found 1-bit register for signal <path_back_ff_52>.
+    Found 1-bit register for signal <path_back_ff_53>.
+    Found 1-bit register for signal <path_back_ff_54>.
+    Found 1-bit register for signal <path_back_ff_55>.
+    Found 1-bit register for signal <path_back_ff_56>.
+    Found 1-bit register for signal <path_back_ff_57>.
+    Found 1-bit register for signal <path_back_ff_58>.
+    Found 1-bit register for signal <path_back_ff_59>.
+    Found 1-bit register for signal <path_back_ff_60>.
+    Found 1-bit register for signal <path_back_ff_61>.
+    Found 1-bit register for signal <path_back_ff_62>.
+    Found 1-bit register for signal <path_back_ff_63>.
+    Found 1-bit register for signal <path_back_ff_64>.
+    Found 1-bit register for signal <path_back_ff_65>.
+    Found 1-bit register for signal <path_back_ff_66>.
+    Found 1-bit register for signal <path_back_ff_67>.
+    Found 1-bit register for signal <path_back_ff_68>.
+    Found 1-bit register for signal <path_back_ff_69>.
+    Found 1-bit register for signal <path_back_ff_70>.
+    Found 1-bit register for signal <path_back_ff_71>.
+    Found 1-bit register for signal <path_back_ff_72>.
+    Found 1-bit register for signal <path_back_ff_73>.
+    Found 1-bit register for signal <path_back_ff_74>.
+    Found 1-bit register for signal <path_back_ff_75>.
+    Found 1-bit register for signal <path_back_ff_76>.
+    Found 1-bit register for signal <path_back_ff_77>.
+    Found 1-bit register for signal <path_back_ff_78>.
+    Found 1-bit register for signal <path_back_ff_79>.
+    Found 1-bit register for signal <path_back_ff_80>.
+    Found 1-bit register for signal <path_back_ff_81>.
+    Found 1-bit register for signal <path_back_ff_82>.
+    Found 1-bit register for signal <path_back_ff_83>.
+    Found 1-bit register for signal <path_back_ff_84>.
+    Found 1-bit register for signal <path_back_ff_85>.
+    Found 1-bit register for signal <path_back_ff_86>.
+    Found 1-bit register for signal <path_back_ff_87>.
+    Found 1-bit register for signal <path_back_ff_88>.
+    Found 1-bit register for signal <path_back_ff_89>.
+    Found 1-bit register for signal <path_back_ff_90>.
+    Found 1-bit register for signal <path_back_ff_91>.
+    Found 1-bit register for signal <path_back_ff_92>.
+    Found 1-bit register for signal <path_back_ff_93>.
+    Found 1-bit register for signal <path_back_ff_94>.
+    Found 1-bit register for signal <path_back_ff_95>.
+    Found 1-bit register for signal <path_back_ff_96>.
+    Found 1-bit register for signal <path_back_ff_97>.
+    Found 1-bit register for signal <path_back_ff_98>.
+    Found 1-bit register for signal <path_back_ff_99>.
+    Found 1-bit register for signal <path_back_ff_100>.
+    Found 1-bit register for signal <path_back_ff_101>.
+    Found 1-bit register for signal <path_back_ff_102>.
+    Found 1-bit register for signal <path_back_ff_103>.
+    Found 1-bit register for signal <path_back_ff_104>.
+    Found 1-bit register for signal <path_back_ff_105>.
+    Found 1-bit register for signal <path_back_ff_106>.
+    Found 1-bit register for signal <path_back_ff_107>.
+    Found 1-bit register for signal <path_back_ff_108>.
+    Found 1-bit register for signal <path_back_ff_109>.
+    Found 1-bit register for signal <path_back_ff_110>.
+    Found 1-bit register for signal <path_back_ff_111>.
+    Found 1-bit register for signal <path_back_ff_112>.
+    Found 1-bit register for signal <path_back_ff_113>.
+    Found 1-bit register for signal <path_back_ff_114>.
+    Found 1-bit register for signal <path_back_ff_115>.
+    Found 1-bit register for signal <path_back_ff_116>.
+    Found 1-bit register for signal <path_back_ff_117>.
+    Found 1-bit register for signal <path_back_ff_118>.
+    Found 1-bit register for signal <path_back_ff_119>.
+    Found 1-bit register for signal <path_back_ff_120>.
+    Found 1-bit register for signal <path_back_ff_121>.
+    Found 1-bit register for signal <path_back_ff_122>.
+    Found 1-bit register for signal <path_back_ff_123>.
+    Found 1-bit register for signal <path_back_ff_124>.
+    Found 1-bit register for signal <path_back_ff_125>.
+    Found 1-bit register for signal <path_back_ff_126>.
+    Found 1-bit register for signal <path_back_ff_127>.
+    Found 1-bit register for signal <path_back_ff_128>.
+    Found 1-bit register for signal <path_back_ff_129>.
+    Found 1-bit register for signal <path_back_ff_130>.
+    Found 1-bit register for signal <path_back_ff_131>.
+    Found 1-bit register for signal <path_back_ff_132>.
+    Found 1-bit register for signal <path_back_ff_133>.
+    Found 1-bit register for signal <path_back_ff_134>.
+    Found 1-bit register for signal <path_back_ff_135>.
+    Found 1-bit register for signal <path_back_ff_136>.
+    Found 1-bit register for signal <path_back_ff_137>.
+    Found 1-bit register for signal <path_back_ff_138>.
+    Found 1-bit register for signal <path_back_ff_139>.
+    Found 1-bit register for signal <path_back_ff_140>.
+    Found 1-bit register for signal <path_back_ff_141>.
+    Found 1-bit register for signal <path_back_ff_142>.
+    Found 1-bit register for signal <path_back_ff_143>.
+    Found 1-bit register for signal <path_back_ff_144>.
+    Found 1-bit register for signal <path_back_ff_145>.
+    Found 1-bit register for signal <path_back_ff_146>.
+    Found 1-bit register for signal <path_back_ff_147>.
+    Found 1-bit register for signal <path_back_ff_148>.
+    Found 1-bit register for signal <path_back_ff_149>.
+    Found 1-bit register for signal <path_back_ff_150>.
+    Found 1-bit register for signal <path_back_ff_151>.
+    Found 1-bit register for signal <path_back_ff_152>.
+    Found 1-bit register for signal <path_back_ff_153>.
+    Found 1-bit register for signal <path_back_ff_154>.
+    Found 1-bit register for signal <path_back_ff_155>.
+    Found 1-bit register for signal <path_back_ff_156>.
+    Found 1-bit register for signal <path_back_ff_157>.
+    Found 1-bit register for signal <path_back_ff_158>.
+    Found 1-bit register for signal <path_back_ff_159>.
+    Found 1-bit register for signal <path_back_ff_160>.
+    Found 1-bit register for signal <path_back_ff_161>.
+    Found 1-bit register for signal <path_back_ff_162>.
+    Found 1-bit register for signal <path_back_ff_163>.
+    Found 1-bit register for signal <path_back_ff_164>.
+    Found 1-bit register for signal <path_back_ff_165>.
+    Found 1-bit register for signal <path_back_ff_166>.
+    Found 1-bit register for signal <path_back_ff_167>.
+    Found 1-bit register for signal <path_back_ff_168>.
+    Found 1-bit register for signal <path_back_ff_169>.
+    Found 1-bit register for signal <path_back_ff_170>.
+    Found 1-bit register for signal <path_back_ff_171>.
+    Found 1-bit register for signal <path_back_ff_172>.
+    Found 1-bit register for signal <path_back_ff_173>.
+    Found 1-bit register for signal <path_back_ff_174>.
+    Found 1-bit register for signal <path_back_ff_175>.
+    Found 1-bit register for signal <path_back_ff_176>.
+    Found 1-bit register for signal <path_back_ff_177>.
+    Found 1-bit register for signal <path_back_ff_178>.
+    Found 1-bit register for signal <path_back_ff_179>.
+    Found 1-bit register for signal <path_back_ff_180>.
+    Found 1-bit register for signal <path_back_ff_181>.
+    Found 1-bit register for signal <path_back_ff_182>.
+    Found 1-bit register for signal <path_back_ff_183>.
+    Found 1-bit register for signal <path_back_ff_184>.
+    Found 1-bit register for signal <path_back_ff_185>.
+    Found 1-bit register for signal <path_back_ff_186>.
+    Found 1-bit register for signal <path_back_ff_187>.
+    Found 1-bit register for signal <path_back_ff_188>.
+    Found 1-bit register for signal <path_back_ff_189>.
+    Found 1-bit register for signal <path_back_ff_190>.
+    Found 1-bit register for signal <path_back_ff_191>.
+    Found 1-bit register for signal <path_back_ff_192>.
+    Found 1-bit register for signal <path_back_ff_193>.
+    Found 1-bit register for signal <path_back_ff_194>.
+    Found 1-bit register for signal <path_back_ff_195>.
+    Found 1-bit register for signal <path_back_ff_196>.
+    Found 1-bit register for signal <path_back_ff_197>.
+    Found 1-bit register for signal <path_back_ff_198>.
+    Found 1-bit register for signal <path_back_ff_199>.
+    Found 1-bit register for signal <path_back_ff_200>.
+    Found 1-bit register for signal <path_back_ff_201>.
+    Found 1-bit register for signal <path_back_ff_202>.
+    Found 1-bit register for signal <path_back_ff_203>.
+    Found 1-bit register for signal <path_back_ff_204>.
+    Found 1-bit register for signal <path_back_ff_205>.
+    Found 1-bit register for signal <path_back_ff_206>.
+    Found 1-bit register for signal <path_back_ff_207>.
+    Found 1-bit register for signal <path_back_ff_208>.
+    Found 1-bit register for signal <path_back_ff_209>.
+    Found 1-bit register for signal <path_back_ff_210>.
+    Found 1-bit register for signal <path_back_ff_211>.
+    Found 1-bit register for signal <path_back_ff_212>.
+    Found 1-bit register for signal <path_back_ff_213>.
+    Found 1-bit register for signal <path_back_ff_214>.
+    Found 1-bit register for signal <path_back_ff_215>.
+    Found 1-bit register for signal <path_back_ff_216>.
+    Found 1-bit register for signal <path_back_ff_217>.
+    Found 1-bit register for signal <path_back_ff_218>.
+    Found 1-bit register for signal <path_back_ff_219>.
+    Found 1-bit register for signal <path_back_ff_220>.
+    Found 1-bit register for signal <path_back_ff_221>.
+    Found 1-bit register for signal <path_back_ff_222>.
+    Found 1-bit register for signal <path_back_ff_223>.
+    Found 1-bit register for signal <path_back_ff_224>.
+    Found 1-bit register for signal <path_back_ff_225>.
+    Found 1-bit register for signal <path_back_ff_226>.
+    Found 1-bit register for signal <path_back_ff_227>.
+    Found 1-bit register for signal <path_back_ff_228>.
+    Found 1-bit register for signal <path_back_ff_229>.
+    Found 1-bit register for signal <path_back_ff_230>.
+    Found 1-bit register for signal <path_back_ff_231>.
+    Found 1-bit register for signal <path_back_ff_232>.
+    Found 1-bit register for signal <path_back_ff_233>.
+    Found 1-bit register for signal <path_back_ff_234>.
+    Found 1-bit register for signal <path_back_ff_235>.
+    Found 1-bit register for signal <path_back_ff_236>.
+    Found 1-bit register for signal <path_back_ff_237>.
+    Found 1-bit register for signal <path_back_ff_238>.
+    Found 1-bit register for signal <path_back_ff_239>.
+    Found 1-bit register for signal <path_back_ff_240>.
+    Found 1-bit register for signal <path_back_ff_241>.
+    Found 1-bit register for signal <path_back_ff_242>.
+    Found 1-bit register for signal <path_back_ff_243>.
+    Found 1-bit register for signal <path_back_ff_244>.
+    Found 1-bit register for signal <path_back_ff_245>.
+    Found 1-bit register for signal <path_back_ff_246>.
+    Found 1-bit register for signal <path_back_ff_247>.
+    Found 1-bit register for signal <path_back_ff_248>.
+    Found 1-bit register for signal <path_back_ff_249>.
+    Found 1-bit register for signal <path_back_ff_250>.
+    Found 1-bit register for signal <path_back_ff_251>.
+    Found 1-bit register for signal <path_back_ff_252>.
+    Found 1-bit register for signal <path_back_ff_253>.
+    Found 1-bit register for signal <path_back_ff_254>.
+    Found 1-bit register for signal <path_back_ff_255>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 30                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | waiting                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][0][7]_wide_mux_327_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][1][7]_wide_mux_328_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][2][7]_wide_mux_329_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][3][7]_wide_mux_330_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][4][7]_wide_mux_331_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][5][7]_wide_mux_332_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][6][7]_wide_mux_333_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][7][7]_wide_mux_334_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][8][7]_wide_mux_335_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][9][7]_wide_mux_336_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][10][7]_wide_mux_337_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][11][7]_wide_mux_338_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][12][7]_wide_mux_339_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][13][7]_wide_mux_340_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][14][7]_wide_mux_341_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <col[3]_weights[15][15][7]_wide_mux_342_OUT> created at line 298.
+    Found 8-bit 16-to-1 multiplexer for signal <row[3]_col[3]_wide_mux_343_OUT> created at line 298.
+    Found 1-bit 256-to-1 multiplexer for signal <col[3]_read_port_348_OUT<0>> created at line 299.
+    Found 4-bit comparator equal for signal <beg_loc[3]_col_in[3]_equal_345_o> created at line 299
+    Found 4-bit comparator equal for signal <beg_loc[7]_row_in[3]_equal_346_o> created at line 300
+    Found 4-bit comparator equal for signal <end_loc[3]_col_in[3]_equal_347_o> created at line 302
+    Found 4-bit comparator equal for signal <end_loc[7]_row_in[3]_equal_348_o> created at line 303
+    Found 4-bit comparator not equal for signal <n1626> created at line 0
+    Found 4-bit comparator not equal for signal <n1624> created at line 0
+    Summary:
+	inferred 2354 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  22 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <node_matrix> synthesized.
+
+Synthesizing Unit <path_reg>.
+    Related source file is "/home/will/Code/VHDL/final/path_reg.vhd".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <path_reg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 522
+ 1-bit register                                        : 256
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+ 8-bit register                                        : 261
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 4
+ 4-bit comparator not equal                            : 2
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 256-to-1 multiplexer                            : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 8-bit 16-to-1 multiplexer                             : 17
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2362
+ Flip-Flops                                            : 2362
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 4
+ 4-bit comparator not equal                            : 2
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 256-to-1 multiplexer                            : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 8-bit 16-to-1 multiplexer                             : 17
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ waiting   | 000
+ receiving | 001
+ re_beg    | 010
+ re_end    | 011
+ loaded    | 100
+ running   | 101
+ done      | 110
+ resetting | 111
+-----------------------
+
+Optimizing unit <path_reg> ...
+
+Optimizing unit <node_matrix> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block node_matrix, actual ratio is 46.
+FlipFlop col_0 has been replicated 23 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop col_0 connected to a primary input has been replicated
+FlipFlop col_1 has been replicated 30 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop col_1 connected to a primary input has been replicated
+FlipFlop col_2 has been replicated 11 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop col_2 connected to a primary input has been replicated
+FlipFlop col_3 has been replicated 5 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop col_3 connected to a primary input has been replicated
+FlipFlop row_0 has been replicated 5 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop row_0 connected to a primary input has been replicated
+FlipFlop row_1 has been replicated 5 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop row_1 connected to a primary input has been replicated
+FlipFlop row_2 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop row_2 connected to a primary input has been replicated
+FlipFlop serial_col_0 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop serial_col_0 connected to a primary input has been replicated
+FlipFlop serial_col_1 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop serial_col_1 connected to a primary input has been replicated
+FlipFlop serial_col_2 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop serial_col_2 connected to a primary input has been replicated
+FlipFlop serial_col_3 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop serial_col_3 connected to a primary input has been replicated
+FlipFlop serial_row_0 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop serial_row_0 connected to a primary input has been replicated
+FlipFlop state_FSM_FFd1 has been replicated 5 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 3 time(s)
+FlipFlop state_FSM_FFd3 has been replicated 5 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2473
+ Flip-Flops                                            : 2473
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : node_matrix.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4250
+#      INV                         : 33
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT4                        : 406
+#      LUT5                        : 36
+#      LUT6                        : 3321
+#      MUXF7                       : 306
+#      MUXF8                       : 144
+# FlipFlops/Latches                : 2473
+#      FD                          : 391
+#      FDE                         : 2072
+#      FDR                         : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 28
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2473  out of  18224    13%  
+ Number of Slice LUTs:                 3800  out of   9112    41%  
+    Number used as Logic:              3800  out of   9112    41%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3902
+   Number with an unused Flip Flop:    1429  out of   3902    36%  
+   Number with an unused LUT:           102  out of   3902     2%  
+   Number of fully used LUT-FF pairs:  2371  out of   3902    60%  
+   Number of unique control sets:        64
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    232    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 2473  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.475ns (Maximum Frequency: 223.486MHz)
+   Minimum input arrival time before clock: 5.802ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.475ns (frequency: 223.486MHz)
+  Total number of paths / destination ports: 36551 / 4418
+-------------------------------------------------------------------------
+Delay:               4.475ns (Levels of Logic = 3)
+  Source:            path_register/data_out_5 (FF)
+  Destination:       _o12418 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: path_register/data_out_5 to _o12418
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              18   0.447   1.154  path_register/data_out_5 (path_register/data_out_5)
+     LUT4:I2->O           12   0.203   1.156  Mmux_BUS_000313_SW0_1 (Mmux_BUS_000313_SW0)
+     LUT6:I2->O           16   0.203   1.005  Mmux_BUS_000317_12 (Mmux_BUS_00031711)
+     LUT4:I3->O            1   0.205   0.000  _o12418_glue_set (_o12418_glue_set)
+     FD:D                      0.102          _o12418
+    ----------------------------------------
+    Total                      4.475ns (1.160ns logic, 3.315ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4329 / 3643
+-------------------------------------------------------------------------
+Offset:              5.802ns (Levels of Logic = 2)
+  Source:            data_tick (PAD)
+  Destination:       weights<6>_1_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data_tick to weights<6>_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           653   1.222   2.468  data_tick_IBUF (data_tick_IBUF)
+     LUT5:I0->O           56   0.203   1.587  _n4623_inv111_7 (_n4623_inv1116)
+     FDE:CE                    0.322          weights<6>_3_0
+    ----------------------------------------
+    Total                      5.802ns (1.747ns logic, 4.055ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            in_path_1 (FF)
+  Destination:       in_path<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: in_path_1 to in_path<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  in_path_1 (in_path_1)
+     OBUF:I->O                 2.571          in_path_1_OBUF (in_path<1>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.475|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.05 secs
+ 
+--> 
+
+
+Total memory usage is 409860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  233 (   0 filtered)
+Number of infos    :  240 (   0 filtered)
+

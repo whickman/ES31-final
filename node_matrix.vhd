@@ -23,6 +23,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.MATH_REAL.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -50,7 +51,7 @@ architecture Behavioral of node_matrix is
                weight : in  STD_LOGIC_VECTOR (7 downto 0);
                in_ping_start: in  STD_LOGIC;
                in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
-               reset_in : in  STD_LOGIC;
+               reset : in  STD_LOGIC;
                out_ping: out  STD_LOGIC;
                pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));
     end component;
@@ -68,7 +69,6 @@ architecture Behavioral of node_matrix is
     type weight_col is array (0 to 15) of std_logic_vector(7 downto 0);
     type weight_array is array (0 to 15) of weight_col;
     type state_type is (waiting,receiving,re_beg,re_end,loaded,running,done,resetting);
-    type back_state_type is (waiting,get_pointer,set_loc,done);
 
     signal pings,start_ping,path_back: binary_array;
     signal backtrace : backtrace_array;
@@ -80,7 +80,6 @@ architecture Behavioral of node_matrix is
     signal reset,path_reg_clear : std_logic := '0';
     signal col,row,serial_col,serial_row : integer;
     signal state,next_state : state_type;
-    signal back_state,next_back_state : back_state_type;
 
 begin
 
@@ -99,106 +98,105 @@ begin
             NX : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
+            weights((I rem 16))((I/16)),
+            start_ping((I rem 16))((I/16)),
+            pings((I rem 16))((I/16)-1),
+            pings((I rem 16)+1)((I/16)),
+            pings((I rem 16))((I/16)+1),
+            pings((I rem 16)-1)((I/16)),
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings((I rem 16))((I/16)),
+            backtrace((I rem 16))((I/16)));
         end generate main_nodes;
 
         top_row_nodes : if ((I<15) and (I>1)) generate
             NTR : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
+            weights((I rem 16))(0),
+            start_ping((I rem 16))(0),
             '0',
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
+            pings((I rem 16)+1)(0),
+            pings((I rem 16))(1),
+            pings((I rem 16)-1)((I/16)),
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings((I rem 16))(0),
+            backtrace((I rem 16))(0));
         end generate top_row_nodes;
 
-        bottow_row_nodes : if ((I<15) and (I>1)) generate
+        bottow_row_nodes : if ((I<255) and (I>240)) generate
             NBR : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
+            weights((I rem 16))(15),
+            start_ping((I rem 16))(15),
+            pings((I rem 16))(14),
+            pings((I rem 16)+1)(15),
             '0',
-            pings((I rem 16)-1)((I mod 16)),
+            pings((I rem 16)-1)(15),
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings((I rem 16))(15),
+            backtrace((I rem 16))(15));
         end generate bottow_row_nodes;
 
         UL_corner_node : if (I=0) generate
             NC1 : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
+            weights(0)(0),
+            start_ping(0)(0),
             '0',
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
+            pings(1)(0),
+            pings(0)(1),
             '0',
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings(0)(0),
+            backtrace(0)(0));
         end generate UL_corner_node;
 
-        --THESE ALL NEED TO BE FIXED!!
         UR_corner_node : if (I=15) generate
             NC2 : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
+            weights(15)(0),
+            start_ping(15)(0),
             '0',
             '0',
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
+            pings(15)(1),
+            pings(14)(15),
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings(15)(0),
+            backtrace(15)(0));
         end generate UR_corner_node;
 
         LL_corner_node : if (I=240) generate
             NC3 : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
+            weights(0)(15),
+            start_ping(0)(15),
+            pings(0)(14),
+            pings(1)(15),
             '0',
             '0',
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings(0)(15),
+            backtrace(0)(15));
         end generate LL_corner_node;
 
         LR_corner_node : if (I=255) generate
             NC4 : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
+            weights(15)(15),
+            start_ping(15)(15),
+            pings(15)(14),
             '0',
             '0',
-            pings((I rem 16)-1)((I mod 16)),
+            pings(14)(15),
             reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
+            pings(15)(15),
+            backtrace(15)(15));
         end generate LR_corner_node;
 
     end generate node_matrix_full;
@@ -207,7 +205,6 @@ begin
     begin
         if rising_edge(clk) then
             state<=next_state;
-            back_state<=next_back_state;
         end if;
     end process;
 
@@ -225,7 +222,7 @@ begin
                     next_state<=re_end;
                 end if;
             when receiving =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 elsif (shift_state="11") then
                     next_state<=loaded;
@@ -235,7 +232,7 @@ begin
                     next_state<=re_end;
                 end if;
             when re_beg =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 elsif (shift_state="11") then
                     next_state<=loaded;
@@ -245,7 +242,7 @@ begin
                     next_state<=re_end;
                 end if;
             when re_end =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 elsif (shift_state="11") then
                     next_state<=loaded;
@@ -255,19 +252,19 @@ begin
                     next_state<=re_beg;
                 end if;
             when loaded =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 elsif (shift_state="00") then
                     next_state<=running;
                 end if;
             when running =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 elsif (shift_state="01") then
                     next_state<=done;
                 end if;
             when done =>
-                if (reset='1') then
+                if (reset_in='1') then
                     next_state<=resetting;
                 end if;
             when resetting =>
@@ -314,7 +311,7 @@ begin
         end if;
     end process;
 
-    start_process : process (state)
+    start_process : process (state,beg_loc)
     begin
         start_ping<=(others=>(others=>'0'));
         if (state=running) then
@@ -322,57 +319,40 @@ begin
         end if;
     end process;
 
-    backtrace_state_process : process(back_state,state,reset)
+    
+    backtrace_process : process(clk)
     begin
-        back_temp_col<=to_integer(path_loc_r(3 downto 0));
-        back_temp_row<=to_integer(path_loc_r(7 downto 4));
-        case back_state is
-            when waiting =>
-                pointer<=(others=>'0');
-                path_back<=(others=>(others=>'0'));
-                path_loc_w<=end_loc;
-                if (state=done) then
-                    next_back_state<=get_pointer;
-                end if;
-            when get_pointer =>
-                path_back(back_temp_col)(back_temp_row)<='1';
-                pointer<=backtrace(back_temp_col)(back_temp_row);
-                next_back_state<=set_loc;
-                if (reset='1') then
-                    next_back_state<=waiting;
-                end if;
-            when set_loc =>
-                if (reset='1') then
-                    next_back_state<=waiting;
-                elsif ((back_temp_col/=end_loc(3 downto 0)) or 
-                (back_temp_row/=end_loc(7 downto 4))) then
+        if rising_edge(clk) then
+            if (state=done) then
+                if ((beg_loc(7 downto 4)/=back_temp_row) and 
+                (beg_loc(3 downto 0)/=back_temp_col)) then 
+                    pointer<=backtrace(back_temp_col)(back_temp_row);
+                    path_back(back_temp_col)(back_temp_row)<='1';
                     case pointer is
                         when "00" =>
-                            path_loc_w<=(path_loc_w(3 downto 0)-"0001") & path_loc_w(7 downto 4);
+                            --path_loc_w<=(path_loc_r(7 downto 4)-"0001") & path_loc_r(3 downto 0);
+                            path_loc_w<=path_loc_r-"00010000";
                         when "01" =>
-                            path_loc_w<=path_loc_w(3 downto 0) & (path_loc_w(7 downto 4)-"0001");
+                            --path_loc_w<=path_loc_r(7 downto 4) & (path_loc_r(3 downto 0)+"0001");
+                            path_loc_w<=path_loc_r+"00000001";
                         when "10" =>
-                            path_loc_w<=(path_loc_w(3 downto 0)+"0001") & path_loc_w(7 downto 4);
+                            --path_loc_w<=(path_loc_r(7 downto 4)+"0001") & path_loc_r(3 downto 0);
+                            path_loc_w<=path_loc_r+"00010000";
                         when "11" =>
-                            path_loc_w<=path_loc_w(3 downto 0) & (path_loc_w(7 downto 4)+"0001");
+                            --path_loc_w<=path_loc_r(7 downto 4) & (path_loc_r(3 downto 0)-"0001");
+                            path_loc_w<=path_loc_r-"00000001";
+                        when others => NULL;
                     end case;
-                    next_back_state<=get_pointer;
-                else
-                    next_back_state<=done;
                 end if;
-            when done =>
-                if (reset='1') then
-                    next_back_state<=waiting;
-                end if;
-            when others =>
-                    next_back_state<=waiting;
-        end case;
+            else
+                path_loc_w<=beg_loc;
+            end if;
+        end if;
     end process;
-
-
-
-    path_loc_r<=unsigned(path_vect_r);        
-
+    path_loc_r<=unsigned(path_vect_r);    
+    back_temp_col<=to_integer(path_loc_r(3 downto 0));
+    back_temp_row<=to_integer(path_loc_r(7 downto 4));
+    
 
 end Behavioral;
 
