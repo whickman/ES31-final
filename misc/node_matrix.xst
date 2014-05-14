@@ -1,6 +1,9 @@
-set -tmpdir "/home/will/Code/VHDL/final/misc/xst/projnav.tmp"
-set -xsthdpdir "/home/will/Code/VHDL/final/misc/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn node_matrix.prj
+-ofn node_matrix
+-ofmt NGC
 -p xc6slx16-3-csg324
 -top node_matrix
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn node_matrix.prj

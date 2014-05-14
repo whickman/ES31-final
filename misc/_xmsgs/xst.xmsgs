@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 80: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">path_reg_clear</arg> since it is never assigned
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1315" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 167: Index value &lt;<arg fmt="%s" index="1">16</arg>&gt; is out of range <arg fmt="%s" index="2">[15:0]</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"/home/will/Code/VHDL/final/node_matrix.vhd" Line 52: Formal &lt;<arg fmt="%s" index="1">in_ping_s</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"/home/will/Code/VHDL/final/node.vhd" Line 36: Formal &lt;<arg fmt="%s" index="1">in_ping_s</arg>&gt; has no actual or default value.
+</msg>
+
 </messages>
 

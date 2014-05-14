@@ -50,7 +50,7 @@ architecture Behavioral of node_matrix is
                weight : in  STD_LOGIC_VECTOR (7 downto 0);
                in_ping_start: in  STD_LOGIC;
                in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
-               reset_in : in  STD_LOGIC;
+               reset : in  STD_LOGIC;
                out_ping: out  STD_LOGIC;
                pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));
     end component;
