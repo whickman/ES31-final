@@ -31,8 +31,10 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="node.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="node_matrix.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="node_matrix.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="node_matrix.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="node_matrix.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="node_matrix.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="node_matrix.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="node_matrix.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="node_matrix.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="node_matrix.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="node_matrix_envsettings.html"/>
@@ -146,13 +148,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400038132" xil_pn:in_ck="374728898613850478" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8303362072968916285" xil_pn:start_ts="1400038126">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1400038526" xil_pn:in_ck="374728898613850478" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8303362072968916285" xil_pn:start_ts="1400038476">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="node_matrix.lso"/>
+      <outfile xil_pn:name="node_matrix.ngc"/>
+      <outfile xil_pn:name="node_matrix.ngr"/>
       <outfile xil_pn:name="node_matrix.prj"/>
+      <outfile xil_pn:name="node_matrix.stx"/>
       <outfile xil_pn:name="node_matrix.syr"/>
       <outfile xil_pn:name="node_matrix.xst"/>
       <outfile xil_pn:name="node_matrix_xst.xrpt"/>
