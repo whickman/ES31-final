@@ -61,12 +61,9 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../node.vhd"/>
-      <outfile xil_pn:name="../node_matrix.vhd"/>
-      <outfile xil_pn:name="../node_test.vhd"/>
-      <outfile xil_pn:name="../vga_color.vhd"/>
-      <outfile xil_pn:name="../vga_controller.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1399844850" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4555336812357275173" xil_pn:start_ts="1399844850">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -87,12 +84,9 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../node.vhd"/>
-      <outfile xil_pn:name="../node_matrix.vhd"/>
-      <outfile xil_pn:name="../node_test.vhd"/>
-      <outfile xil_pn:name="../vga_color.vhd"/>
-      <outfile xil_pn:name="../vga_controller.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1399844861" xil_pn:in_ck="3817462159173051465" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8238663564073305546" xil_pn:start_ts="1399844851">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,22 +96,20 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="node_test_beh.prj"/>
-      <outfile xil_pn:name="node_test_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1399844861" xil_pn:in_ck="8028555340894088148" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5826723360896803709" xil_pn:start_ts="1399844861">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="node_test_isim_beh.wdb"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1399785785" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1399785785">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -148,11 +140,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400176433" xil_pn:in_ck="374728898613850478" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4319488072485035816" xil_pn:start_ts="1400176392">
+    <transform xil_pn:end_ts="1400180418" xil_pn:in_ck="-7115836304799865527" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8303362072968916285" xil_pn:start_ts="1400180370">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="node_matrix.lso"/>
       <outfile xil_pn:name="node_matrix.ngc"/>
