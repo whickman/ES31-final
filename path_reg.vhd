@@ -31,9 +31,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity path_reg is
     Port ( clk : in  STD_LOGIC;
-           data_in : in  STD_LOGIC_VECTOR (7 downto 0);
-           clear : in STD_LOGIC;
-           data_out : out  STD_LOGIC_VECTOR (7 downto 0));
+           data_one_in : in  STD_LOGIC_VECTOR (3 downto 0);
+           data_two_in: in  STD_LOGIC_VECTOR (3 downto 0);
+           data_one_out : out  STD_LOGIC_VECTOR (3 downto 0);
+           data_two_out : out  STD_LOGIC_VECTOR (3 downto 0));
 end path_reg;
 
 architecture Behavioral of path_reg is
@@ -43,11 +44,8 @@ begin
     clocked_process : process(clk)
     begin
         if rising_edge(clk) then
-            if (clear='1') then
-                data_out<=(others=>'0');
-            else
-                data_out<=data_in;
-            end if;
+            data_one_out<=data_one_in;
+            data_two_out<=data_two_in;
         end if;
     end process;
 

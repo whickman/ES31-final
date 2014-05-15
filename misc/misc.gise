@@ -148,10 +148,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400038526" xil_pn:in_ck="374728898613850478" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8303362072968916285" xil_pn:start_ts="1400038476">
+    <transform xil_pn:end_ts="1400176433" xil_pn:in_ck="374728898613850478" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4319488072485035816" xil_pn:start_ts="1400176392">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="node_matrix.lso"/>
       <outfile xil_pn:name="node_matrix.ngc"/>
