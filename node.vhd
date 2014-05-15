@@ -37,8 +37,7 @@ entity node is
            in_bping_N,in_bping_E,in_bping_S,in_bping_W : in STD_LOGIC;
            reset : in STD_LOGIC;
            out_ping : out  STD_LOGIC;
-           out_bping : out STD_LOGIC;
-           pinged_by_out : out  STD_LOGIC_VECTOR (1 downto 0));
+           out_bping : out STD_LOGIC);
 end node;
 
 architecture Behavioral of node is
@@ -70,7 +69,7 @@ begin
     state_process : process(state,counter,in_ping_start_end,
         in_ping_N,in_ping_E,in_ping_S,in_ping_W,
         in_bping_N,in_bping_E,in_bping_S,in_bping_W,
-        reset,is_start)
+        reset,is_start,pinged_by)
     begin
 
         out_ping<='0';
@@ -121,13 +120,13 @@ begin
                 elsif (is_start='1') then NULL;
                 elsif (in_ping_start_end='1') then
                     next_state<=back_ping;
-                elsif (in_bping_N='1') then
+                elsif ((in_bping_N='1') and (pinged_by="10")) then
                     next_state<=back_ping;
-                elsif (in_bping_E='1') then
+                elsif ((in_bping_E='1') and (pinged_by="11")) then
                     next_state<=back_ping;
-                elsif (in_bping_S='1') then
+                elsif ((in_bping_S='1') and (pinged_by="00")) then
                     next_state<=back_ping;
-                elsif (in_bping_W='1') then
+                elsif ((in_bping_W='1') and (pinged_by="01")) then
                     next_state<=back_ping;
                 end if;
             when others =>
@@ -135,8 +134,6 @@ begin
         end case;
 
     end process;
-
-    pinged_by_out<=pinged_by;
 
 end Behavioral;
 

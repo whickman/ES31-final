@@ -31,12 +31,10 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity node_matrix is
     Port ( clk : in  STD_LOGIC;
-           row_in : in  STD_LOGIC_VECTOR (3 downto 0);
-           col_in : in  STD_LOGIC_VECTOR (3 downto 0);
+           disp_loc_in : in  STD_LOGIC_VECTOR (7 downto 0);
            shift_state : in STD_LOGIC_VECTOR (1 downto 0);
            data_tick : in STD_LOGIC;
-           serial_row_in : in  STD_LOGIC_VECTOR (3 downto 0);
-           serial_col_in : in  STD_LOGIC_VECTOR (3 downto 0);
+           serial_in : in  STD_LOGIC_VECTOR (7 downto 0);
            data_in : in  STD_LOGIC_VECTOR (7 downto 0);
            reset_in : in  STD_LOGIC;
            in_path : out STD_LOGIC_VECTOR(1 downto 0);
@@ -53,15 +51,12 @@ architecture Behavioral of node_matrix is
                in_bping_N,in_bping_E,in_bping_S,in_bping_W : in STD_LOGIC;
                reset : in  STD_LOGIC;
                out_ping: out  STD_LOGIC;
-               out_bping: out STD_LOGIC;
-               pinged_by_out : out  STD_LOGIC_VECTOR (1 downto 0));
+               out_bping: out STD_LOGIC);
     end component;
 
-    type binary_array is array (0 to 15) of std_logic_vector(15 downto 0);
-    type backtrace_col is array (0 to 15) of std_logic_vector(1 downto 0);
-    type backtrace_array is array (0 to 15) of backtrace_col;
-    type weight_col is array (0 to 15) of std_logic_vector(7 downto 0);
-    type weight_array is array (0 to 15) of weight_col;
+    type binary_array is array (0 to 255) of std_logic;
+    type backtrace_array is array (0 to 255) of std_logic_vector(1 downto 0);
+    type weight_array is array (0 to 255) of std_logic_vector(7 downto 0);
     type state_type is (waiting,receiving,re_beg,re_end,loaded,running,done,resetting);
 
     signal pings,bpings,start_end_ping : binary_array;
@@ -69,7 +64,7 @@ architecture Behavioral of node_matrix is
     signal weights : weight_array;
     signal beg_loc,end_loc : unsigned(7 downto 0) := (others=>'0');
     signal reset : std_logic := '0';
-    signal col,row,serial_col,serial_row : integer;
+    signal ind,serial_ind,disp_ind : integer;
     signal state,next_state : state_type;
 
 begin
@@ -82,140 +77,133 @@ begin
             NX : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))((I/16)),
-            start_end_ping((I rem 16))((I/16)),
-            pings((I rem 16))((I/16)-1),
-            pings((I rem 16)+1)((I/16)),
-            pings((I rem 16))((I/16)+1),
-            pings((I rem 16)-1)((I/16)),
-            bpings((I rem 16))((I/16)-1),
-            bpings((I rem 16)+1)((I/16)),
-            bpings((I rem 16))((I/16)+1),
-            bpings((I rem 16)-1)((I/16)),
+            weights(I),
+            start_end_ping(I),
+            pings(I-16),
+            pings(I+1),
+            pings(I+16),
+            pings(I-1),
+            bpings(I-16),
+            bpings(I+1),
+            bpings(I+16),
+            bpings(I-1),
             reset,
-            pings((I rem 16))((I/16)),
-            bpings((I rem 16))((I/16)),
-            backtrace((I rem 16))((I/16)));
+            pings(I),
+            bpings(I));
         end generate main_nodes;
 
         top_row_nodes : if ((I<15) and (I>1)) generate
             NTR : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))(0),
-            start_end_ping((I rem 16))(0),
+            weights(I),
+            start_end_ping(I),
             '0',
-            pings((I rem 16)+1)(0),
-            pings((I rem 16))(1),
-            pings((I rem 16)-1)((I/16)),
+            pings(I+1),
+            pings(I+16),
+            pings(I-1),
             '0',
-            bpings((I rem 16)+1)(0),
-            bpings((I rem 16))(1),
-            bpings((I rem 16)-1)((I/16)),
+            bpings(I+1),
+            bpings(I+16),
+            bpings(I-1),
             reset,
-            pings((I rem 16))(0),
-            bpings((I rem 16))(0),
-            backtrace((I rem 16))(0));
+            pings(I),
+            bpings(I));
         end generate top_row_nodes;
 
         bottow_row_nodes : if ((I<255) and (I>240)) generate
             NBR : node
             PORT MAP ( 
             clk, 
-            weights((I rem 16))(15),
-            start_end_ping((I rem 16))(15),
-            pings((I rem 16))(14),
-            pings((I rem 16)+1)(15),
+            weights(I),
+            start_end_ping(I),
+            pings(I-16),
+            pings(I+1),
             '0',
-            pings((I rem 16)-1)(15),
-            bpings((I rem 16))(14),
-            bpings((I rem 16)+1)(15),
+            pings(I-1),
+            bpings(I-16),
+            bpings(I+1),
             '0',
-            bpings((I rem 16)-1)(15),
+            bpings(I-1),
             reset,
-            pings((I rem 16))(15),
-            bpings((I rem 16))(15),
-            backtrace((I rem 16))(15));
+            pings(I),
+            bpings(I));
         end generate bottow_row_nodes;
 
         UL_corner_node : if (I=0) generate
             NC1 : node
             PORT MAP ( 
             clk, 
-            weights(0)(0),
-            start_end_ping(0)(0),
+            weights(I),
+            start_end_ping(I),
             '0',
-            pings(1)(0),
-            pings(0)(0),
+            pings(I+1),
+            pings(I+16),
             '0',
             '0',
-            bpings(1)(0),
-            bpings(0)(0),
+            bpings(I+1),
+            bpings(I+16),
             '0',
             reset,
-            pings(0)(0),
-            bpings(0)(0),
-            backtrace(0)(0));
+            pings(I),
+            bpings(I));
         end generate UL_corner_node;
 
         UR_corner_node : if (I=15) generate
             NC2 : node
             PORT MAP ( 
             clk, 
-            weights(15)(0),
-            start_end_ping(15)(0),
+            weights(I),
+            start_end_ping(I),
             '0',
             '0',
-            pings(15)(1),
-            pings(14)(15),
+            pings(I+16),
+            pings(I-1),
             '0',
             '0',
-            bpings(15)(1),
-            bpings(14)(15),
+            bpings(I+16),
+            bpings(I-1),
             reset,
-            pings(15)(0),
-            bpings(15)(0),
-            backtrace(15)(0));
+            pings(I),
+            bpings(I));
         end generate UR_corner_node;
 
         LL_corner_node : if (I=240) generate
             NC3 : node
             PORT MAP ( 
             clk, 
-            weights(0)(15),
-            start_end_ping(0)(15),
-            pings(0)(14),
-            pings(1)(15),
+            weights(I),
+            start_end_ping(I),
+            pings(I-16),
+            pings(I+1),
             '0',
             '0',
-            bpings(0)(14),
-            bpings(1)(15),
+            bpings(I-16),
+            bpings(I+1),
             '0',
             '0',
             reset,
-            pings(0)(15),
-            bpings(0)(15),
-            backtrace(0)(15));
+            pings(I),
+            bpings(I));
         end generate LL_corner_node;
 
         LR_corner_node : if (I=255) generate
             NC4 : node
             PORT MAP ( 
             clk, 
-            weights(15)(15),
-            start_end_ping(15)(15),
-            pings(15)(14),
+            weights(I),
+            start_end_ping(I),
+            pings(I-16),
             '0',
             '0',
-            pings(14)(15),
-            bpings(15)(14),
+            pings(I-1),
+            bpings(I-16),
             '0',
             '0',
-            bpings(14)(15),
+            bpings(I-1),
             reset,
-            pings(15)(15),
-            bpings(15)(15),
-            backtrace(15)(15));
+            pings(I),
+            bpings(I));
         end generate LR_corner_node;
 
     end generate node_matrix_full;
@@ -299,29 +287,25 @@ begin
         if rising_edge(clk) then
             weight_out<=(others=>'0');
             in_path<=(others=>'0');
-            serial_col<=to_integer(unsigned(serial_col_in));
-            serial_row<=to_integer(unsigned(serial_row_in));
-            col<=to_integer(unsigned(col_in));
-            row<=to_integer(unsigned(row_in));
+            serial_ind<=to_integer(unsigned(serial_in));
+            disp_ind<=to_integer(unsigned(disp_loc_in));
             if (data_tick='1') then
                 case state is
                     when receiving =>
-                        weights(serial_col)(serial_row)<=data_in;
+                        weights(serial_ind)<=data_in;
                     when re_beg =>
                         beg_loc<=unsigned(data_in);
                     when re_end =>
                         end_loc<=unsigned(data_in);
                     when loaded =>
-                        weight_out<=weights(col)(row);
+                        weight_out<=weights(disp_ind);
                     when done =>
-                        weight_out<=weights(col)(row);
-                        if ((col_in=(std_logic_vector(beg_loc(3 downto 0)))) and 
-                        (row_in=(std_logic_vector(beg_loc(7 downto 4))))) then
+                        weight_out<=weights(disp_ind);
+                        if (disp_ind=to_integer(beg_loc)) then
                             in_path<="01";
-                        elsif ((col_in=(std_logic_vector(end_loc(3 downto 0)))) and 
-                        (row_in=(std_logic_vector(end_loc(7 downto 4))))) then
+                        elsif (disp_ind=to_integer(end_loc)) then
                             in_path<="11";
-                        elsif (bpings(col)(row)='1') then
+                        elsif (bpings(disp_ind)='1') then
                             in_path<="10";
                         end if;
                     when others => NULL;
@@ -332,11 +316,11 @@ begin
 
     start_end_process : process (state,beg_loc,end_loc)
     begin
-        start_end_ping<=(others=>(others=>'0'));
+        start_end_ping<=(others=>'0');
         if (state=running) then
-            start_end_ping(to_integer(beg_loc(3 downto 0)))(to_integer(beg_loc(7 downto 4)))<='1';
+            start_end_ping(to_integer(beg_loc))<='1';
         elsif (state=running) then
-            start_end_ping(to_integer(end_loc(3 downto 0)))(to_integer(end_loc(7 downto 4)))<='1';
+            start_end_ping(to_integer(end_loc))<='1';
         end if;
     end process;
 
