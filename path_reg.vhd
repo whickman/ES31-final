@@ -33,6 +33,7 @@ entity path_reg is
     Port ( clk : in  STD_LOGIC;
            data_in : in  STD_LOGIC_VECTOR (7 downto 0);
            clear : in STD_LOGIC;
+           enable : in STD_LOGIC;
            data_out : out  STD_LOGIC_VECTOR (7 downto 0));
 end path_reg;
 
@@ -45,7 +46,7 @@ begin
         if rising_edge(clk) then
             if (clear='1') then
                 data_out<=(others=>'0');
-            else
+            elsif (enable='1') then
                 data_out<=data_in;
             end if;
         end if;
