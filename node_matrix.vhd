@@ -62,11 +62,9 @@ architecture Behavioral of node_matrix is
                data_out : out  STD_LOGIC_VECTOR (7 downto 0));
     end component;
 
-    type binary_array is array (0 to 15) of std_logic_vector(15 downto 0);
-    type backtrace_col is array (0 to 15) of std_logic_vector(1 downto 0);
-    type backtrace_array is array (0 to 15) of backtrace_col;
-    type weight_col is array (0 to 15) of std_logic_vector(7 downto 0);
-    type weight_array is array (0 to 15) of weight_col;
+    type binary_array is array (0 to 255) of std_logic;
+    type backtrace_array is array (0 to 255) of std_logic_vector(1 downto 0);
+    type weight_array is array (0 to 255) of std_logic_vector(7 downto 0);
     type state_type is (waiting,receiving,re_beg,re_end,loaded,running,done,resetting);
     type back_state_type is (waiting,get_pointer,set_loc,done);
 
@@ -92,117 +90,145 @@ begin
         path_vect_r);
 
     node_matrix_full:
-    for I in 0 to 255 generate
+        for I in 0 to 255 generate
 
-        main_nodes : if ((I>15) and (I<240) and 
-        ((I rem 16)/=0) and ((I rem 16)/=15)) generate
-            NX : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate main_nodes;
+            main_nodes : if ((I>15) and (I<240) and 
+            ((I rem 16)/=0) and ((I rem 16)/=15)) generate
+                NX : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                pings(I-16),
+                pings(I+1),
+                pings(I+16),
+                pings(I-1),
+                bpings(I-16),
+                bpings(I+1),
+                bpings(I+16),
+                bpings(I-1),
+                reset,
+                pings(I),
+                bpings(I));
+            end generate main_nodes;
 
-        top_row_nodes : if ((I<15) and (I>1)) generate
-            NTR : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            '0',
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate top_row_nodes;
+            top_row_nodes : if ((I<15) and (I>1)) generate
+                NTR : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                '0',
+                pings(I+1),
+                pings(I+16),
+                pings(I-1),
+                '0',
+                bpings(I+1),
+                bpings(I+16),
+                bpings(I-1),
+                reset,
+                pings(I),
+                bpings(I));
+            end generate top_row_nodes;
 
-        bottow_row_nodes : if ((I<15) and (I>1)) generate
-            NBR : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
-            '0',
-            pings((I rem 16)-1)((I mod 16)),
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate bottow_row_nodes;
+            bottow_row_nodes : if ((I<255) and (I>240)) generate
+                NBR : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                pings(I-16),
+                pings(I+1),
+                '0',
+                pings(I-1),
+                bpings(I-16),
+                bpings(I+1),
+                '0',
+                bpings(I-1),
+                reset,
+                pings(I),
+                bpings(I));
+            end generate bottow_row_nodes;
 
-        UL_corner_node : if (I=0) generate
-            NC1 : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            '0',
-            pings((I rem 16)+1)((I mod 16)),
-            pings((I rem 16))((I mod 16)+1),
-            '0',
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate UL_corner_node;
+            UL_corner_node : if (I=0) generate
+                NC1 : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                '0',
+                pings(I+1),
+                pings(I+16),
+                '0',
+                '0',
+                bpings(I+1),
+                bpings(I+16),
+                '0',
+                reset,
+                pings(I),
+                bpings(I));
+            end generate UL_corner_node;
 
-        --THESE ALL NEED TO BE FIXED!!
-        UR_corner_node : if (I=15) generate
-            NC2 : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            '0',
-            '0',
-            pings((I rem 16))((I mod 16)+1),
-            pings((I rem 16)-1)((I mod 16)),
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate UR_corner_node;
+            UR_corner_node : if (I=15) generate
+                NC2 : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                '0',
+                '0',
+                pings(I+16),
+                pings(I-1),
+                '0',
+                '0',
+                bpings(I+16),
+                bpings(I-1),
+                reset,
+                pings(I),
+                bpings(I));
+            end generate UR_corner_node;
 
-        LL_corner_node : if (I=240) generate
-            NC3 : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            pings((I rem 16)+1)((I mod 16)),
-            '0',
-            '0',
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate LL_corner_node;
+            LL_corner_node : if (I=240) generate
+                NC3 : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                pings(I-16),
+                pings(I+1),
+                '0',
+                '0',
+                bpings(I-16),
+                bpings(I+1),
+                '0',
+                '0',
+                reset,
+                pings(I),
+                bpings(I));
+            end generate LL_corner_node;
 
-        LR_corner_node : if (I=255) generate
-            NC4 : node
-            PORT MAP ( 
-            clk, 
-            weights((I rem 16))((I mod 16)),
-            start_ping((I rem 16))((I mod 16)),
-            pings((I rem 16))((I mod 16)-1),
-            '0',
-            '0',
-            pings((I rem 16)-1)((I mod 16)),
-            reset,
-            pings((I rem 16))((I mod 16)),
-            backtrace((I rem 16))((I mod 16)));
-        end generate LR_corner_node;
+            LR_corner_node : if (I=255) generate
+                NC4 : node
+                PORT MAP ( 
+                clk, 
+                weights(I),
+                start_end_ping(I),
+                pings(I-16),
+                '0',
+                '0',
+                pings(I-1),
+                bpings(I-16),
+                '0',
+                '0',
+                bpings(I-1),
+                reset,
+                pings(I),
+                bpings(I));
+            end generate LR_corner_node;
 
     end generate node_matrix_full;
 
+   
     state_process : process(clk)
     begin
         if rising_edge(clk) then
