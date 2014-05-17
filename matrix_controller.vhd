@@ -35,19 +35,22 @@ entity matrix_controller is
            rx_done_tick : in  STD_LOGIC;
            data_tick : out STD_LOGIC;
            mod_data : out  STD_LOGIC_VECTOR (7 downto 0);
+           addr_out : out  STD_LOGIC_VECTOR (7 downto 0);
            shift_state : out  STD_LOGIC_VECTOR (1 downto 0));
 end matrix_controller;
 
 architecture Behavioral of matrix_controller is
+
     constant header_val : std_logic_vector(7 downto 0) := "1010111";
     constant comm_cell_w : std_logic_vector(7 downto 0) := "00000001";
     constant comm_beg_addr : std_logic_vector(7 downto 0) := "00000010";
     constant comm_end_addr : std_logic_vector(7 downto 0) := "00000011";
     constant comm_prog_beg : std_logic_vector(7 downto 0) := "00000100";
     constant comm_prog_end : std_logic_vector(7 downto 0) := "00000101";
+
     type state_type is (waiting, header, command, 
-    shift_rec, shift_beg, shift_end, shift_prog_beg, shift_prog_end, 
-    addr, addr_send, cost, cost_send);
+    shift_rec, shift_rec_wait, shift_beg, shift_end, shift_prog_beg, shift_prog_end, 
+    cost_send);
     signal state, next_state : state_type := waiting;
 begin
 
@@ -60,6 +63,7 @@ begin
 
     state_logic : process(state,rx_done_tick)
     begin
+        next_state<=current_state;
         case state is
             when waiting =>
                 if (rx_done_tick='1') then
@@ -85,7 +89,18 @@ begin
                             next_state<=waiting;
                     end case;
                 end if;
-            when comm_send =>
+            when shift_rec =>
+                addr_out<=rx_data;
+                next_state<=shift_rec_wait;
+            when shift_rec_wait =>
+                if (rx_done_tick='1') then
+                    next_state<=cost_send;
+                end if;
+            when cost_send =>
+
+
+
+
 
             when addr =>
             when cost =>
