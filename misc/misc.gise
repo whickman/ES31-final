@@ -53,6 +53,10 @@
     <transform xil_pn:end_ts="1400338743" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1400338743">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../lab5_final/SerialRx.vhd"/>
       <outfile xil_pn:name="../../lab5_final/SerialRx_tb14s.vhd"/>
       <outfile xil_pn:name="../../lab5_final/SerialTx2_14s.vhd"/>
@@ -86,6 +90,11 @@
     <transform xil_pn:end_ts="1400338743" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1400338743">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../lab5_final/SerialRx.vhd"/>
       <outfile xil_pn:name="../../lab5_final/SerialRx_tb14s.vhd"/>
       <outfile xil_pn:name="../../lab5_final/SerialTx2_14s.vhd"/>
@@ -107,6 +116,11 @@
     <transform xil_pn:end_ts="1400338749" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7043910527043550698" xil_pn:start_ts="1400338743">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="node_matrix_tb_beh.prj"/>
@@ -116,6 +130,9 @@
     <transform xil_pn:end_ts="1400338749" xil_pn:in_ck="1041563612182087166" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6641629423227278505" xil_pn:start_ts="1400338749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="node_matrix_tb_isim_beh.wdb"/>
     </transform>
@@ -151,7 +168,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="node_matrix.lso"/>
