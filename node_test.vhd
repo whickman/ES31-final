@@ -66,7 +66,7 @@ ARCHITECTURE behavior OF node_test IS
    signal reset : std_logic := '0';
 
  	--Outputs
-   signal out_ping : std_logic;
+   signal out_ping,oping2 : std_logic;
    signal pinged_by : std_logic_vector(1 downto 0);
 
    -- Clock period definitions
@@ -86,6 +86,18 @@ BEGIN
           reset => reset,
           out_ping => out_ping,
           pinged_by => pinged_by
+        );
+   uut2: node PORT MAP (
+          clk => clk,
+          weight => "00001000",
+          in_ping_start => '0',
+          in_ping_N => '0',
+          in_ping_E => '0',
+          in_ping_S => '0',
+          in_ping_W => out_ping,
+          reset => '0',
+          out_ping => oping2,
+          pinged_by => open
         );
 
    -- Clock process definitions

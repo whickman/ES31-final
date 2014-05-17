@@ -21,8 +21,151 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="misc.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="node_matrix.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="node_matrix.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="node_matrix.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="node_matrix.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="node_matrix.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="node_matrix.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="node_matrix.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="node_matrix.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="node_matrix_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="node_matrix_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="node_matrix_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="node_matrix_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="node_matrix_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="node_matrix_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1400338743" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1400338743">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400338743" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1400338743">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../lab5_final/SerialRx.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/SerialRx_tb14s.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/SerialTx2_14s.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/brg.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/controller.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/double_flop_sync.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/lab5.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/load_reg.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/shift_reg.vhd"/>
+      <outfile xil_pn:name="../node.vhd"/>
+      <outfile xil_pn:name="../node_matrix.vhd"/>
+      <outfile xil_pn:name="../node_matrix_tb.vhd"/>
+      <outfile xil_pn:name="../node_test.vhd"/>
+      <outfile xil_pn:name="../path_reg.vhd"/>
+      <outfile xil_pn:name="../vga_color.vhd"/>
+      <outfile xil_pn:name="../vga_controller.vhd"/>
+      <outfile xil_pn:name="../weight_reg.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282531" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2146668030288218715" xil_pn:start_ts="1400282531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282531" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7102165447403785181" xil_pn:start_ts="1400282531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282531" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4607194096104335318" xil_pn:start_ts="1400282531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400338743" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1400338743">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../lab5_final/SerialRx.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/SerialRx_tb14s.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/SerialTx2_14s.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/brg.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/controller.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/double_flop_sync.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/lab5.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/load_reg.vhd"/>
+      <outfile xil_pn:name="../../lab5_final/shift_reg.vhd"/>
+      <outfile xil_pn:name="../node.vhd"/>
+      <outfile xil_pn:name="../node_matrix.vhd"/>
+      <outfile xil_pn:name="../node_matrix_tb.vhd"/>
+      <outfile xil_pn:name="../node_test.vhd"/>
+      <outfile xil_pn:name="../path_reg.vhd"/>
+      <outfile xil_pn:name="../vga_color.vhd"/>
+      <outfile xil_pn:name="../vga_controller.vhd"/>
+      <outfile xil_pn:name="../weight_reg.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1400338749" xil_pn:in_ck="-8517047860876668414" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7043910527043550698" xil_pn:start_ts="1400338743">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="node_matrix_tb_beh.prj"/>
+      <outfile xil_pn:name="node_matrix_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1400338749" xil_pn:in_ck="1041563612182087166" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6641629423227278505" xil_pn:start_ts="1400338749">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="node_matrix_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3170719080938718213" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4607194096104335318" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1710961215044476355" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282740" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8395279475841542772" xil_pn:start_ts="1400282740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1400282888" xil_pn:in_ck="6973979409786669951" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8303362072968916285" xil_pn:start_ts="1400282852">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="node_matrix.lso"/>
+      <outfile xil_pn:name="node_matrix.ngc"/>
+      <outfile xil_pn:name="node_matrix.ngr"/>
+      <outfile xil_pn:name="node_matrix.prj"/>
+      <outfile xil_pn:name="node_matrix.stx"/>
+      <outfile xil_pn:name="node_matrix.syr"/>
+      <outfile xil_pn:name="node_matrix.xst"/>
+      <outfile xil_pn:name="node_matrix_tb_beh.prj"/>
+      <outfile xil_pn:name="node_matrix_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>

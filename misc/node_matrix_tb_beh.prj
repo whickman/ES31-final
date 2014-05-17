@@ -1,0 +1,5 @@
+vhdl work "../weight_reg.vhd"
+vhdl work "../path_reg.vhd"
+vhdl work "../node.vhd"
+vhdl work "../node_matrix.vhd"
+vhdl work "../node_matrix_tb.vhd"

@@ -40,7 +40,7 @@ entity node is
 end node;
 
 architecture Behavioral of node is
-signal counter : integer := 0;
+signal counter : unsigned(7 downto 0) := (others=>'0');
 type state_type is (waiting, countdown, ping, done, the_end);
 signal state, next_state : state_type :=waiting;
 begin
@@ -56,9 +56,9 @@ begin
     begin
         if rising_edge(clk) then
             if (state=countdown) then
-                counter<=counter-1;
+                counter<=counter-"1";
             else
-                counter<=to_integer(unsigned(weight));
+                counter<=unsigned(weight);
             end if;
         end if;
     end process;
@@ -90,7 +90,7 @@ begin
             when countdown =>
                 if (reset='1') then
                     next_state<=waiting;
-                elsif (counter<=0) then
+                elsif (counter=("00000000")) then
                     next_state<=ping;
                 end if;
             when ping =>
