@@ -327,6 +327,13 @@ begin
         end if;
     end process;
 
+
+    comm_process : process(disp_loc_in,beg_loc,end_loc,path_back,disp_index,weights)
+    begin
+			in_path<=path_back(disp_index);
+			weight_out<=weights(disp_index);
+    end process;
+
     backtrace_state_process : process(back_state,state,
         reset_in,path_loc_r,beg_loc,end_loc,
         pointer,btrace_index,backtrace,pinged_end,reached_end)
@@ -426,13 +433,8 @@ begin
         end if; 
     end process;
 
-    comm_process : process(disp_loc_in,beg_loc,end_loc,path_back)
-    begin
-	disp_index<=to_integer(unsigned(disp_loc_in));
-	in_path<=path_back(disp_index);
-	weight_out<=weights(disp_index);
-    end process;
 
+	 disp_index<=to_integer(unsigned(disp_loc_in));
     path_loc_r<=unsigned(path_vect_r);
     btrace_index<=to_integer(path_loc_r);
     weight_index<=to_integer(unsigned(addr_r));

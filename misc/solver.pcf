@@ -1,11 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.49d on Mon May 19 21:12:32 2014
+// Written by: Map P.49d on Tue May 20 15:27:09 2014
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "hs" LOCATE = SITE "N6" LEVEL 1;
 COMP "vs" LOCATE = SITE "P7" LEVEL 1;
-COMP "RXD" LOCATE = SITE "K1" LEVEL 1;
+COMP "RXD" LOCATE = SITE "V12" LEVEL 1;
 COMP "TXD" LOCATE = SITE "N10" LEVEL 1;
 COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
 COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
@@ -16,10 +16,7 @@ COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
 COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
-PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
-        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
-PIN cb/dcm_sp_inst_pins<1> = BEL "cb/dcm_sp_inst" PINNAME CLKFB;
-TIMEGRP cb_clk0 = BEL "br_gen/counter_0" BEL "br_gen/counter_1" BEL
+TIMEGRP cb_clkfx = BEL "br_gen/counter_0" BEL "br_gen/counter_1" BEL
         "br_gen/counter_2" BEL "br_gen/counter_3" BEL "br_gen/counter_4" BEL
         "br_gen/counter_5" BEL "br_gen/counter_6" BEL "br_gen/counter_7" BEL
         "br_gen/counter_8" BEL "br_gen/counter_9" BEL "br_gen/counter_10" BEL
@@ -31,10 +28,42 @@ TIMEGRP cb_clk0 = BEL "br_gen/counter_0" BEL "br_gen/counter_1" BEL
         BEL "br_gen/counter_24" BEL "br_gen/counter_25" BEL
         "br_gen/counter_26" BEL "br_gen/counter_27" BEL "br_gen/counter_28"
         BEL "br_gen/counter_29" BEL "br_gen/counter_30" BEL
-        "br_gen/counter_31" BEL "s_rx/control/tick_counter_3" BEL
-        "s_rx/control/tick_counter_2" BEL "s_rx/control/tick_counter_1" BEL
-        "s_rx/control/tick_counter_0" BEL "s_rx/control/state_2" BEL
-        "s_rx/control/state_1" BEL "s_rx/control/state_0" BEL
+        "br_gen/counter_31" BEL "cb/clkout1_buf" BEL
+        "s_rx/control/state_FSM_FFd1" BEL "s_rx/control/state_FSM_FFd2" BEL
+        "s_rx/control/state_FSM_FFd3" BEL "s_rx/control/tick_counter_3" BEL
+        "s_rx/control/tick_counter_2" BEL "s_rx/control/tick_counter_0" BEL
+        "s_rx/control/tick_counter_1" BEL "s_rx/control/counter_31" BEL
+        "s_rx/control/counter_30" BEL "s_rx/control/counter_29" BEL
+        "s_rx/control/counter_28" BEL "s_rx/control/counter_27" BEL
+        "s_rx/control/counter_26" BEL "s_rx/control/counter_24" BEL
+        "s_rx/control/counter_23" BEL "s_rx/control/counter_25" BEL
+        "s_rx/control/counter_22" BEL "s_rx/control/counter_21" BEL
+        "s_rx/control/counter_20" BEL "s_rx/control/counter_19" BEL
+        "s_rx/control/counter_18" BEL "s_rx/control/counter_17" BEL
+        "s_rx/control/counter_15" BEL "s_rx/control/counter_14" BEL
+        "s_rx/control/counter_16" BEL "s_rx/control/counter_13" BEL
+        "s_rx/control/counter_12" BEL "s_rx/control/counter_11" BEL
+        "s_rx/control/counter_10" BEL "s_rx/control/counter_9" BEL
+        "s_rx/control/counter_8" BEL "s_rx/control/counter_6" BEL
+        "s_rx/control/counter_5" BEL "s_rx/control/counter_7" BEL
+        "s_rx/control/counter_4" BEL "s_rx/control/counter_3" BEL
+        "s_rx/control/counter_1" BEL "s_rx/control/counter_2" BEL
+        "s_rx/control/lastShift_31" BEL "s_rx/control/lastShift_30" BEL
+        "s_rx/control/lastShift_29" BEL "s_rx/control/lastShift_28" BEL
+        "s_rx/control/lastShift_27" BEL "s_rx/control/lastShift_26" BEL
+        "s_rx/control/lastShift_25" BEL "s_rx/control/lastShift_24" BEL
+        "s_rx/control/lastShift_23" BEL "s_rx/control/lastShift_22" BEL
+        "s_rx/control/lastShift_21" BEL "s_rx/control/lastShift_20" BEL
+        "s_rx/control/lastShift_19" BEL "s_rx/control/lastShift_18" BEL
+        "s_rx/control/lastShift_17" BEL "s_rx/control/lastShift_16" BEL
+        "s_rx/control/lastShift_15" BEL "s_rx/control/lastShift_14" BEL
+        "s_rx/control/lastShift_13" BEL "s_rx/control/lastShift_12" BEL
+        "s_rx/control/lastShift_11" BEL "s_rx/control/lastShift_10" BEL
+        "s_rx/control/lastShift_9" BEL "s_rx/control/lastShift_8" BEL
+        "s_rx/control/lastShift_7" BEL "s_rx/control/lastShift_6" BEL
+        "s_rx/control/lastShift_5" BEL "s_rx/control/lastShift_4" BEL
+        "s_rx/control/lastShift_3" BEL "s_rx/control/lastShift_2" BEL
+        "s_rx/control/lastShift_1" BEL "s_rx/control/lastShift_0" BEL
         "s_rx/control/last_br" BEL "s_rx/s_reg/reg_9" BEL "s_rx/s_reg/reg_8"
         BEL "s_rx/s_reg/reg_7" BEL "s_rx/s_reg/reg_6" BEL "s_rx/s_reg/reg_5"
         BEL "s_rx/s_reg/reg_4" BEL "s_rx/s_reg/reg_3" BEL "s_rx/s_reg/reg_2"
@@ -49,18 +78,48 @@ TIMEGRP cb_clk0 = BEL "br_gen/counter_0" BEL "br_gen/counter_1" BEL
         "s_tx/curr_state_FSM_FFd1" BEL "s_tx/tx_reg_9" BEL "s_tx/tx_reg_8" BEL
         "s_tx/tx_reg_7" BEL "s_tx/tx_reg_6" BEL "s_tx/tx_reg_5" BEL
         "s_tx/tx_reg_4" BEL "s_tx/tx_reg_3" BEL "s_tx/tx_reg_2" BEL
-        "s_tx/tx_reg_1" BEL "s_tx/tx_reg_0" BEL "nm/back_state_FSM_FFd1" BEL
-        "nm/back_state_FSM_FFd2" BEL "nm/back_state_FSM_FFd3" BEL
-        "nm/back_state_FSM_FFd4" BEL "nm/state_FSM_FFd2" BEL
-        "nm/state_FSM_FFd3" BEL "nm/state_FSM_FFd4" BEL "nm/pinged_end" BEL
-        "nm/addr_register/data_out_7" BEL "nm/addr_register/data_out_6" BEL
-        "nm/addr_register/data_out_5" BEL "nm/addr_register/data_out_4" BEL
-        "nm/addr_register/data_out_3" BEL "nm/addr_register/data_out_2" BEL
-        "nm/addr_register/data_out_1" BEL "nm/addr_register/data_out_0" BEL
-        "nm/path_register/data_out_7" BEL "nm/path_register/data_out_6" BEL
-        "nm/path_register/data_out_5" BEL "nm/path_register/data_out_4" BEL
-        "nm/path_register/data_out_3" BEL "nm/path_register/data_out_2" BEL
-        "nm/path_register/data_out_1" BEL "nm/path_register/data_out_0" BEL
+        "s_tx/tx_reg_1" BEL "s_tx/tx_reg_0" BEL "v_cont/v_count_31" BEL
+        "v_cont/v_count_30" BEL "v_cont/v_count_29" BEL "v_cont/v_count_28"
+        BEL "v_cont/v_count_27" BEL "v_cont/v_count_26" BEL
+        "v_cont/v_count_25" BEL "v_cont/v_count_24" BEL "v_cont/v_count_23"
+        BEL "v_cont/v_count_22" BEL "v_cont/v_count_21" BEL
+        "v_cont/v_count_20" BEL "v_cont/v_count_19" BEL "v_cont/v_count_18"
+        BEL "v_cont/v_count_17" BEL "v_cont/v_count_16" BEL
+        "v_cont/v_count_15" BEL "v_cont/v_count_14" BEL "v_cont/v_count_13"
+        BEL "v_cont/v_count_12" BEL "v_cont/v_count_11" BEL
+        "v_cont/v_count_10" BEL "v_cont/v_count_9" BEL "v_cont/v_count_8" BEL
+        "v_cont/v_count_7" BEL "v_cont/v_count_6" BEL "v_cont/v_count_5" BEL
+        "v_cont/v_count_4" BEL "v_cont/v_count_3" BEL "v_cont/v_count_2" BEL
+        "v_cont/v_count_1" BEL "v_cont/v_count_0" BEL "v_cont/h_count_9" BEL
+        "v_cont/h_count_8" BEL "v_cont/h_count_7" BEL "v_cont/h_count_6" BEL
+        "v_cont/h_count_5" BEL "v_cont/h_count_4" BEL "v_cont/h_count_3" BEL
+        "v_cont/h_count_2" BEL "v_cont/h_count_1" BEL "v_cont/h_count_0" BEL
+        "v_cont/row_8" BEL "v_cont/row_7" BEL "v_cont/row_6" BEL
+        "v_cont/row_5" BEL "v_cont/row_4" BEL "v_cont/row_3" BEL
+        "v_cont/row_2" BEL "v_cont/row_1" BEL "v_cont/row_0" BEL "v_cont/vs"
+        BEL "v_cont/column_9" BEL "v_cont/column_8" BEL "v_cont/column_7" BEL
+        "v_cont/column_6" BEL "v_cont/column_5" BEL "v_cont/column_4" BEL
+        "v_cont/column_3" BEL "v_cont/column_2" BEL "v_cont/column_1" BEL
+        "v_cont/column_0" BEL "v_cont/hs" BEL "v_cont/blue_1" BEL
+        "v_cont/blue_0" BEL "v_cont/green_2" BEL "v_cont/green_1" BEL
+        "v_cont/red_2" BEL "v_cont/red_1" BEL "br_gen/tick" BEL
+        "s_rx/control/counter_0" BEL "s_rx/df_sync/Mshreg_async_out" BEL
+        "s_rx/df_sync/async_out";
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN cb/dcm_sp_inst_pins<1> = BEL "cb/dcm_sp_inst" PINNAME CLKFB;
+TIMEGRP cb_clk0 = BEL "nm/back_state_FSM_FFd1" BEL "nm/back_state_FSM_FFd2"
+        BEL "nm/back_state_FSM_FFd3" BEL "nm/back_state_FSM_FFd4" BEL
+        "nm/state_FSM_FFd2" BEL "nm/state_FSM_FFd3" BEL "nm/state_FSM_FFd4"
+        BEL "nm/pinged_end" BEL "nm/addr_register/data_out_7" BEL
+        "nm/addr_register/data_out_6" BEL "nm/addr_register/data_out_5" BEL
+        "nm/addr_register/data_out_4" BEL "nm/addr_register/data_out_3" BEL
+        "nm/addr_register/data_out_2" BEL "nm/addr_register/data_out_1" BEL
+        "nm/addr_register/data_out_0" BEL "nm/path_register/data_out_7" BEL
+        "nm/path_register/data_out_6" BEL "nm/path_register/data_out_5" BEL
+        "nm/path_register/data_out_4" BEL "nm/path_register/data_out_3" BEL
+        "nm/path_register/data_out_2" BEL "nm/path_register/data_out_1" BEL
+        "nm/path_register/data_out_0" BEL
         "nm/node_matrix_full[255].LR_corner_node.NC4/counter_7" BEL
         "nm/node_matrix_full[255].LR_corner_node.NC4/counter_6" BEL
         "nm/node_matrix_full[255].LR_corner_node.NC4/counter_5" BEL
@@ -2621,51 +2680,8 @@ TIMEGRP cb_clk0 = BEL "br_gen/counter_0" BEL "br_gen/counter_1" BEL
         "nm/node_matrix_full[0].UL_corner_node.NC1/counter_0" BEL
         "nm/node_matrix_full[0].UL_corner_node.NC1/state_FSM_FFd1" BEL
         "nm/node_matrix_full[0].UL_corner_node.NC1/state_FSM_FFd2" BEL
-        "br_gen/tick" BEL "s_rx/control/counter_0" BEL
-        "s_rx/control/counter_31" BEL "s_rx/control/counter_30" BEL
-        "s_rx/control/counter_29" BEL "s_rx/control/counter_28" BEL
-        "s_rx/control/counter_27" BEL "s_rx/control/counter_26" BEL
-        "s_rx/control/counter_25" BEL "s_rx/control/counter_24" BEL
-        "s_rx/control/counter_23" BEL "s_rx/control/counter_22" BEL
-        "s_rx/control/counter_21" BEL "s_rx/control/counter_20" BEL
-        "s_rx/control/counter_19" BEL "s_rx/control/counter_18" BEL
-        "s_rx/control/counter_17" BEL "s_rx/control/counter_16" BEL
-        "s_rx/control/counter_15" BEL "s_rx/control/counter_14" BEL
-        "s_rx/control/counter_13" BEL "s_rx/control/counter_12" BEL
-        "s_rx/control/counter_11" BEL "s_rx/control/counter_10" BEL
-        "s_rx/control/counter_9" BEL "s_rx/control/counter_8" BEL
-        "s_rx/control/counter_7" BEL "s_rx/control/counter_6" BEL
-        "s_rx/control/counter_5" BEL "s_rx/control/counter_4" BEL
-        "s_rx/control/counter_3" BEL "s_rx/control/counter_2" BEL
-        "s_rx/control/counter_1" BEL "s_rx/df_sync/Mshreg_output" BEL
-        "s_rx/df_sync/output" BEL "cb/clkout2_buf" PIN
-        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "cb/clkout2_buf" PIN "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
         "cb/dcm_sp_inst_pins<1>";
-TIMEGRP cb_clkfx = BEL "cb/clkout1_buf" BEL "v_cont/v_count_31" BEL
-        "v_cont/v_count_30" BEL "v_cont/v_count_29" BEL "v_cont/v_count_28"
-        BEL "v_cont/v_count_27" BEL "v_cont/v_count_26" BEL
-        "v_cont/v_count_25" BEL "v_cont/v_count_24" BEL "v_cont/v_count_23"
-        BEL "v_cont/v_count_22" BEL "v_cont/v_count_21" BEL
-        "v_cont/v_count_20" BEL "v_cont/v_count_19" BEL "v_cont/v_count_18"
-        BEL "v_cont/v_count_17" BEL "v_cont/v_count_16" BEL
-        "v_cont/v_count_15" BEL "v_cont/v_count_14" BEL "v_cont/v_count_13"
-        BEL "v_cont/v_count_12" BEL "v_cont/v_count_11" BEL
-        "v_cont/v_count_10" BEL "v_cont/v_count_9" BEL "v_cont/v_count_8" BEL
-        "v_cont/v_count_7" BEL "v_cont/v_count_6" BEL "v_cont/v_count_5" BEL
-        "v_cont/v_count_4" BEL "v_cont/v_count_3" BEL "v_cont/v_count_2" BEL
-        "v_cont/v_count_1" BEL "v_cont/v_count_0" BEL "v_cont/h_count_9" BEL
-        "v_cont/h_count_8" BEL "v_cont/h_count_7" BEL "v_cont/h_count_6" BEL
-        "v_cont/h_count_5" BEL "v_cont/h_count_4" BEL "v_cont/h_count_3" BEL
-        "v_cont/h_count_2" BEL "v_cont/h_count_1" BEL "v_cont/h_count_0" BEL
-        "v_cont/row_8" BEL "v_cont/row_7" BEL "v_cont/row_6" BEL
-        "v_cont/row_5" BEL "v_cont/row_4" BEL "v_cont/row_3" BEL
-        "v_cont/row_2" BEL "v_cont/row_1" BEL "v_cont/row_0" BEL "v_cont/vs"
-        BEL "v_cont/column_9" BEL "v_cont/column_8" BEL "v_cont/column_7" BEL
-        "v_cont/column_6" BEL "v_cont/column_5" BEL "v_cont/column_4" BEL
-        "v_cont/column_3" BEL "v_cont/column_2" BEL "v_cont/column_1" BEL
-        "v_cont/column_0" BEL "v_cont/hs" BEL "v_cont/blue_1" BEL
-        "v_cont/blue_0" BEL "v_cont/green_2" BEL "v_cont/green_1" BEL
-        "v_cont/red_2" BEL "v_cont/red_1";
 PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
         PINNAME DIVCLK;
 PIN cb/dcm_sp_inst_pins<3> = BEL "cb/dcm_sp_inst" PINNAME CLKIN;

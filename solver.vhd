@@ -115,12 +115,12 @@ begin
 
     br_gen : brg
     PORT MAP (
-    clk,
+    slow_clk,
     br_tick_16);
 
     s_rx : SerialRx
     PORT MAP (
-    clk,
+    slow_clk,
     TXD,
     br_tick_16,
     rx_data,
@@ -128,7 +128,7 @@ begin
 	 
 	 s_tx : SerialTx
 	 PORT MAP (
-	 clk,
+	 slow_clk,
 	 rx_data,
 	 rx_done_tick,
 	 br_tick_16,
@@ -170,7 +170,7 @@ begin
     begin
         weight_out<=weight_in;
         if (in_path='1') then
-            weight_out<="00000000";
+            weight_out<="11111111";
         end if;
     end process;
 

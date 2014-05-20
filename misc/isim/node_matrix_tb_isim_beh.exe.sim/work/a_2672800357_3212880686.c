@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//thayerfs.thayer.dartmouth.edu/f000jg5/final/reg_8b.vhd";
+static const char *ng0 = "C:/Users/f000jg5/Desktop/final/reg_8b.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -43,25 +43,25 @@ static void work_a_2672800357_3212880686_p_0(char *t0)
     char *t12;
 
 LAB0:    xsi_set_current_line(46, ng0);
-    t1 = (t0 + 992U);
+    t1 = (t0 + 568U);
     t2 = ieee_p_2592010699_sub_1744673427_503743352(IEEE_P_2592010699, t1, 0U, 0U);
     if (t2 != 0)
         goto LAB2;
 
 LAB4:
-LAB3:    t1 = (t0 + 3152);
+LAB3:    t1 = (t0 + 1816);
     *((int *)t1) = 1;
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(47, ng0);
-    t3 = (t0 + 1352U);
+    t3 = (t0 + 776U);
     t4 = *((char **)t3);
     t5 = *((unsigned char *)t4);
     t6 = (t5 == (unsigned char)3);
     if (t6 != 0)
         goto LAB5;
 
-LAB7:    t1 = (t0 + 1512U);
+LAB7:    t1 = (t0 + 868U);
     t3 = *((char **)t1);
     t2 = *((unsigned char *)t3);
     t5 = (t2 == (unsigned char)3);
@@ -76,22 +76,22 @@ LAB5:    xsi_set_current_line(48, ng0);
     memset(t3, 0, 8U);
     t7 = t3;
     memset(t7, (unsigned char)2, 8U);
-    t8 = (t0 + 3232);
-    t9 = (t8 + 56U);
+    t8 = (t0 + 1860);
+    t9 = (t8 + 32U);
     t10 = *((char **)t9);
-    t11 = (t10 + 56U);
+    t11 = (t10 + 40U);
     t12 = *((char **)t11);
     memcpy(t12, t3, 8U);
     xsi_driver_first_trans_fast_port(t8);
     goto LAB6;
 
 LAB8:    xsi_set_current_line(50, ng0);
-    t1 = (t0 + 1192U);
+    t1 = (t0 + 684U);
     t4 = *((char **)t1);
-    t1 = (t0 + 3232);
-    t7 = (t1 + 56U);
+    t1 = (t0 + 1860);
+    t7 = (t1 + 32U);
     t8 = *((char **)t7);
-    t9 = (t8 + 56U);
+    t9 = (t8 + 40U);
     t10 = *((char **)t9);
     memcpy(t10, t4, 8U);
     xsi_driver_first_trans_fast_port(t1);

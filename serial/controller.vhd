@@ -41,7 +41,7 @@ end controller;
 
 architecture Behavioral of controller is
 
-signal tick_counter, counter, lastShift : integer := 0;
+signal tick_counter, counter, lastShift,next_lastShift : integer := 0;
 signal last_br : std_logic := '0';
 type state_type is (waiting,data,shifting,loading,done);
 signal state, nextState : state_type := waiting;
@@ -51,6 +51,7 @@ begin
     begin
         if rising_edge(clk) then
             state<=nextState;
+				lastShift<=next_lastShift;
         end if;
     end process;
 
@@ -60,9 +61,8 @@ begin
         load<='0';
         rx_done_tick<='0';
         shift<='0';
-		  if (nextState /= shifting) then
-				nextState<=state;
-		  end if;
+		  next_lastShift<=lastShift;
+		  nextState<=state;
         case (state) is
             when waiting =>
                 if (data_in='0') then
@@ -72,9 +72,9 @@ begin
             when data =>
                 if (counter>10) then
                     nextState<=loading;
-                    lastShift<=0;
+                    next_lastShift<=0;
                 elsif (lastShift /= counter) then
-                    lastShift<=counter;
+                    next_lastShift<=counter;
                     nextState<=shifting;
                 end if;
             when shifting =>      
