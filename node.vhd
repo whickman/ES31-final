@@ -31,10 +31,11 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity node is
     Port ( clk : in  STD_LOGIC;
-           weight : in  STD_LOGIC_VECTOR (7 downto 0);
+           weight_in : in  STD_LOGIC_VECTOR (7 downto 0);
            in_ping_start: in  STD_LOGIC;
            in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
            reset : in STD_LOGIC;
+           weight_out : out STD_LOGIC_VECTOR (7 downto 0);
            out_ping: out  STD_LOGIC;
            pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));
 end node;
@@ -57,8 +58,10 @@ begin
         if rising_edge(clk) then
             if (state=countdown) then
                 counter<=counter-"1";
+            elsif (state=waiting) then
+                counter<=unsigned(weight_in);
             else
-                counter<=unsigned(weight);
+                counter<=(others=>'0');
             end if;
         end if;
     end process;
@@ -106,8 +109,9 @@ begin
             when others =>
                 next_state<=waiting;
         end case;
-
     end process;
+
+    weight_out<=std_logic_vector(counter);
 
 end Behavioral;
 

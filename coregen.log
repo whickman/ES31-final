@@ -1,0 +1,45 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'cbuff' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'cbuff'...
+WARNING:sim - A core named 'cbuff' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'cbuff'...
+Delivering associated files for 'cbuff'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for VHDL
+   synthesis
+Delivering EJava files for 'cbuff'...
+Delivered 3 files into directory O:/final/tmp/_cg/cbuff
+Delivered 1 file into directory O:/final/tmp/_cg/cbuff
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx16.nph' in environment
+C:\Xilinx\14.4\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'cbuff'...
+Generating ISE project...
+XCO file found: cbuff.xco
+XMDF file found: cbuff_xmdf.tcl
+Adding O:/final/tmp/_cg/cbuff/example_design/cbuff_exdes.ucf -view all
+-origin_type created
+Adding O:/final/tmp/_cg/cbuff/example_design/cbuff_exdes.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "O:/final/tmp/_cg/cbuff/example_design/cbuff_exdes.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding O:/final/tmp/_cg/cbuff.asy -view all -origin_type imported
+Adding O:/final/tmp/_cg/cbuff.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file "O:/final/tmp/_cg/cbuff.vhd" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding O:/final/tmp/_cg/cbuff.vho -view all -origin_type imported
+WARNING:coreutil - WARNING: This core does not have a top level called "/cbuff"
+   WARNING: Top level has been set to "/cbuff_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'cbuff'.

@@ -32,12 +32,10 @@ use IEEE.NUMERIC_STD.ALL;
 entity node_matrix is
     Port ( clk : in  STD_LOGIC;
            disp_loc_in : in  STD_LOGIC_VECTOR (7 downto 0);
-           shift_state : in STD_LOGIC_VECTOR (1 downto 0);
            data_tick : in STD_LOGIC;
-           serial_in : in  STD_LOGIC_VECTOR (7 downto 0);
            data_in : in  STD_LOGIC_VECTOR (7 downto 0);
            reset_in : in  STD_LOGIC;
-           in_path : out STD_LOGIC_VECTOR(1 downto 0);
+           in_path : out STD_LOGIC;
            weight_out : out  STD_LOGIC_VECTOR (7 downto 0));
 end node_matrix;
 
@@ -45,15 +43,16 @@ architecture Behavioral of node_matrix is
 
     component node 
         Port ( clk : in  STD_LOGIC;
-               weight : in  STD_LOGIC_VECTOR (7 downto 0);
+               weight_in : in  STD_LOGIC_VECTOR (7 downto 0);
                in_ping_start: in  STD_LOGIC;
                in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
                reset : in  STD_LOGIC;
+               weight_out : out STD_LOGIC_VECTOR (7 downto 0);
                out_ping: out  STD_LOGIC;
                pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));
     end component;
 
-    component path_reg
+    component reg_8b
         Port ( clk : in  STD_LOGIC;
                data_in : in  STD_LOGIC_VECTOR (7 downto 0);
                clear : in STD_LOGIC;
@@ -61,36 +60,34 @@ architecture Behavioral of node_matrix is
                data_out : out  STD_LOGIC_VECTOR (7 downto 0));
     end component;
 
-    component weight_reg 
-        Port ( clk : in  STD_LOGIC;
-               data_in : in  STD_LOGIC_VECTOR (7 downto 0);
-               clear : in STD_LOGIC;
-               enable : in STD_LOGIC;
-               data_out : out  STD_LOGIC_VECTOR (7 downto 0));
-    end component;
-
-
+    constant comm_header : std_logic_vector(7 downto 0) := "01010111";
+    constant comm_cell_w : std_logic_vector(7 downto 0) := "00000001";
+    constant comm_beg_addr : std_logic_vector(7 downto 0) := "00000010";
+    constant comm_end_addr : std_logic_vector(7 downto 0) := "00000011";
+    constant comm_prog_beg : std_logic_vector(7 downto 0) := "00000100";
+    constant comm_prog_end : std_logic_vector(7 downto 0) := "00000101";
+    
     type binary_array is array (0 to 255) of std_logic;
     type backtrace_array is array (0 to 255) of std_logic_vector(1 downto 0);
     type weight_array is array (0 to 255) of std_logic_vector(7 downto 0);
-    type state_type is (waiting,receiving,re_beg,re_end,loaded,running,done,resetting);
+    type state_type is (waiting,command,re_w_addr,re_w_weight,re_beg,re_end,start,finish,resetting);
     type back_state_type is (waiting,get_pointer,first_set_loc,set_loc,go_N,go_E,go_S,go_W,done);
 
     signal pings,start_ping,path_back: binary_array;
     signal backtrace : backtrace_array;
-    signal weights : weight_array;
+    signal start_weights,weights : weight_array;
     signal beg_loc,end_loc,
         path_loc_w,path_loc_r : unsigned(7 downto 0) := (others=>'0');
-    signal path_vect_r,weight_r,weight_w : std_logic_vector(7 downto 0);
+    signal path_vect_r,addr_r,addr_w : std_logic_vector(7 downto 0);
     signal pointer : std_logic_vector(1 downto 0);
-    signal reset,reached_end : std_logic := '0';
-    signal disp_index,serial_index, btrace_index : integer := 0;
+    signal reset,reached_end,next_reached_end,pinged_end,next_pinged_end : std_logic := '0';
+    signal disp_index,weight_index, btrace_index : integer := 0;
     signal state,next_state : state_type := waiting;
     signal back_state,next_back_state : back_state_type := waiting;
 
 begin
 
-    path_register : path_reg
+    path_register : reg_8b
     PORT MAP (
         clk,
         std_logic_vector(path_loc_w),
@@ -98,13 +95,13 @@ begin
         '1',
         path_vect_r);
 
-    weight_register : weight_reg
+    addr_register : reg_8b
     PORT MAP (
         clk,
-        weight_w,
+        addr_w,
         '0',
         '1',
-        weight_r);
+        addr_r);
 
 
     node_matrix_full:
@@ -115,13 +112,14 @@ begin
                 NX : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 pings(I+1),
                 pings(I+16),
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate main_nodes;
@@ -130,13 +128,14 @@ begin
                 NTR : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 '0',
                 pings(I+1),
                 pings(I+16),
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate top_row_nodes;
@@ -145,13 +144,14 @@ begin
                 NBR : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 pings(I+1),
                 '0',
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate bottow_row_nodes;
@@ -160,13 +160,14 @@ begin
                 NTR : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 pings(I+1),
                 pings(I+16),
                 '0',
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate left_side_nodes;
@@ -175,13 +176,14 @@ begin
                 NTR : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 '0',
                 pings(I+16),
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate right_side_nodes;
@@ -190,13 +192,14 @@ begin
                 NC1 : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 '0',
                 pings(I+1),
                 pings(I+16),
                 '0',
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate UL_corner_node;
@@ -205,13 +208,14 @@ begin
                 NC2 : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 '0',
                 '0',
                 pings(I+16),
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate UR_corner_node;
@@ -220,13 +224,14 @@ begin
                 NC3 : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 pings(I+1),
                 '0',
                 '0',
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate LL_corner_node;
@@ -235,13 +240,14 @@ begin
                 NC4 : node
                 PORT MAP ( 
                 clk, 
-                weights(I),
+                start_weights(I),
                 start_ping(I),
                 pings(I-16),
                 '0',
                 '0',
                 pings(I-1),
                 reset,
+                weights(I),
                 pings(I),
                 backtrace(I));
             end generate LR_corner_node;
@@ -254,55 +260,62 @@ begin
         if rising_edge(clk) then
             state<=next_state;
             back_state<=next_back_state;
+            reached_end<=next_reached_end;
+            pinged_end<=next_pinged_end;
         end if;
     end process;
 
-    next_state_process : process(state,shift_state,reset_in,reached_end)
+    next_state_process : process(state,data_in,data_tick,addr_r,weight_index,reset_in,beg_loc)
     begin
         reset<='0';
+        start_ping<=(others=>'0');
         next_state<=state;
+        addr_w<=addr_r;
         case state is
             when waiting =>
-                if (shift_state="00") then
-                    next_state<=receiving;
-                elsif (shift_state="01") then
-                    next_state<=re_beg;
-                elsif (shift_state="10") then
-                    next_state<=re_end;
+                if ((data_tick='1') and (data_in=comm_header)) then
+                    next_state<=command;
                 end if;
-            when receiving =>
-                if (shift_state="11") then
-                    next_state<=loaded;
-                elsif (shift_state="01") then
-                    next_state<=re_beg;
-                elsif (shift_state="10") then
-                    next_state<=re_end;
+            when command =>
+                if (data_tick='1') then
+                    case data_in is
+                        when comm_cell_w =>
+                            next_state<=re_w_addr;
+                        when comm_beg_addr =>
+                            next_state<=re_beg;
+                        when comm_end_addr =>
+                            next_state<=re_end;
+                        when comm_prog_beg =>
+                            next_state<=start;
+                        when comm_prog_end =>
+                            next_state<=finish;
+                        when others =>
+                            next_state<=waiting;
+                    end case;
                 end if;
-            when re_beg =>                
-                if (shift_state="11") then
-                    next_state<=loaded;
-                elsif (shift_state="00") then
-                    next_state<=receiving;
-                elsif (shift_state="10") then
-                    next_state<=re_end;
+            when re_w_addr =>
+                if (data_tick='1') then
+                    addr_w<=data_in;
+                    next_state<=re_w_weight;
                 end if;
-            when re_end =>                
-                if (shift_state="11") then
-                    next_state<=loaded;
-                elsif (shift_state="00") then
-                    next_state<=receiving;
-                elsif (shift_state="01") then
-                    next_state<=re_beg;
+            when re_w_weight =>
+                if (data_tick='1') then
+                    start_weights(weight_index)<=data_in;
+                    next_state<=waiting;
                 end if;
-            when loaded =>                
-                if (shift_state="00") then
-                    next_state<=running;
+            when re_beg =>
+                if (data_tick='1') then
+                    beg_loc<=unsigned(data_in);
+                    next_state<=waiting;
                 end if;
-            when running =>                
-                if ((shift_state="01") or (reached_end='1')) then
-                    next_state<=done;
+            when re_end =>
+                if (data_tick='1') then
+                    end_loc<=unsigned(data_in);
+                    next_state<=waiting;
                 end if;
-            when done => NULL;
+            when start =>
+                start_ping(to_integer(beg_loc))<='1';
+                next_state<=waiting;
             when resetting =>
                 reset<='1';
                 next_state<=waiting;
@@ -314,66 +327,18 @@ begin
         end if;
     end process;
 
-
-    comm_process : process(clk)
-    begin
-        if rising_edge(clk) then
-            in_path<=(others=>'0');
-            serial_index<=to_integer(unsigned(serial_in));
-            disp_index<=to_integer(unsigned(disp_loc_in));
-            if (data_tick='1') then
-                weight_w<=weight_r;
-                case state is
-                    when receiving =>
-                        weights(serial_index)<=data_in;
-                    when re_beg =>
-                        beg_loc<=unsigned(data_in);
-                    when re_end =>
-                        end_loc<=unsigned(data_in);
-                    when loaded =>
-                        weight_w<=weights(disp_index);
-                    when running =>
-                        weight_w<=weights(disp_index);
-                    when done =>
-                        weight_w<=weights(disp_index);
-                        if (disp_index=to_integer(beg_loc)) then
-                            in_path<="01";
-                        elsif (disp_index=to_integer(end_loc)) then
-                            in_path<="11";
-                        elsif (path_back(disp_index)='1') then
-                            in_path<="10";
-                        end if;
-                    when others => NULL;
-                end case;
-            elsif (state=waiting) then
-                weight_w<=(others=>'0');
-            end if;
-        end if;
-    end process;
-
-    start_process : process (state,beg_loc)
-    begin
-        start_ping<=(others=>'0');
-        if (state=running) then
-            start_ping(to_integer(beg_loc))<='1';
-        end if;
-    end process;
-
     backtrace_state_process : process(back_state,state,
         reset_in,path_loc_r,beg_loc,end_loc,
-        pointer,btrace_index,backtrace,reached_end)
+        pointer,btrace_index,backtrace,pinged_end,reached_end)
     begin
-        path_reg_clear<='0';
-        path_reg_en<='0';
         path_loc_w<=path_loc_r;
         next_back_state<=back_state;
         case back_state is
             when waiting =>
                 pointer<=(others=>'0');
                 path_back<=(others=>'0');
-                path_reg_en<='1';
                 path_loc_w<=end_loc;
-                if (state=done) then
+                if (pinged_end='1') then
                     next_back_state<=get_pointer;
                 end if;
             when get_pointer =>
@@ -425,19 +390,15 @@ begin
                     next_back_state<=done;
                 end if;
             when go_N =>
-                path_reg_en<='1';
                 path_loc_w<=path_loc_r-"10000"; 
                 next_back_state<=get_pointer;
             when go_E =>
-                path_reg_en<='1';
                 path_loc_w<=path_loc_r+"00001";
                 next_back_state<=get_pointer;
             when go_S => 
-                path_reg_en<='1';
                 path_loc_w<=path_loc_r+"10000"; 
                 next_back_state<=get_pointer;
             when go_W =>
-                path_reg_en<='1';
                 path_loc_w<=path_loc_r-"00001";
                 next_back_state<=get_pointer;
             when done =>
@@ -449,20 +410,32 @@ begin
         end case;
     end process;
 
-    done_process : process(beg_loc,pings,state,reached_end)
+    btrace_finished_process : process(beg_loc,pings,state,reached_end)
     begin
+        next_reached_end<='0';
         if ((pings(to_integer(beg_loc))='1') or (reached_end='1')) then
-            reached_end<='1';
-        else 
-            reached_end<='0';
+            next_reached_end<='1';
         end if; 
     end process;
 
+    pinged_end_process : process(end_loc,pings,state,pinged_end)
+    begin
+        next_pinged_end<='0';
+        if ((pings(to_integer(end_loc))='1') or (pinged_end='1')) then
+            next_pinged_end<='1';
+        end if; 
+    end process;
+
+    comm_process : process(disp_loc_in,beg_loc,end_loc,path_back)
+    begin
+	disp_index<=to_integer(unsigned(disp_loc_in));
+	in_path<=path_back(disp_index);
+	weight_out<=weights(disp_index);
+    end process;
 
     path_loc_r<=unsigned(path_vect_r);
     btrace_index<=to_integer(path_loc_r);
-    weight_out<=weight_r;
-
+    weight_index<=to_integer(unsigned(addr_r));
 
 
 end Behavioral;

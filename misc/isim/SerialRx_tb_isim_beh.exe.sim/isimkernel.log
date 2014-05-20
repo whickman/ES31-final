@@ -1,0 +1,29 @@
+Command line:
+   SerialRx_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44978
+
+Sat May 17 14:33:14 2014
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 227.721 Meg
+
+ Total Signals          : 70
+ Total Nets             : 88
+ Total Signal Drivers   : 35
+ Total Blocks           : 11
+ Total Primitive Blocks : 8
+ Total Processes        : 23
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 584
+Total Line Count : 113
+
+ Total Simulation Time: 0.23 sec
+
+ Current Memory Usage: 303.223 Meg
+
+Sun May 18 11:55:12 2014
+
