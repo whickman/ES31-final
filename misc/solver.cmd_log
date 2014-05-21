@@ -127,3 +127,18 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off solver_map.ncd solver.ncd solver.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml solver.twx solver.ncd -o solver.twr solver.pcf 
 bitgen -intstyle ise -f solver.ut solver.ncd 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 
+xst -intstyle ise -ifn "/home/will/Code/VHDL/final/misc/solver.xst" -ofn "/home/will/Code/VHDL/final/misc/solver.syr" 

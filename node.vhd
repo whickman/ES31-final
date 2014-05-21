@@ -42,6 +42,7 @@ end node;
 
 architecture Behavioral of node is
 signal counter : unsigned(7 downto 0) := (others=>'0');
+signal pinged_by_current, pinged_by_next : STD_LOGIC_VECTOR(1 downto 0);
 type state_type is (waiting, countdown, ping, done, the_end);
 signal state, next_state : state_type :=waiting;
 begin
@@ -50,6 +51,7 @@ begin
     begin
         if rising_edge(clk) then
             state<=next_state;
+            pinged_by_current<=pinged_by_next;
         end if;
     end process;
 
@@ -66,29 +68,31 @@ begin
         end if;
     end process;
 
-    state_process : process(state,counter,in_ping_start,in_ping_N,in_ping_E,in_ping_S,in_ping_W,reset)
+    state_process : process(state,counter,pinged_by_current,
+        in_ping_start,in_ping_N,in_ping_E,in_ping_S,in_ping_W,reset)
     begin
 
         out_ping<='0';
         next_state<=state;
+        pinged_by_next<=pinged_by_current;
 
         case state is
             when waiting =>
-                pinged_by<=(others=>'0');
+                pinged_by_next<=(others=>'0');
                 if (in_ping_start='1') then
                     next_state<=countdown;
                 elsif (in_ping_N='1') then
                     next_state<=countdown;
-                    pinged_by<="00";
+                    pinged_by_next<="00";
                 elsif (in_ping_E='1') then
                     next_state<=countdown;
-                    pinged_by<="01";
+                    pinged_by_next<="01";
                 elsif (in_ping_S='1') then
                     next_state<=countdown;
-                    pinged_by<="10";
+                    pinged_by_next<="10";
                 elsif (in_ping_W='1') then
                     next_state<=countdown;
-                    pinged_by<="11";
+                    pinged_by_next<="11";
                 end if;
             when countdown =>
                 if (reset='1') then
@@ -112,6 +116,7 @@ begin
     end process;
 
     weight_out<=std_logic_vector(counter);
+    pinged_by<=pinged_by_current;
 
 end Behavioral;
 

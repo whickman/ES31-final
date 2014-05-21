@@ -1,17 +1,17 @@
-Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_isim_beh.exe -prj C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_beh.prj node_matrix_tb 
-ISim P.49d (signature 0x8ef4fb42)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/will/Code/VHDL/final/misc/node_matrix_tb_isim_beh.exe -prj /home/will/Code/VHDL/final/misc/node_matrix_tb_beh.prj work.node_matrix_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../reg_8b.vhd" into library work
-Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node.vhd" into library work
-Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node_matrix.vhd" into library work
-Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node_matrix_tb.vhd" into library work
-Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../cbuff/example_design/cbuff_exdes.vhd" into library work
+Parsing VHDL file "/home/will/Code/VHDL/final/misc/../reg_8b.vhd" into library work
+Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node.vhd" into library work
+Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node_matrix.vhd" into library work
+Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node_matrix_tb.vhd" into library work
+Parsing VHDL file "/home/will/Code/VHDL/final/misc/../cbuff/example_design/cbuff_exdes.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 131660 KB
-Fuse CPU Usage: 483 ms
+Fuse Memory Usage: 114060 KB
+Fuse CPU Usage: 2040 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -22,6 +22,7 @@ Compiling architecture behavior of entity node_matrix_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 VHDL Units
-Built simulation executable C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_isim_beh.exe
-Fuse Memory Usage: 148220 KB
-Fuse CPU Usage: 795 ms
+Built simulation executable /home/will/Code/VHDL/final/misc/node_matrix_tb_isim_beh.exe
+Fuse Memory Usage: 1211100 KB
+Fuse CPU Usage: 2340 ms
+GCC CPU Usage: 3320 ms
