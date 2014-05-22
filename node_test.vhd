@@ -42,13 +42,15 @@ ARCHITECTURE behavior OF node_test IS
     COMPONENT node
     PORT(
          clk : IN  std_logic;
-         weight : IN  std_logic_vector(7 downto 0);
+         weight_in : IN  std_logic_vector(7 downto 0);
          in_ping_start : IN  std_logic;
          in_ping_N : IN  std_logic;
          in_ping_E : IN  std_logic;
          in_ping_S : IN  std_logic;
          in_ping_W : IN  std_logic;
          reset : IN  std_logic;
+			stop : in std_logic;
+			en : in std_logic;
          out_ping : OUT  std_logic;
          pinged_by : OUT  std_logic_vector(1 downto 0)
         );
@@ -66,7 +68,7 @@ ARCHITECTURE behavior OF node_test IS
    signal reset : std_logic := '0';
 
  	--Outputs
-   signal out_ping : std_logic;
+   signal out_ping,oping2 : std_logic;
    signal pinged_by : std_logic_vector(1 downto 0);
 
    -- Clock period definitions
@@ -77,15 +79,31 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: node PORT MAP (
           clk => clk,
-          weight => weight,
+          weight_in => weight,
           in_ping_start => in_ping_start,
           in_ping_N => in_ping_N,
           in_ping_E => in_ping_E,
           in_ping_S => in_ping_S,
           in_ping_W => in_ping_W,
           reset => reset,
+			 stop => '0',
+			 en => '1',
           out_ping => out_ping,
           pinged_by => pinged_by
+        );
+   uut2: node PORT MAP (
+          clk => clk,
+          weight_in => "00001000",
+          in_ping_start => '0',
+          in_ping_N => '0',
+          in_ping_E => '0',
+          in_ping_S => '0',
+          in_ping_W => out_ping,
+          reset => '0',
+			 stop => '0',
+			 en => '1',
+          out_ping => oping2,
+          pinged_by => open
         );
 
    -- Clock process definitions

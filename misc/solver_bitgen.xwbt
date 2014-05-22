@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\f000jg5\Desktop\final\misc\solver.ncd
+OUTFILE=C:\Users\f000jg5\Desktop\final\misc\solver.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\f000jg5\Desktop\final\misc
+LICENSE=ISE
+USER_INFO=210643936_1777485687_210562918_764

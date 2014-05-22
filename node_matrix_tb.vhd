@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   15:41:48 05/12/2014
+-- Create Date:   12:42:33 05/16/2014
 -- Design Name:   
 -- Module Name:   /home/will/Code/VHDL/final/node_matrix_tb.vhd
 -- Project Name:  misc
@@ -42,36 +42,32 @@ ARCHITECTURE behavior OF node_matrix_tb IS
     COMPONENT node_matrix
     PORT(
          clk : IN  std_logic;
-         row_in : IN  std_logic_vector(3 downto 0);
-         col_in : IN  std_logic_vector(3 downto 0);
-         shift_state : IN  std_logic_vector(1 downto 0);
+         disp_loc_in : IN  std_logic_vector(7 downto 0);
          data_tick : IN  std_logic;
-         serial_row_in : IN  std_logic_vector(3 downto 0);
-         serial_col_in : IN  std_logic_vector(3 downto 0);
          data_in : IN  std_logic_vector(7 downto 0);
          reset_in : IN  std_logic;
-         in_path : OUT  std_logic_vector(1 downto 0);
+         in_path : OUT  std_logic;
          weight_out : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
+    constant comm_header : std_logic_vector(7 downto 0) := "01010111";
+    constant comm_cell_w : std_logic_vector(7 downto 0) := "00000001";
+    constant comm_beg_addr : std_logic_vector(7 downto 0) := "00000010";
+    constant comm_end_addr : std_logic_vector(7 downto 0) := "00000011";
+    constant comm_prog_beg : std_logic_vector(7 downto 0) := "00000100";
+    constant comm_prog_end : std_logic_vector(7 downto 0) := "00000101";
 
    --Inputs
    signal clk : std_logic := '0';
-   signal row_in : std_logic_vector(3 downto 0) := (others => '0');
-   signal col_in : std_logic_vector(3 downto 0) := (others => '0');
-   signal shift_state : std_logic_vector(1 downto 0) := (others => '0');
+   signal disp_loc_in : std_logic_vector(7 downto 0) := (others => '0');
    signal data_tick : std_logic := '0';
-   signal serial_row_in : std_logic_vector(3 downto 0) := (others => '0');
-   signal serial_col_in : std_logic_vector(3 downto 0) := (others => '0');
    signal data_in : std_logic_vector(7 downto 0) := (others => '0');
    signal reset_in : std_logic := '0';
-
-   --Others
-   signal Ivect : std_logic_vector(7 downto 0);
+   signal count : unsigned(7 downto 0) := (others=>'0');
 
  	--Outputs
-   signal in_path : std_logic_vector(1 downto 0);
+   signal in_path : std_logic;
    signal weight_out : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
@@ -82,12 +78,8 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: node_matrix PORT MAP (
           clk => clk,
-          row_in => row_in,
-          col_in => col_in,
-          shift_state => shift_state,
+          disp_loc_in => disp_loc_in,
           data_tick => data_tick,
-          serial_row_in => serial_row_in,
-          serial_col_in => serial_col_in,
           data_in => data_in,
           reset_in => reset_in,
           in_path => in_path,
@@ -111,22 +103,87 @@ BEGIN
       wait for 100 ns;	
 
       wait for clk_period*10;
+      wait for clk_period/2;
+		 data_in<=comm_header;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<=comm_beg_addr;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<="00000010";
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
 
-      -- insert stimulus here 
-
-      shift_state<="00";
+		 data_in<=comm_header;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<=comm_end_addr;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<="00000001";
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
       for I in 0 to 255 loop
-          Ivect<=std_logic_vector(to_unsigned(I,8));
-          data_in<=Ivect;
-          serial_row_in<=Ivect(7 downto 4);
-          serial_col_in<=Ivect(3 downto 0);
-          data_tick<='1';
-          wait for clk_period;
-          data_tick<='0';
-          wait for clk_period;
-      end loop;
+        data_in<=comm_header;
+        data_tick<='1';
+        wait for clk_period;
+        data_tick<='0';
+        wait for 8*clk_period;
 
-      wait;
+        data_in<=comm_cell_w;
+        data_tick<='1';
+        wait for clk_period;
+        data_tick<='0';
+        wait for 8*clk_period;
+
+        data_in<=std_logic_vector(count);
+        data_tick<='1';
+        wait for clk_period;
+        data_tick<='0';
+        wait for 8*clk_period;
+        data_in<=std_logic_vector(count);
+        data_tick<='1';
+        wait for clk_period;
+		  data_tick<='0';
+        count<=count+"01";
+        wait for 8*clk_period;
+              -- insert stimulus here 
+    end loop;
+
+    data_in<=comm_header;
+    data_tick<='1';
+    wait for clk_period;
+    data_tick<='0';
+    wait for 8*clk_period;
+    data_in<=comm_prog_beg;
+    data_tick<='1';
+    wait for clk_period;
+    data_tick<='0';
+    wait for 100*clk_period;
+
+
+    count<=(others=>'0');
+	disp_loc_in<=std_logic_vector(count);
+	  wait for 3*clk_period;
+    for I in 0 to 255 loop
+		  count<=count+"01";
+		  wait for clk_period;
+        disp_loc_in<=std_logic_vector(count);
+        wait for 3*clk_period;
+    end loop;
+    wait;
    end process;
 
 END;

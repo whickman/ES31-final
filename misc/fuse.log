@@ -1,23 +1,24 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/will/Code/VHDL/final/misc/node_test_isim_beh.exe" -prj "/home/will/Code/VHDL/final/misc/node_test_beh.prj" "work.node_test" 
-ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_isim_beh.exe" -prj "C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_beh.prj" "work.node_matrix_tb" 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node.vhd" into library work
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node_test.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../reg_8b.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node_matrix.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node_matrix_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 96540 KB
-Fuse CPU Usage: 1120 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
+Compiling architecture behavioral of entity reg_8b [reg_8b_default]
 Compiling architecture behavioral of entity node [node_default]
-Compiling architecture behavior of entity node_test
+Compiling architecture behavioral of entity node_matrix [node_matrix_default]
+Compiling architecture behavior of entity node_matrix_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 6 VHDL Units
-Built simulation executable /home/will/Code/VHDL/final/misc/node_test_isim_beh.exe
-Fuse Memory Usage: 1192612 KB
-Fuse CPU Usage: 1220 ms
-GCC CPU Usage: 140 ms
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/f000jg5/Desktop/final/misc/node_matrix_tb_isim_beh.exe
+Fuse Memory Usage: 38560 KB
+Fuse CPU Usage: 873 ms

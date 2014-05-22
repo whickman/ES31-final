@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/f000jg5/Desktop/final/misc/solver.xst" -ofn "C:/Users/f000jg5/Desktop/final/misc/solver.syr" 
+xst -intstyle ise -ifn "C:/Users/f000jg5/Desktop/final/misc/solver.xst" -ofn "C:/Users/f000jg5/Desktop/final/misc/solver.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc C:/Users/f000jg5/Desktop/final/Nexys3_Master.ucf -p xc6slx16-csg324-3 solver.ngc solver.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc C:/Users/f000jg5/Desktop/final/Nexys3_Master.ucf -p xc6slx16-csg324-3 solver.ngc solver.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o solver_map.ncd solver.ngd solver.pcf 
+par -w -intstyle ise -ol high -mt off solver_map.ncd solver.ncd solver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml solver.twx solver.ncd -o solver.twr solver.pcf 
+bitgen -intstyle ise -f solver.ut solver.ncd 

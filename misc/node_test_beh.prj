@@ -1,2 +1,0 @@
-vhdl work "../node.vhd"
-vhdl work "../node_test.vhd"

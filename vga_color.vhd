@@ -8,6 +8,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity vga_color is
 	port(row,column	     : in INTEGER;
+			in_path 			  : in std_logic;
          cell_address    : out std_logic_vector(7 downto 0);
          cell_data       : in std_logic_vector(7 downto 0);
          color           : out std_logic_vector(7 downto 0));
@@ -38,7 +39,7 @@ architecture Behavioral of vga_color is
 begin	
 
 	-- set the colors based on the current pixel
-	process(row,column, row_enable, row_box, cell_data, color_shade, column_enable, column_box)  
+	process(row,column, row_enable, row_box, cell_data, color_shade, column_enable, column_box, in_path)  
 	begin
 	    if (row >= 17) and (row <= 43) then
 		   row_box <= "0000";
@@ -146,16 +147,20 @@ begin
 	    end if;
 		   
 		   
-    	    if ((row_enable = '1') and (column_enable = '1')) then
+    	 if ((row_enable = '1') and (column_enable = '1')) then
 	       cell_address <= row_box & column_box;
 	       color_shade <= cell_data;
 	    else cell_address <= "00000000";
 	       color_shade <= "11111111";
 	    end if;
    
-	    if color_shade = "00000000" then color <= red;
+		 if ((color_shade/="11111111") and (in_path='1')) then color<=green;
+	    elsif color_shade = "00000000" then color <= red;
 	    elsif color_shade < "00001000" then color <= yellow;
 	    elsif color_shade < "00010000" then color <= cyan;
+		 elsif color_shade < "00100000" then color <= blue;
+		 elsif color_shade < "01000000" then color <= dark_blu;
+		 elsif color_shade < "10000000" then color <= dark_pur;
 	    elsif color_shade < "11111111" then color <= gray1;
 	    else color <= black;
 	    end if;

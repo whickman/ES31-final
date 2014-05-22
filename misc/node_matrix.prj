@@ -1,2 +1,3 @@
+vhdl work "../reg_8b.vhd"
 vhdl work "../node.vhd"
 vhdl work "../node_matrix.vhd"
