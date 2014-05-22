@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//thayerfs.thayer.dartmouth.edu/f000jg5/lab5_final/SerialTx2_14s.vhd";
+static const char *ng0 = "C:/Users/f000jg5/Desktop/final/serial/SerialTx2_14s.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -77,7 +77,7 @@ LAB6:    goto LAB3;
 LAB5:    xsi_set_current_line(48, ng0);
     t3 = (t0 + 1992U);
     t8 = *((char **)t3);
-    t3 = (t0 + 10816U);
+    t3 = (t0 + 10492U);
     t9 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t7, t8, t3, 1);
     t10 = (t7 + 12U);
     t11 = *((unsigned int *)t10);
@@ -129,8 +129,8 @@ static void work_a_1283668799_3212880686_p_1(char *t0)
 LAB0:    xsi_set_current_line(52, ng0);
     t2 = (t0 + 1992U);
     t3 = *((char **)t2);
-    t2 = (t0 + 10816U);
-    t4 = (t0 + 10907);
+    t2 = (t0 + 10492U);
+    t4 = (t0 + 10583);
     t7 = (t6 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -245,7 +245,7 @@ LAB5:    xsi_set_current_line(60, ng0);
     t3 = (t0 + 1192U);
     t7 = *((char **)t3);
     t9 = ((IEEE_P_2592010699) + 4024);
-    t10 = (t0 + 10800U);
+    t10 = (t0 + 10476U);
     t3 = xsi_base_array_concat(t3, t8, t9, (char)97, t7, t10, (char)99, (unsigned char)2, (char)101);
     t11 = (8U + 1U);
     t12 = (9U != t11);
@@ -395,7 +395,7 @@ LAB9:
 LAB6:    goto LAB3;
 
 LAB5:    xsi_set_current_line(75, ng0);
-    t3 = (t0 + 10911);
+    t3 = (t0 + 10587);
     t8 = (t0 + 6936);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
@@ -408,7 +408,7 @@ LAB5:    xsi_set_current_line(75, ng0);
 LAB8:    xsi_set_current_line(77, ng0);
     t1 = (t0 + 2472U);
     t4 = *((char **)t1);
-    t1 = (t0 + 10848U);
+    t1 = (t0 + 10524U);
     t7 = ieee_p_1242562249_sub_1919437128_1035706684(IEEE_P_1242562249, t13, t4, t1, 1);
     t8 = (t13 + 12U);
     t14 = *((unsigned int *)t8);
@@ -456,8 +456,8 @@ static void work_a_1283668799_3212880686_p_5(char *t0)
 LAB0:    xsi_set_current_line(81, ng0);
     t1 = (t0 + 2472U);
     t2 = *((char **)t1);
-    t1 = (t0 + 10848U);
-    t3 = (t0 + 10915);
+    t1 = (t0 + 10524U);
+    t3 = (t0 + 10591);
     t6 = (t5 + 0U);
     t7 = (t6 + 0U);
     *((int *)t7) = 0;

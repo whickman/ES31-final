@@ -1,28 +1,61 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/will/Code/VHDL/final/misc/node_matrix_tb_isim_beh.exe -prj /home/will/Code/VHDL/final/misc/node_matrix_tb_beh.prj work.node_matrix_tb 
-ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/f000jg5/Desktop/final/misc/solver_tb_isim_beh.exe" -prj "C:/Users/f000jg5/Desktop/final/misc/solver_tb_beh.prj" "work.solver_tb" 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../reg_8b.vhd" into library work
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node.vhd" into library work
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node_matrix.vhd" into library work
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../node_matrix_tb.vhd" into library work
-Parsing VHDL file "/home/will/Code/VHDL/final/misc/../cbuff/example_design/cbuff_exdes.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../cbuff.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../cbuff/example_design/cbuff_exdes.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/shift_reg.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/load_reg.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/double_flop_sync.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/controller.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../reg_8b.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../vga_controller.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../vga_color.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/SerialTx2_14s.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/SerialRx.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../serial/brg.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../node_matrix.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../solver.vhd" into library work
+Parsing VHDL file "C:/Users/f000jg5/Desktop/final/misc/../solver_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 114060 KB
-Fuse CPU Usage: 2040 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,4.0,...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture xilinx of entity cbuff [cbuff_default]
+Compiling architecture behavioral of entity brg [brg_default]
+Compiling architecture behavioral of entity controller [controller_default]
+Compiling architecture behavioral of entity double_flop_sync [double_flop_sync_default]
+Compiling architecture behavioral of entity shift_reg [shift_reg_default]
+Compiling architecture behavioral of entity load_reg [load_reg_default]
+Compiling architecture behavioral of entity SerialRx [serialrx_default]
+Compiling architecture behavioral of entity SerialTx [serialtx_default]
 Compiling architecture behavioral of entity reg_8b [reg_8b_default]
 Compiling architecture behavioral of entity node [node_default]
 Compiling architecture behavioral of entity node_matrix [node_matrix_default]
-Compiling architecture behavior of entity node_matrix_tb
+Compiling architecture behavioral of entity vga_color [vga_color_default]
+Compiling architecture behavioral of entity vga_controller [vga_controller_default]
+Compiling architecture behavioral of entity solver [solver_default]
+Compiling architecture behavior of entity solver_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 10 VHDL Units
-Built simulation executable /home/will/Code/VHDL/final/misc/node_matrix_tb_isim_beh.exe
-Fuse Memory Usage: 1211100 KB
-Fuse CPU Usage: 2340 ms
-GCC CPU Usage: 3320 ms
+Waiting for 24 sub-compilation(s) to finish...
+Compiled 53 VHDL Units
+Built simulation executable C:/Users/f000jg5/Desktop/final/misc/solver_tb_isim_beh.exe
+Fuse Memory Usage: 60212 KB
+Fuse CPU Usage: 1575 ms

@@ -70,6 +70,8 @@ ARCHITECTURE behavior OF solver_tb IS
     constant comm_end_addr : std_logic_vector(7 downto 0) := "00000011";
     constant comm_prog_beg : std_logic_vector(7 downto 0) := "00000100";
     constant comm_prog_end : std_logic_vector(7 downto 0) := "00000101";
+	 constant end_location : std_logic_vector(7 downto 0) := "00000100";
+	 constant beg_location : std_logic_vector(7 downto 0) := "00000001";
 	 signal count : unsigned(7 downto 0) := (others=>'0');
 	
    -- Clock period definitions
@@ -109,9 +111,6 @@ BEGIN
 
       -- insert stimulus here 
 
-		count<=(others=>'0');
-		
-		for I in 0 to 255 loop
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
 			for bitcount in 0 to 7 loop
@@ -119,48 +118,7 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
-			
-			TXD <= '0';		-- Start bit
-			wait for bit_time;
-			for bitcount in 0 to 7 loop
-				TXD <= comm_cell_w(bitcount);
-				wait for bit_time;
-			end loop;
-			TXD <= '1';		-- Stop bit
-			wait for bit_time;
-			
-			TXD <= '0';		-- Start bit
-			wait for bit_time;
-			for bitcount in 0 to 7 loop
-				TXD <= std_logic(count(bitcount));
-				wait for bit_time;
-			end loop;
-			TXD <= '1';		-- Stop bit
-			wait for bit_time;
-			
-			TXD <= '0';		-- Start bit
-			wait for bit_time;
-			for bitcount in 0 to 7 loop
-				TXD <= std_logic(count(bitcount));
-				wait for bit_time;
-			end loop;
-			TXD <= '1';		-- Stop bit
-			wait for bit_time;
-			
-			count<=count+"01";
-
-					  -- insert stimulus here 
-		 end loop;
-
-			TXD <= '0';		-- Start bit
-			wait for bit_time;
-			for bitcount in 0 to 7 loop
-				TXD <= comm_header(bitcount);
-				wait for bit_time;
-			end loop;
-			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 8*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
@@ -169,16 +127,16 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
 			for bitcount in 0 to 7 loop
-				TXD <= '0';
+				TXD <= beg_location(bitcount);
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
@@ -187,7 +145,7 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
@@ -196,16 +154,61 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
 			for bitcount in 0 to 7 loop
-				TXD <= '1';
+				TXD <= end_location(bitcount);
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
+			wait for 2*bit_time;
+			
+			count<=(others=>'0');
+		for I in 0 to 32 loop
+			TXD <= '0';		-- Start bit
 			wait for bit_time;
+			for bitcount in 0 to 7 loop
+				TXD <= comm_header(bitcount);
+				wait for bit_time;
+			end loop;
+			TXD <= '1';		-- Stop bit
+			wait for 2*bit_time;
+			
+			TXD <= '0';		-- Start bit
+			wait for bit_time;
+			for bitcount in 0 to 7 loop
+				TXD <= comm_cell_w(bitcount);
+				wait for bit_time;
+			end loop;
+			TXD <= '1';		-- Stop bit
+			wait for 2*bit_time;
+			
+			TXD <= '0';		-- Start bit
+			wait for bit_time;
+			for bitcount in 0 to 7 loop
+				TXD <= std_logic(count(bitcount));
+				wait for bit_time;
+			end loop;
+			TXD <= '1';		-- Stop bit
+			wait for 2*bit_time;
+			
+			TXD <= '0';		-- Start bit
+			wait for bit_time;
+			for bitcount in 0 to 7 loop
+				TXD <= std_logic(count(bitcount));
+				wait for bit_time;
+			end loop;
+			TXD <= '1';		-- Stop bit
+			wait for 2*bit_time;
+			
+			count<=count+"01";
+
+					  -- insert stimulus here 
+		 end loop;
+
+			
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
@@ -214,7 +217,7 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 			
 			TXD <= '0';		-- Start bit
 			wait for bit_time;
@@ -223,7 +226,7 @@ BEGIN
 				wait for bit_time;
 			end loop;
 			TXD <= '1';		-- Stop bit
-			wait for bit_time;
+			wait for 2*bit_time;
 
       wait;
    end process;

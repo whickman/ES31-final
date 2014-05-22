@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "//thayerfs.thayer.dartmouth.edu/f000jg5/final/vga_controller.vhd";
+static const char *ng0 = "C:/Users/f000jg5/Desktop/final/vga_controller.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -242,7 +242,7 @@ LAB25:    if (t2 != 0)
         goto LAB20;
 
 LAB22:    xsi_set_current_line(69, ng0);
-    t1 = (t0 + 9020);
+    t1 = (t0 + 8676);
     t4 = (t0 + 5568);
     t7 = (t4 + 56U);
     t9 = *((char **)t7);
@@ -251,7 +251,7 @@ LAB22:    xsi_set_current_line(69, ng0);
     memcpy(t13, t1, 3U);
     xsi_driver_first_trans_fast_port(t4);
     xsi_set_current_line(70, ng0);
-    t1 = (t0 + 9023);
+    t1 = (t0 + 8679);
     t4 = (t0 + 5632);
     t7 = (t4 + 56U);
     t9 = *((char **)t7);
@@ -260,7 +260,7 @@ LAB22:    xsi_set_current_line(69, ng0);
     memcpy(t13, t1, 3U);
     xsi_driver_first_trans_fast_port(t4);
     xsi_set_current_line(71, ng0);
-    t1 = (t0 + 9026);
+    t1 = (t0 + 8682);
     t4 = (t0 + 5696);
     t7 = (t4 + 56U);
     t9 = *((char **)t7);

@@ -33,6 +33,7 @@ entity solver is
     Port ( clk_real : in  STD_LOGIC;
            TXD : in  STD_LOGIC;
 			  RXD : out STD_LOGIC;
+			  test : out STD_LOGIC;
            red : out std_logic_vector(2 downto 0);
 		     green : out std_logic_vector(2 downto 0);
 		     blue : out std_logic_vector(1 downto 0); 
@@ -80,11 +81,13 @@ architecture Behavioral of solver is
            data_in : in  STD_LOGIC_VECTOR (7 downto 0);
            reset_in : in  STD_LOGIC;
            in_path : out STD_LOGIC;
+			  test : out STD_LOGIC;
            weight_out : out  STD_LOGIC_VECTOR (7 downto 0));
     end component;
 
     component vga_color
 	port(row,column	     : in INTEGER;
+			in_path			  : std_logic;
          cell_address    : out std_logic_vector(7 downto 0);
          cell_data       : in std_logic_vector(7 downto 0);
          color           : out std_logic_vector(7 downto 0));
@@ -102,7 +105,7 @@ architecture Behavioral of solver is
     end component;
 
     signal br_tick_16,rx_done_tick,reset,clk,slow_clk,in_path : std_logic;
-    signal color,cell_address,rx_data,weight_in,weight_out : std_logic_vector(7 downto 0);
+    signal color,cell_address,rx_data,weight : std_logic_vector(7 downto 0);
     signal row, col : integer;
 
 begin
@@ -137,20 +140,22 @@ begin
 
     nm : node_matrix
     PORT MAP (
-    clk,
+    slow_clk,
     cell_address,
     rx_done_tick,
     rx_data,
     reset,
     in_path,
-    weight_in);
+	 test,
+    weight);
 
     v_col : vga_color
     PORT MAP (
     row,
     col,
+	 in_path,
     cell_address,
-	 weight_out,
+	 weight,
     color);
 
     v_cont : vga_controller
@@ -165,14 +170,6 @@ begin
     vs,
     row,
     col);
-		
-    weight_process : process(weight_in,in_path)
-    begin
-        weight_out<=weight_in;
-        if (in_path='1') then
-            weight_out<="11111111";
-        end if;
-    end process;
 
 end Behavioral;
 

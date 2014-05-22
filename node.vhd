@@ -35,6 +35,7 @@ entity node is
            in_ping_start: in  STD_LOGIC;
            in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
            reset : in STD_LOGIC;
+			  en : in STD_LOGIC;
            weight_out : out STD_LOGIC_VECTOR (7 downto 0);
            out_ping: out  STD_LOGIC;
            pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));
@@ -58,12 +59,12 @@ begin
     counter_process : process(clk)
     begin
         if rising_edge(clk) then
-            if (state=countdown) then
+            if ((state=countdown) and (en='1')) then
                 counter<=counter-"1";
             elsif (state=waiting) then
                 counter<=unsigned(weight_in);
             else
-                counter<=(others=>'0');
+                counter<=counter;
             end if;
         end if;
     end process;

@@ -104,6 +104,37 @@ BEGIN
 
       wait for clk_period*10;
       wait for clk_period/2;
+		 data_in<=comm_header;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<=comm_beg_addr;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<="00000010";
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+
+		 data_in<=comm_header;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<=comm_end_addr;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
+		 data_in<="00000001";
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for 8*clk_period;
       for I in 0 to 255 loop
         data_in<=comm_header;
         data_tick<='1';
@@ -130,38 +161,6 @@ BEGIN
         wait for 8*clk_period;
               -- insert stimulus here 
     end loop;
-
-    data_in<=comm_header;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-    data_in<=comm_beg_addr;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-    data_in<="00000000";
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-
-    data_in<=comm_header;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-    data_in<=comm_end_addr;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-    data_in<="00010001";
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
 
     data_in<=comm_header;
     data_tick<='1';

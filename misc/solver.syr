@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.63 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.80 secs
  
---> 
-Reading design: solver.prj
+--> Reading design: solver.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -111,49 +108,49 @@ Cores Search Directories           : {".."  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/will/Code/VHDL/final/cbuff.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\cbuff.vhd" into library work
 Parsing entity <cbuff>.
 Parsing architecture <xilinx> of entity <cbuff>.
-Parsing VHDL file "/home/will/Code/VHDL/final/cbuff/example_design/cbuff_exdes.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\cbuff\example_design\cbuff_exdes.vhd" into library work
 Parsing entity <cbuff_exdes>.
 Parsing architecture <xilinx> of entity <cbuff_exdes>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/shift_reg.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\shift_reg.vhd" into library work
 Parsing entity <shift_reg>.
 Parsing architecture <Behavioral> of entity <shift_reg>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/load_reg.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\load_reg.vhd" into library work
 Parsing entity <load_reg>.
 Parsing architecture <Behavioral> of entity <load_reg>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/double_flop_sync.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\double_flop_sync.vhd" into library work
 Parsing entity <double_flop_sync>.
 Parsing architecture <Behavioral> of entity <double_flop_sync>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/controller.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\controller.vhd" into library work
 Parsing entity <controller>.
 Parsing architecture <Behavioral> of entity <controller>.
-Parsing VHDL file "/home/will/Code/VHDL/final/reg_8b.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\reg_8b.vhd" into library work
 Parsing entity <reg_8b>.
 Parsing architecture <Behavioral> of entity <reg_8b>.
-Parsing VHDL file "/home/will/Code/VHDL/final/node.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\node.vhd" into library work
 Parsing entity <node>.
 Parsing architecture <Behavioral> of entity <node>.
-Parsing VHDL file "/home/will/Code/VHDL/final/vga_controller.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\vga_controller.vhd" into library work
 Parsing entity <vga_controller>.
 Parsing architecture <Behavioral> of entity <vga_controller>.
-Parsing VHDL file "/home/will/Code/VHDL/final/vga_color.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\vga_color.vhd" into library work
 Parsing entity <vga_color>.
 Parsing architecture <Behavioral> of entity <vga_color>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/SerialTx2_14s.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\SerialTx2_14s.vhd" into library work
 Parsing entity <SerialTx>.
 Parsing architecture <Behavioral> of entity <serialtx>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/SerialRx.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\SerialRx.vhd" into library work
 Parsing entity <SerialRx>.
 Parsing architecture <Behavioral> of entity <serialrx>.
-Parsing VHDL file "/home/will/Code/VHDL/final/serial/brg.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\serial\brg.vhd" into library work
 Parsing entity <brg>.
 Parsing architecture <Behavioral> of entity <brg>.
-Parsing VHDL file "/home/will/Code/VHDL/final/node_matrix.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\node_matrix.vhd" into library work
 Parsing entity <node_matrix>.
 Parsing architecture <Behavioral> of entity <node_matrix>.
-Parsing VHDL file "/home/will/Code/VHDL/final/solver.vhd" into library work
+Parsing VHDL file "C:\Users\f000jg5\Desktop\final\solver.vhd" into library work
 Parsing entity <solver>.
 Parsing architecture <Behavioral> of entity <solver>.
 
@@ -170,7 +167,7 @@ Elaborating entity <brg> (architecture <Behavioral>) from library <work>.
 Elaborating entity <SerialRx> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <controller> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/will/Code/VHDL/final/serial/controller.vhd" Line 89. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\f000jg5\Desktop\final\serial\controller.vhd" Line 89. Case statement is complete. others clause is never selected
 
 Elaborating entity <double_flop_sync> (architecture <Behavioral>) from library <work>.
 
@@ -185,35 +182,36 @@ Elaborating entity <node_matrix> (architecture <Behavioral>) from library <work>
 Elaborating entity <reg_8b> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <node> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 391. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 411. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/will/Code/VHDL/final/node_matrix.vhd" Line 432. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\f000jg5\Desktop\final\node_matrix.vhd" Line 419. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\f000jg5\Desktop\final\node_matrix.vhd" Line 439. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\f000jg5\Desktop\final\node_matrix.vhd" Line 460. Case statement is complete. others clause is never selected
 
 Elaborating entity <vga_color> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <vga_controller> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/will/Code/VHDL/final/solver.vhd" Line 104: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\f000jg5\Desktop\final\solver.vhd" Line 107: Net <reset> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <solver>.
-    Related source file is "/home/will/Code/VHDL/final/solver.vhd".
-INFO:Xst:3210 - "/home/will/Code/VHDL/final/solver.vhd" line 129: Output port <tx_done_tick> of the instance <s_tx> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\f000jg5\Desktop\final\solver.vhd".
+INFO:Xst:3210 - "C:\Users\f000jg5\Desktop\final\solver.vhd" line 113: Output port <CLK_OUT2> of the instance <cb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\f000jg5\Desktop\final\solver.vhd" line 132: Output port <tx_done_tick> of the instance <s_tx> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <solver> synthesized.
 
 Synthesizing Unit <cbuff>.
-    Related source file is "/home/will/Code/VHDL/final/cbuff.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\cbuff.vhd".
     Summary:
 	no macro.
 Unit <cbuff> synthesized.
 
 Synthesizing Unit <brg>.
-    Related source file is "/home/will/Code/VHDL/final/serial/brg.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\brg.vhd".
     Found 1-bit register for signal <tick>.
     Found 32-bit register for signal <counter>.
     Found 32-bit adder for signal <counter[31]_GND_14_o_add_0_OUT> created at line 51.
@@ -223,13 +221,13 @@ Synthesizing Unit <brg>.
 Unit <brg> synthesized.
 
 Synthesizing Unit <SerialRx>.
-    Related source file is "/home/will/Code/VHDL/final/serial/SerialRx.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\SerialRx.vhd".
     Summary:
 	no macro.
 Unit <SerialRx> synthesized.
 
 Synthesizing Unit <controller>.
-    Related source file is "/home/will/Code/VHDL/final/serial/controller.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\controller.vhd".
     Found 32-bit register for signal <lastShift>.
     Found 32-bit register for signal <tick_counter>.
     Found 32-bit register for signal <counter>.
@@ -246,8 +244,8 @@ Synthesizing Unit <controller>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <tick_counter[31]_GND_16_o_add_15_OUT> created at line 98.
-    Found 32-bit adder for signal <counter[31]_GND_16_o_add_19_OUT> created at line 103.
+    Found 32-bit adder for signal <tick_counter[31]_GND_16_o_add_15_OUT> created at line 99.
+    Found 32-bit adder for signal <counter[31]_GND_16_o_add_19_OUT> created at line 104.
     Found 32-bit comparator greater for signal <counter[31]_GND_16_o_LessThan_4_o> created at line 73
     Found 32-bit comparator equal for signal <n0005> created at line 76
     Summary:
@@ -259,7 +257,7 @@ Synthesizing Unit <controller>.
 Unit <controller> synthesized.
 
 Synthesizing Unit <double_flop_sync>.
-    Related source file is "/home/will/Code/VHDL/final/serial/double_flop_sync.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\double_flop_sync.vhd".
     Found 2-bit register for signal <val>.
     Found 1-bit register for signal <async_out>.
     Summary:
@@ -267,21 +265,21 @@ Synthesizing Unit <double_flop_sync>.
 Unit <double_flop_sync> synthesized.
 
 Synthesizing Unit <shift_reg>.
-    Related source file is "/home/will/Code/VHDL/final/serial/shift_reg.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\shift_reg.vhd".
     Found 10-bit register for signal <reg>.
     Summary:
 	inferred  10 D-type flip-flop(s).
 Unit <shift_reg> synthesized.
 
 Synthesizing Unit <load_reg>.
-    Related source file is "/home/will/Code/VHDL/final/serial/load_reg.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\load_reg.vhd".
     Found 8-bit register for signal <output>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <load_reg> synthesized.
 
 Synthesizing Unit <SerialTx>.
-    Related source file is "/home/will/Code/VHDL/final/serial/SerialTx2_14s.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\serial\SerialTx2_14s.vhd".
     Found 10-bit register for signal <tx_reg>.
     Found 4-bit register for signal <tx_ctr>.
     Found 3-bit register for signal <curr_state>.
@@ -308,7 +306,7 @@ INFO:Xst:1799 - State ssync is never reached in FSM <curr_state>.
 Unit <SerialTx> synthesized.
 
 Synthesizing Unit <node_matrix>.
-    Related source file is "/home/will/Code/VHDL/final/node_matrix.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\node_matrix.vhd".
     Found 4-bit register for signal <back_state>.
     Found 8-bit register for signal <start_weights<0>>.
     Found 8-bit register for signal <start_weights<1>>.
@@ -569,6 +567,7 @@ Synthesizing Unit <node_matrix>.
     Found 1-bit register for signal <pinged_end>.
     Found 256-bit register for signal <path_back>.
     Found 2-bit register for signal <pointer>.
+    Found 22-bit register for signal <clk_div>.
     Found 4-bit register for signal <state>.
     Found finite state machine <FSM_2> for signal <back_state>.
     -----------------------------------------------------------------------
@@ -593,34 +592,35 @@ INFO:Xst:1799 - State resetting is never reached in FSM <state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <path_loc_r[7]_GND_21_o_add_1069_OUT> created at line 420.
-    Found 8-bit adder for signal <path_loc_r[7]_GND_21_o_add_1070_OUT> created at line 423.
-    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_1069_OUT<7:0>> created at line 417.
-    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_1072_OUT<7:0>> created at line 426.
-    Found 2-bit 256-to-1 multiplexer for signal <btrace_index[7]_backtrace[255][1]_wide_mux_1056_OUT> created at line 370.
-    Found 1-bit 256-to-1 multiplexer for signal <in_path> created at line 439.
-    Found 8-bit 256-to-1 multiplexer for signal <weight_out> created at line 440.
-    Found 1-bit 256-to-1 multiplexer for signal <end_loc_r[7]_pings[255]_Mux_1080_o> created at line 455.
-    Found 8-bit comparator equal for signal <path_loc_r[7]_end_loc_r[7]_equal_1058_o> created at line 374
-    Found 8-bit comparator equal for signal <n1317> created at line 380
-    Found 8-bit comparator equal for signal <n1321> created at line 400
+    Found 22-bit adder for signal <clk_div[21]_GND_21_o_add_260_OUT> created at line 302.
+    Found 8-bit adder for signal <path_loc_r[7]_GND_21_o_add_1070_OUT> created at line 448.
+    Found 8-bit adder for signal <path_loc_r[7]_GND_21_o_add_1071_OUT> created at line 451.
+    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_1070_OUT<7:0>> created at line 445.
+    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_1073_OUT<7:0>> created at line 454.
+    Found 2-bit 256-to-1 multiplexer for signal <btrace_index[7]_backtrace[255][1]_wide_mux_1057_OUT> created at line 398.
+    Found 1-bit 256-to-1 multiplexer for signal <in_path> created at line 467.
+    Found 8-bit 256-to-1 multiplexer for signal <weight_out> created at line 468.
+    Found 1-bit 256-to-1 multiplexer for signal <end_loc_index[7]_pings[255]_Mux_1081_o> created at line 483.
+    Found 8-bit comparator equal for signal <path_loc_r[7]_end_loc_r[7]_equal_1059_o> created at line 402
+    Found 8-bit comparator equal for signal <n1318> created at line 408
+    Found 8-bit comparator equal for signal <n1322> created at line 428
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred 2307 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 2329 D-type flip-flop(s).
 	inferred   3 Comparator(s).
-	inferred 275 Multiplexer(s).
+	inferred 273 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
 Unit <node_matrix> synthesized.
 
 Synthesizing Unit <reg_8b>.
-    Related source file is "/home/will/Code/VHDL/final/reg_8b.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\reg_8b.vhd".
     Found 8-bit register for signal <data_out>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <reg_8b> synthesized.
 
 Synthesizing Unit <node>.
-    Related source file is "/home/will/Code/VHDL/final/node.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\node.vhd".
     Found 2-bit register for signal <pinged_by_current>.
     Found 8-bit register for signal <counter>.
     Found 3-bit register for signal <state>.
@@ -630,7 +630,7 @@ INFO:Xst:1799 - State the_end is never reached in FSM <state>.
     | States             | 5                                              |
     | Transitions        | 17                                             |
     | Inputs             | 8                                              |
-    | Outputs            | 2                                              |
+    | Outputs            | 4                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | state<2> (positive)                            |
     | Reset type         | synchronous                                    |
@@ -639,7 +639,7 @@ INFO:Xst:1799 - State the_end is never reached in FSM <state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit subtractor for signal <GND_27_o_GND_27_o_sub_4_OUT<7:0>> created at line 62.
+    Found 8-bit subtractor for signal <GND_27_o_GND_27_o_sub_4_OUT<7:0>> created at line 63.
     Found 8x1-bit Read Only RAM for signal <out_ping>
     Summary:
 	inferred   1 RAM(s).
@@ -650,81 +650,84 @@ INFO:Xst:1799 - State the_end is never reached in FSM <state>.
 Unit <node> synthesized.
 
 Synthesizing Unit <vga_color>.
-    Related source file is "/home/will/Code/VHDL/final/vga_color.vhd".
-    Found 32-bit comparator lessequal for signal <n0000> created at line 43
-    Found 32-bit comparator lessequal for signal <n0002> created at line 43
-    Found 32-bit comparator lessequal for signal <n0005> created at line 46
-    Found 32-bit comparator lessequal for signal <n0007> created at line 46
-    Found 32-bit comparator lessequal for signal <n0010> created at line 49
-    Found 32-bit comparator lessequal for signal <n0012> created at line 49
-    Found 32-bit comparator lessequal for signal <n0015> created at line 52
-    Found 32-bit comparator lessequal for signal <n0017> created at line 52
-    Found 32-bit comparator lessequal for signal <n0020> created at line 55
-    Found 32-bit comparator lessequal for signal <n0022> created at line 55
-    Found 32-bit comparator lessequal for signal <n0025> created at line 58
-    Found 32-bit comparator lessequal for signal <n0027> created at line 58
-    Found 32-bit comparator lessequal for signal <n0030> created at line 61
-    Found 32-bit comparator lessequal for signal <n0032> created at line 61
-    Found 32-bit comparator lessequal for signal <n0035> created at line 64
-    Found 32-bit comparator lessequal for signal <n0037> created at line 64
-    Found 32-bit comparator lessequal for signal <n0040> created at line 67
-    Found 32-bit comparator lessequal for signal <n0042> created at line 67
-    Found 32-bit comparator lessequal for signal <n0045> created at line 70
-    Found 32-bit comparator lessequal for signal <n0047> created at line 70
-    Found 32-bit comparator lessequal for signal <n0050> created at line 73
-    Found 32-bit comparator lessequal for signal <n0052> created at line 73
-    Found 32-bit comparator lessequal for signal <n0055> created at line 76
-    Found 32-bit comparator lessequal for signal <n0057> created at line 76
-    Found 32-bit comparator lessequal for signal <n0060> created at line 79
-    Found 32-bit comparator lessequal for signal <n0062> created at line 79
-    Found 32-bit comparator lessequal for signal <n0065> created at line 82
-    Found 32-bit comparator lessequal for signal <n0067> created at line 82
-    Found 32-bit comparator lessequal for signal <n0070> created at line 85
-    Found 32-bit comparator lessequal for signal <n0072> created at line 85
-    Found 32-bit comparator lessequal for signal <n0075> created at line 88
-    Found 32-bit comparator lessequal for signal <n0077> created at line 88
-    Found 32-bit comparator lessequal for signal <n0111> created at line 96
-    Found 32-bit comparator lessequal for signal <n0113> created at line 96
-    Found 32-bit comparator lessequal for signal <n0116> created at line 99
-    Found 32-bit comparator lessequal for signal <n0118> created at line 99
-    Found 32-bit comparator lessequal for signal <n0121> created at line 102
-    Found 32-bit comparator lessequal for signal <n0123> created at line 102
-    Found 32-bit comparator lessequal for signal <n0126> created at line 105
-    Found 32-bit comparator lessequal for signal <n0128> created at line 105
-    Found 32-bit comparator lessequal for signal <n0131> created at line 108
-    Found 32-bit comparator lessequal for signal <n0133> created at line 108
-    Found 32-bit comparator lessequal for signal <n0136> created at line 111
-    Found 32-bit comparator lessequal for signal <n0138> created at line 111
-    Found 32-bit comparator lessequal for signal <n0141> created at line 114
-    Found 32-bit comparator lessequal for signal <n0143> created at line 114
-    Found 32-bit comparator lessequal for signal <n0146> created at line 117
-    Found 32-bit comparator lessequal for signal <n0148> created at line 117
-    Found 32-bit comparator lessequal for signal <n0151> created at line 120
-    Found 32-bit comparator lessequal for signal <n0153> created at line 120
-    Found 32-bit comparator lessequal for signal <n0156> created at line 123
-    Found 32-bit comparator lessequal for signal <n0158> created at line 123
-    Found 32-bit comparator lessequal for signal <n0161> created at line 126
-    Found 32-bit comparator lessequal for signal <n0163> created at line 126
-    Found 32-bit comparator lessequal for signal <n0166> created at line 129
-    Found 32-bit comparator lessequal for signal <n0168> created at line 129
-    Found 32-bit comparator lessequal for signal <n0171> created at line 132
-    Found 32-bit comparator lessequal for signal <n0173> created at line 132
-    Found 32-bit comparator lessequal for signal <n0176> created at line 135
-    Found 32-bit comparator lessequal for signal <n0178> created at line 135
-    Found 32-bit comparator lessequal for signal <n0181> created at line 138
-    Found 32-bit comparator lessequal for signal <n0183> created at line 138
-    Found 32-bit comparator lessequal for signal <n0186> created at line 141
-    Found 32-bit comparator lessequal for signal <n0188> created at line 141
-    Found 8-bit comparator greater for signal <color_shade[7]_GND_164_o_LessThan_100_o> created at line 157
-    Found 8-bit comparator greater for signal <color_shade[7]_GND_164_o_LessThan_101_o> created at line 158
-    Found 8-bit comparator greater for signal <color_shade[7]_PWR_26_o_LessThan_102_o> created at line 159
+    Related source file is "C:\Users\f000jg5\Desktop\final\vga_color.vhd".
+    Found 32-bit comparator lessequal for signal <n0000> created at line 44
+    Found 32-bit comparator lessequal for signal <n0002> created at line 44
+    Found 32-bit comparator lessequal for signal <n0005> created at line 47
+    Found 32-bit comparator lessequal for signal <n0007> created at line 47
+    Found 32-bit comparator lessequal for signal <n0010> created at line 50
+    Found 32-bit comparator lessequal for signal <n0012> created at line 50
+    Found 32-bit comparator lessequal for signal <n0015> created at line 53
+    Found 32-bit comparator lessequal for signal <n0017> created at line 53
+    Found 32-bit comparator lessequal for signal <n0020> created at line 56
+    Found 32-bit comparator lessequal for signal <n0022> created at line 56
+    Found 32-bit comparator lessequal for signal <n0025> created at line 59
+    Found 32-bit comparator lessequal for signal <n0027> created at line 59
+    Found 32-bit comparator lessequal for signal <n0030> created at line 62
+    Found 32-bit comparator lessequal for signal <n0032> created at line 62
+    Found 32-bit comparator lessequal for signal <n0035> created at line 65
+    Found 32-bit comparator lessequal for signal <n0037> created at line 65
+    Found 32-bit comparator lessequal for signal <n0040> created at line 68
+    Found 32-bit comparator lessequal for signal <n0042> created at line 68
+    Found 32-bit comparator lessequal for signal <n0045> created at line 71
+    Found 32-bit comparator lessequal for signal <n0047> created at line 71
+    Found 32-bit comparator lessequal for signal <n0050> created at line 74
+    Found 32-bit comparator lessequal for signal <n0052> created at line 74
+    Found 32-bit comparator lessequal for signal <n0055> created at line 77
+    Found 32-bit comparator lessequal for signal <n0057> created at line 77
+    Found 32-bit comparator lessequal for signal <n0060> created at line 80
+    Found 32-bit comparator lessequal for signal <n0062> created at line 80
+    Found 32-bit comparator lessequal for signal <n0065> created at line 83
+    Found 32-bit comparator lessequal for signal <n0067> created at line 83
+    Found 32-bit comparator lessequal for signal <n0070> created at line 86
+    Found 32-bit comparator lessequal for signal <n0072> created at line 86
+    Found 32-bit comparator lessequal for signal <n0075> created at line 89
+    Found 32-bit comparator lessequal for signal <n0077> created at line 89
+    Found 32-bit comparator lessequal for signal <n0111> created at line 97
+    Found 32-bit comparator lessequal for signal <n0113> created at line 97
+    Found 32-bit comparator lessequal for signal <n0116> created at line 100
+    Found 32-bit comparator lessequal for signal <n0118> created at line 100
+    Found 32-bit comparator lessequal for signal <n0121> created at line 103
+    Found 32-bit comparator lessequal for signal <n0123> created at line 103
+    Found 32-bit comparator lessequal for signal <n0126> created at line 106
+    Found 32-bit comparator lessequal for signal <n0128> created at line 106
+    Found 32-bit comparator lessequal for signal <n0131> created at line 109
+    Found 32-bit comparator lessequal for signal <n0133> created at line 109
+    Found 32-bit comparator lessequal for signal <n0136> created at line 112
+    Found 32-bit comparator lessequal for signal <n0138> created at line 112
+    Found 32-bit comparator lessequal for signal <n0141> created at line 115
+    Found 32-bit comparator lessequal for signal <n0143> created at line 115
+    Found 32-bit comparator lessequal for signal <n0146> created at line 118
+    Found 32-bit comparator lessequal for signal <n0148> created at line 118
+    Found 32-bit comparator lessequal for signal <n0151> created at line 121
+    Found 32-bit comparator lessequal for signal <n0153> created at line 121
+    Found 32-bit comparator lessequal for signal <n0156> created at line 124
+    Found 32-bit comparator lessequal for signal <n0158> created at line 124
+    Found 32-bit comparator lessequal for signal <n0161> created at line 127
+    Found 32-bit comparator lessequal for signal <n0163> created at line 127
+    Found 32-bit comparator lessequal for signal <n0166> created at line 130
+    Found 32-bit comparator lessequal for signal <n0168> created at line 130
+    Found 32-bit comparator lessequal for signal <n0171> created at line 133
+    Found 32-bit comparator lessequal for signal <n0173> created at line 133
+    Found 32-bit comparator lessequal for signal <n0176> created at line 136
+    Found 32-bit comparator lessequal for signal <n0178> created at line 136
+    Found 32-bit comparator lessequal for signal <n0181> created at line 139
+    Found 32-bit comparator lessequal for signal <n0183> created at line 139
+    Found 32-bit comparator lessequal for signal <n0186> created at line 142
+    Found 32-bit comparator lessequal for signal <n0188> created at line 142
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_212_o_LessThan_101_o> created at line 159
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_212_o_LessThan_102_o> created at line 160
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_212_o_LessThan_103_o> created at line 161
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_212_o_LessThan_104_o> created at line 162
+    Found 8-bit comparator greater for signal <color_shade[7]_PWR_24_o_LessThan_105_o> created at line 163
+    Found 8-bit comparator greater for signal <color_shade[7]_PWR_24_o_LessThan_106_o> created at line 164
     Summary:
-	inferred  67 Comparator(s).
-	inferred  65 Multiplexer(s).
+	inferred  70 Comparator(s).
+	inferred  69 Multiplexer(s).
 Unit <vga_color> synthesized.
 
 Synthesizing Unit <vga_controller>.
-    Related source file is "/home/will/Code/VHDL/final/vga_controller.vhd".
+    Related source file is "C:\Users\f000jg5\Desktop\final\vga_controller.vhd".
     Found 1-bit register for signal <vs>.
     Found 32-bit register for signal <h_count>.
     Found 32-bit register for signal <v_count>.
@@ -734,21 +737,21 @@ Synthesizing Unit <vga_controller>.
     Found 32-bit register for signal <column>.
     Found 32-bit register for signal <row>.
     Found 1-bit register for signal <hs>.
-    Found 32-bit adder for signal <h_count[31]_GND_165_o_add_3_OUT> created at line 53.
-    Found 32-bit adder for signal <v_count[31]_GND_165_o_add_4_OUT> created at line 55.
-    Found 32-bit subtractor for signal <h_count[31]_GND_165_o_sub_19_OUT<31:0>> created at line 80.
-    Found 32-bit subtractor for signal <v_count[31]_GND_165_o_sub_24_OUT<31:0>> created at line 88.
-    Found 32-bit comparator lessequal for signal <GND_165_o_h_count[31]_LessThan_1_o> created at line 39
-    Found 32-bit comparator lessequal for signal <GND_165_o_v_count[31]_LessThan_2_o> created at line 45
-    Found 32-bit comparator greater for signal <GND_165_o_h_count[31]_LessThan_3_o> created at line 52
-    Found 32-bit comparator greater for signal <h_count[31]_GND_165_o_LessThan_10_o> created at line 64
-    Found 32-bit comparator greater for signal <GND_165_o_h_count[31]_LessThan_11_o> created at line 64
-    Found 32-bit comparator greater for signal <v_count[31]_GND_165_o_LessThan_12_o> created at line 64
-    Found 32-bit comparator greater for signal <GND_165_o_v_count[31]_LessThan_13_o> created at line 64
-    Found 32-bit comparator greater for signal <GND_165_o_h_count[31]_LessThan_17_o> created at line 75
-    Found 32-bit comparator greater for signal <h_count[31]_GND_165_o_LessThan_18_o> created at line 77
-    Found 32-bit comparator greater for signal <GND_165_o_v_count[31]_LessThan_22_o> created at line 83
-    Found 32-bit comparator greater for signal <v_count[31]_GND_165_o_LessThan_23_o> created at line 85
+    Found 32-bit adder for signal <h_count[31]_GND_213_o_add_3_OUT> created at line 53.
+    Found 32-bit adder for signal <v_count[31]_GND_213_o_add_4_OUT> created at line 55.
+    Found 32-bit subtractor for signal <h_count[31]_GND_213_o_sub_19_OUT<31:0>> created at line 80.
+    Found 32-bit subtractor for signal <v_count[31]_GND_213_o_sub_24_OUT<31:0>> created at line 88.
+    Found 32-bit comparator lessequal for signal <GND_213_o_h_count[31]_LessThan_1_o> created at line 39
+    Found 32-bit comparator lessequal for signal <GND_213_o_v_count[31]_LessThan_2_o> created at line 45
+    Found 32-bit comparator greater for signal <GND_213_o_h_count[31]_LessThan_3_o> created at line 52
+    Found 32-bit comparator greater for signal <h_count[31]_GND_213_o_LessThan_10_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_213_o_h_count[31]_LessThan_11_o> created at line 64
+    Found 32-bit comparator greater for signal <v_count[31]_GND_213_o_LessThan_12_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_213_o_v_count[31]_LessThan_13_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_213_o_h_count[31]_LessThan_17_o> created at line 75
+    Found 32-bit comparator greater for signal <h_count[31]_GND_213_o_LessThan_18_o> created at line 77
+    Found 32-bit comparator greater for signal <GND_213_o_v_count[31]_LessThan_22_o> created at line 83
+    Found 32-bit comparator greater for signal <v_count[31]_GND_213_o_LessThan_23_o> created at line 85
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred 138 D-type flip-flop(s).
@@ -762,37 +765,39 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 256
  8x1-bit single-port Read Only RAM                     : 256
-# Adders/Subtractors                                   : 266
+# Adders/Subtractors                                   : 267
+ 22-bit adder                                          : 1
  32-bit adder                                          : 5
  32-bit subtractor                                     : 2
  4-bit adder                                           : 1
  4-bit subtractor                                      : 1
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 256
-# Registers                                            : 797
+# Registers                                            : 798
  1-bit register                                        : 6
  10-bit register                                       : 2
  2-bit register                                        : 259
+ 22-bit register                                       : 1
  256-bit register                                      : 1
  3-bit register                                        : 2
  32-bit register                                       : 8
  4-bit register                                        : 2
  8-bit register                                        : 517
-# Comparators                                          : 83
+# Comparators                                          : 86
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 10
  32-bit comparator lessequal                           : 66
  8-bit comparator equal                                : 3
- 8-bit comparator greater                              : 3
-# Multiplexers                                         : 1115
- 1-bit 2-to-1 multiplexer                              : 288
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 1116
+ 1-bit 2-to-1 multiplexer                              : 290
  1-bit 256-to-1 multiplexer                            : 2
  10-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 513
  2-bit 256-to-1 multiplexer                            : 1
  32-bit 2-to-1 multiplexer                             : 4
  4-bit 2-to-1 multiplexer                              : 30
- 8-bit 2-to-1 multiplexer                              : 275
+ 8-bit 2-to-1 multiplexer                              : 274
  8-bit 256-to-1 multiplexer                            : 1
 # FSMs                                                 : 260
 
@@ -828,11 +833,15 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_ping> will be implemented on LUT
     | Port A                                                              |
     |     aspect ratio   | 8-word x 1-bit                      |          |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <("0",_n0067,state)> |          |
+    |     addrA          | connected to signal <("0",state)>   |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <out_ping>      |          |
     -----------------------------------------------------------------------
 Unit <node> synthesized (advanced).
+
+Synthesizing (advanced) Unit <node_matrix>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+Unit <node_matrix> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_controller>.
 The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
@@ -849,27 +858,28 @@ Macro Statistics
 # Adders/Subtractors                                   : 3
  32-bit subtractor                                     : 2
  8-bit addsub                                          : 1
-# Counters                                             : 263
+# Counters                                             : 264
+ 22-bit up counter                                     : 1
  32-bit up counter                                     : 5
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  8-bit down counter                                    : 256
 # Registers                                            : 2989
  Flip-Flops                                            : 2989
-# Comparators                                          : 83
+# Comparators                                          : 86
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 10
  32-bit comparator lessequal                           : 66
  8-bit comparator equal                                : 3
- 8-bit comparator greater                              : 3
-# Multiplexers                                         : 867
- 1-bit 2-to-1 multiplexer                              : 298
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 868
+ 1-bit 2-to-1 multiplexer                              : 300
  1-bit 256-to-1 multiplexer                            : 2
  2-bit 2-to-1 multiplexer                              : 513
  2-bit 256-to-1 multiplexer                            : 1
  32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 30
- 8-bit 2-to-1 multiplexer                              : 19
+ 8-bit 2-to-1 multiplexer                              : 18
  8-bit 256-to-1 multiplexer                            : 1
 # FSMs                                                 : 260
 
@@ -1210,11 +1220,11 @@ Optimizing unit <controller> ...
 
 Optimizing unit <SerialTx> ...
 
-Optimizing unit <vga_controller> ...
-
 Optimizing unit <node_matrix> ...
 
 Optimizing unit <node> ...
+
+Optimizing unit <vga_controller> ...
 
 Optimizing unit <vga_color> ...
 WARNING:Xst:1710 - FF/Latch <nm/node_matrix_full[240].LL_corner_node.NC3/pinged_by_current_1> (without init value) has a constant value of 0 in block <solver>. This FF/Latch will be trimmed during the optimization process.
@@ -1313,15 +1323,29 @@ WARNING:Xst:1293 - FF/Latch <s_rx/control/tick_counter_4> has a constant value o
 WARNING:Xst:1293 - FF/Latch <s_rx/control/tick_counter_5> has a constant value of 0 in block <solver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <s_rx/control/tick_counter_6> has a constant value of 0 in block <solver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <s_rx/control/tick_counter_7> has a constant value of 0 in block <solver>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <v_cont/red_1> in Unit <solver> is equivalent to the following FF/Latch, which will be removed : <v_cont/red_0> 
-INFO:Xst:2261 - The FF/Latch <v_cont/green_1> in Unit <solver> is equivalent to the following FF/Latch, which will be removed : <v_cont/green_0> 
 INFO:Xst:2261 - The FF/Latch <nm/node_matrix_full[255].LR_corner_node.NC4/pinged_by_current_1> in Unit <solver> is equivalent to the following FF/Latch, which will be removed : <nm/node_matrix_full[255].LR_corner_node.NC4/pinged_by_current_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block solver, actual ratio is 136.
+Found area constraint ratio of 100 (+ 5) on block solver, actual ratio is 122.
 Optimizing block <solver> to meet ratio 100 (+ 5) of 2278 slices :
-WARNING:Xst:2254 - Area constraint could not be met for block <solver>, final ratio is 126.
+WARNING:Xst:2254 - Area constraint could not be met for block <solver>, final ratio is 130.
+FlipFlop v_cont/column_2 has been replicated 1 time(s)
+FlipFlop v_cont/column_3 has been replicated 1 time(s)
+FlipFlop v_cont/column_4 has been replicated 1 time(s)
+FlipFlop v_cont/column_5 has been replicated 1 time(s)
+FlipFlop v_cont/column_6 has been replicated 1 time(s)
+FlipFlop v_cont/column_7 has been replicated 1 time(s)
+FlipFlop v_cont/column_8 has been replicated 1 time(s)
+FlipFlop v_cont/column_9 has been replicated 1 time(s)
+FlipFlop v_cont/row_1 has been replicated 1 time(s)
+FlipFlop v_cont/row_2 has been replicated 1 time(s)
+FlipFlop v_cont/row_3 has been replicated 1 time(s)
+FlipFlop v_cont/row_4 has been replicated 1 time(s)
+FlipFlop v_cont/row_5 has been replicated 1 time(s)
+FlipFlop v_cont/row_6 has been replicated 1 time(s)
+FlipFlop v_cont/row_7 has been replicated 1 time(s)
+FlipFlop v_cont/row_8 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1333,8 +1357,8 @@ Unit <solver> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5628
- Flip-Flops                                            : 5628
+# Registers                                            : 5668
+ Flip-Flops                                            : 5668
 # Shift Registers                                      : 1
  3-bit shift register                                  : 1
 
@@ -1359,34 +1383,34 @@ Top Level Output File Name         : solver.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 12826
+# BELS                             : 13174
 #      GND                         : 1
-#      INV                         : 283
-#      LUT1                        : 119
-#      LUT2                        : 785
-#      LUT3                        : 2118
-#      LUT4                        : 132
-#      LUT5                        : 992
-#      LUT6                        : 3191
-#      MUXCY                       : 2413
-#      MUXF7                       : 415
-#      MUXF8                       : 203
+#      INV                         : 29
+#      LUT1                        : 140
+#      LUT2                        : 793
+#      LUT3                        : 70
+#      LUT4                        : 150
+#      LUT5                        : 3038
+#      LUT6                        : 3708
+#      MUXCY                       : 2436
+#      MUXF7                       : 409
+#      MUXF8                       : 204
 #      VCC                         : 1
-#      XORCY                       : 2173
-# FlipFlops/Latches                : 5629
-#      FD                          : 20
-#      FDE                         : 2361
-#      FDR                         : 3106
+#      XORCY                       : 2195
+# FlipFlops/Latches                : 5669
+#      FD                          : 42
+#      FDE                         : 4409
+#      FDR                         : 1076
 #      FDRE                        : 131
 #      FDSE                        : 11
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 13
+# IO Buffers                       : 14
 #      IBUF                        : 1
 #      IBUFG                       : 1
-#      OBUF                        : 11
+#      OBUF                        : 12
 # DCMs                             : 1
 #      DCM_SP                      : 1
 
@@ -1397,22 +1421,22 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5629  out of  18224    30%  
- Number of Slice LUTs:                 7621  out of   9112    83%  
-    Number used as Logic:              7620  out of   9112    83%  
+ Number of Slice Registers:            5669  out of  18224    31%  
+ Number of Slice LUTs:                 7929  out of   9112    87%  
+    Number used as Logic:              7928  out of   9112    87%  
     Number used as Memory:                1  out of   2176     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   9605
-   Number with an unused Flip Flop:    3976  out of   9605    41%  
-   Number with an unused LUT:          1984  out of   9605    20%  
-   Number of fully used LUT-FF pairs:  3645  out of   9605    37%  
-   Number of unique control sets:       786
+ Number of LUT Flip Flop pairs used:   9941
+   Number with an unused Flip Flop:    4272  out of   9941    42%  
+   Number with an unused LUT:          2012  out of   9941    20%  
+   Number of fully used LUT-FF pairs:  3657  out of   9941    36%  
+   Number of unique control sets:       787
 
 IO Utilization: 
- Number of IOs:                          13
- Number of bonded IOBs:                  13  out of    232     5%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -1438,8 +1462,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_real                           | DCM_SP:CLKFX           | 214   |
-clk_real                           | DCM_SP:CLK0            | 5416  |
+clk_real                           | DCM_SP:CLKFX           | 5670  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1450,9 +1473,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.734ns (Maximum Frequency: 148.505MHz)
+   Minimum period: 3.495ns (Maximum Frequency: 286.088MHz)
    Minimum input arrival time before clock: 1.801ns
-   Maximum output required time after clock: 3.634ns
+   Maximum output required time after clock: 5.837ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1461,34 +1484,43 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_real'
-  Clock period: 6.734ns (frequency: 148.505MHz)
-  Total number of paths / destination ports: 26431363 / 10803
+  Clock period: 3.495ns (frequency: 286.087MHz)
+  Total number of paths / destination ports: 23900523 / 10877
 -------------------------------------------------------------------------
-Delay:               6.734ns (Levels of Logic = 10)
-  Source:            nm/node_matrix_full[238].main_nodes.NX/counter_5 (FF)
-  Destination:       v_cont/green_2 (FF)
-  Source Clock:      clk_real rising
-  Destination Clock: clk_real rising 0.2X
+Delay:               13.982ns (Levels of Logic = 19)
+  Source:            v_cont/column_3_1 (FF)
+  Destination:       v_cont/green_0 (FF)
+  Source Clock:      clk_real rising 0.3X
+  Destination Clock: clk_real rising 0.3X
 
-  Data Path: nm/node_matrix_full[238].main_nodes.NX/counter_5 to v_cont/green_2
+  Data Path: v_cont/column_3_1 to v_cont/green_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              4   0.447   0.931  nm/node_matrix_full[238].main_nodes.NX/counter_5 (nm/node_matrix_full[238].main_nodes.NX/counter_5)
-     LUT6:I2->O            1   0.203   0.000  nm/Mmux_weight_out_1133 (nm/Mmux_weight_out_1133)
-     MUXF7:I1->O           1   0.140   0.000  nm/Mmux_weight_out_10_f7_26 (nm/Mmux_weight_out_10_f727)
-     MUXF8:I1->O           1   0.152   0.827  nm/Mmux_weight_out_9_f8_20 (nm/Mmux_weight_out_9_f821)
-     LUT6:I2->O            1   0.203   0.000  nm/Mmux_weight_out_45 (nm/Mmux_weight_out_45)
-     MUXF7:I1->O           1   0.140   0.000  nm/Mmux_weight_out_3_f7_4 (nm/Mmux_weight_out_3_f75)
-     MUXF8:I1->O           5   0.152   1.059  nm/Mmux_weight_out_2_f8_4 (weight_in<5>)
-     LUT6:I1->O            4   0.203   0.684  v_col/color_shade[7]_GND_164_o_equal_99_o<7>11 (v_col/color_shade[7]_GND_164_o_equal_99_o<7>1)
-     LUT6:I5->O            1   0.205   0.944  v_col/color_shade[7]_GND_164_o_equal_99_o<7>2_SW0 (N579)
-     LUT6:I0->O            1   0.203   0.000  v_col/Mmux_color5_G (N595)
-     MUXF7:I1->O           1   0.140   0.000  v_col/Mmux_color5 (color<4>)
-     FDR:D                     0.102          v_cont/green_2
+     FDR:C->Q             24   0.447   1.517  v_cont/column_3_1 (v_cont/column_3_1)
+     LUT5:I0->O            1   0.203   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_lut<0> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<0> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<1> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<2> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<3> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<4> (v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.684  v_col/Mcompar_GND_212_o_column[31]_LessThan_52_o_cy<5> (v_col/GND_212_o_column[31]_LessThan_52_o)
+     LUT2:I0->O           31   0.203   1.382  v_col/column[31]_GND_212_o_AND_554_o1 (v_col/column[31]_GND_212_o_AND_554_o)
+     LUT6:I4->O            1   0.203   0.684  v_col/row_enable_column_enable_AND_569_o7_SW0 (N561)
+     LUT6:I4->O           40   0.203   1.406  v_col/row_enable_column_enable_AND_569_o7 (v_col/row_enable_column_enable_AND_569_o)
+     LUT6:I5->O          576   0.205   2.106  v_col/Mmux_cell_address26 (cell_address<1>)
+     LUT6:I5->O            1   0.205   0.000  nm/Mmux_weight_out_1139 (nm/Mmux_weight_out_1139)
+     MUXF7:I1->O           1   0.140   0.000  nm/Mmux_weight_out_10_f7_31 (nm/Mmux_weight_out_10_f732)
+     MUXF8:I1->O           1   0.152   0.827  nm/Mmux_weight_out_9_f8_24 (nm/Mmux_weight_out_9_f825)
+     LUT6:I2->O            1   0.203   0.000  nm/Mmux_weight_out_46 (nm/Mmux_weight_out_46)
+     MUXF7:I1->O           1   0.140   0.000  nm/Mmux_weight_out_3_f7_5 (nm/Mmux_weight_out_3_f76)
+     MUXF8:I1->O          10   0.152   1.104  nm/Mmux_weight_out_2_f8_5 (weight<6>)
+     LUT4:I0->O            2   0.203   0.845  v_col/Mmux_color511 (v_col/Mmux_color51)
+     LUT6:I3->O            1   0.205   0.000  v_col/Mmux_color31 (color<2>)
+     FDR:D                     0.102          v_cont/green_0
     ----------------------------------------
-    Total                      6.734ns (2.290ns logic, 4.444ns route)
-                                       (34.0% logic, 66.0% route)
+    Total                     13.982ns (3.427ns logic, 10.555ns route)
+                                       (24.5% logic, 75.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_real'
@@ -1497,7 +1529,7 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_real'
 Offset:              1.801ns (Levels of Logic = 1)
   Source:            TXD (PAD)
   Destination:       s_rx/df_sync/Mshreg_async_out (FF)
-  Destination Clock: clk_real rising 0.2X
+  Destination Clock: clk_real rising 0.3X
 
   Data Path: TXD to s_rx/df_sync/Mshreg_async_out
                                 Gate     Net
@@ -1511,22 +1543,23 @@ Offset:              1.801ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_real'
-  Total number of paths / destination ports: 11 / 11
+  Total number of paths / destination ports: 19 / 12
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            v_cont/red_1 (FF)
-  Destination:       red<1> (PAD)
-  Source Clock:      clk_real rising 0.2X
+Offset:              5.837ns (Levels of Logic = 2)
+  Source:            nm/end_loc_reg/data_out_1 (FF)
+  Destination:       test (PAD)
+  Source Clock:      clk_real rising 0.3X
 
-  Data Path: v_cont/red_1 to red<1>
+  Data Path: nm/end_loc_reg/data_out_1 to test
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.447   0.616  v_cont/red_1 (v_cont/red_1)
-     OBUF:I->O                 2.571          red_1_OBUF (red<1>)
+     FDRE:C->Q            69   0.447   2.037  nm/end_loc_reg/data_out_1 (nm/end_loc_reg/data_out_1)
+     LUT6:I0->O            1   0.203   0.579  nm/test<7> (test_OBUF)
+     OBUF:I->O                 2.571          test_OBUF (test)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      5.837ns (3.221ns logic, 2.616ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 
@@ -1538,21 +1571,20 @@ Clock to Setup on destination clock clk_real
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_real       |   16.602|         |         |         |
+clk_real       |   13.982|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 95.00 secs
-Total CPU time to Xst completion: 94.04 secs
+Total REAL time to Xst completion: 70.00 secs
+Total CPU time to Xst completion: 70.31 secs
  
 --> 
 
-
-Total memory usage is 501944 kilobytes
+Total memory usage is 386860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  101 (   0 filtered)
-Number of infos    :    9 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

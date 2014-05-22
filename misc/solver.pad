@@ -1,7 +1,7 @@
-Release 14.4 - par P.49d (nt)
+Release 14.4 - par P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Tue May 20 15:28:34 2014
+Wed May 21 18:57:28 2014
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -322,7 +322,7 @@ U12|||GND||||||||||||
 U13||IOBM|IO_L14P_D11_2|UNUSED||2|||||||||
 U14|||VCCO_2|||2|||||3.30||||
 U15||IOBM|IO_L5P_2|UNUSED||2|||||||||
-U16||IOBM|IO_L2P_CMPCLK_2|UNUSED||2|||||||||
+U16|test|IOB|IO_L2P_CMPCLK_2|OUTPUT|LVCMOS33|2|12|SLOW||||LOCATED|NO|NONE|
 U17||IOBM|IO_L52P_M1DQ14_1|UNUSED||1|||||||||
 U18||IOBS|IO_L52N_M1DQ15_1|UNUSED||1|||||||||
 V1|||GND||||||||||||

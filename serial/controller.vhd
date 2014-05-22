@@ -86,7 +86,8 @@ begin
             when done =>
                 rx_done_tick<='1';
                 nextState<=waiting;
-            when others => NULL;
+            when others => 
+					nextState<=waiting;
         end case;
     end process;
 
