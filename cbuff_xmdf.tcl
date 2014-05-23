@@ -40,20 +40,12 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/clk_wi
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/example_design/cbuff_exdes.ucf
-utilities_xmdf::xmdfSetData $instance FileSet $fcount type ucf
-incr fcount
-
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/doc/clk_wiz_ds709.pdf
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/doc/clk_wiz_gsg521.pdf
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
-incr fcount
-
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/example_design/cbuff_exdes.vhd
-utilities_xmdf::xmdfSetData $instance FileSet $fcount type vhdl
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff/implement/implement.bat
@@ -106,6 +98,10 @@ incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff.ejp
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type AnyView
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff.ucf
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type ucf
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path cbuff.vhd

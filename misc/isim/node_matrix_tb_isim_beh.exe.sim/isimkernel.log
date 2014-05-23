@@ -2,9 +2,9 @@ Command line:
    node_matrix_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  61182
+     -socket  51234
 
-Thu May 22 15:10:03 2014
+Fri May 23 13:36:17 2014
 
 
- Elaboration Time: 0.1404 sec
+ Elaboration Time: 0.06 sec

@@ -1,33 +1,9 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    08:39:14 05/09/2014 
--- Design Name: 
--- Module Name:    node - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+--Will Hickman
+--ENGS 31
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity node is
     Port ( clk : in  STD_LOGIC;
@@ -35,7 +11,7 @@ entity node is
            in_ping_start: in  STD_LOGIC;
            in_ping_N,in_ping_E,in_ping_S,in_ping_W : in STD_LOGIC;
            reset : in STD_LOGIC;
-			  en : in STD_LOGIC;
+           en : in STD_LOGIC;
            weight_out : out STD_LOGIC_VECTOR (7 downto 0);
            out_ping: out  STD_LOGIC;
            pinged_by : out  STD_LOGIC_VECTOR (1 downto 0));

@@ -45,7 +45,6 @@ ARCHITECTURE behavior OF node_matrix_tb IS
          disp_loc_in : IN  std_logic_vector(7 downto 0);
          data_tick : IN  std_logic;
          data_in : IN  std_logic_vector(7 downto 0);
-         reset_in : IN  std_logic;
          in_path : OUT  std_logic;
          weight_out : OUT  std_logic_vector(7 downto 0)
         );
@@ -63,7 +62,6 @@ ARCHITECTURE behavior OF node_matrix_tb IS
    signal disp_loc_in : std_logic_vector(7 downto 0) := (others => '0');
    signal data_tick : std_logic := '0';
    signal data_in : std_logic_vector(7 downto 0) := (others => '0');
-   signal reset_in : std_logic := '0';
    signal count : unsigned(7 downto 0) := (others=>'0');
 
  	--Outputs
@@ -81,7 +79,6 @@ BEGIN
           disp_loc_in => disp_loc_in,
           data_tick => data_tick,
           data_in => data_in,
-          reset_in => reset_in,
           in_path => in_path,
           weight_out => weight_out
         );
@@ -109,7 +106,7 @@ BEGIN
 		 wait for clk_period;
 		 data_tick<='0';
 		 wait for 8*clk_period;
-		 data_in<=comm_beg_addr;
+		 data_in<=comm_end_addr;
 		 data_tick<='1';
 		 wait for clk_period;
 		 data_tick<='0';
@@ -125,7 +122,7 @@ BEGIN
 		 wait for clk_period;
 		 data_tick<='0';
 		 wait for 8*clk_period;
-		 data_in<=comm_end_addr;
+		 data_in<=comm_beg_addr;
 		 data_tick<='1';
 		 wait for clk_period;
 		 data_tick<='0';
@@ -135,6 +132,8 @@ BEGIN
 		 wait for clk_period;
 		 data_tick<='0';
 		 wait for 8*clk_period;
+
+
       for I in 0 to 255 loop
         data_in<=comm_header;
         data_tick<='1';
@@ -171,7 +170,7 @@ BEGIN
     data_tick<='1';
     wait for clk_period;
     data_tick<='0';
-    wait for 100*clk_period;
+    wait for clk_period;
 
 
     count<=(others=>'0');

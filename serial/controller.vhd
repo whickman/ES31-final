@@ -1,33 +1,9 @@
-----------------------------------------------------------------------------------
--- Company:         ENGS 31 
--- Engineer:        Will Hickman
--- 
--- Create Date:    23:21:23 04/26/2014 
--- Design Name: 
--- Module Name:    controller - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+--Will Hickman
+--ENGS 31 Final Project
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity controller is
     Port ( br_tick16 : in  STD_LOGIC;
@@ -41,17 +17,19 @@ end controller;
 
 architecture Behavioral of controller is
 
-signal tick_counter, counter, lastShift,next_lastShift : integer := 0;
-signal last_br : std_logic := '0';
-type state_type is (waiting,data,shifting,loading,done);
-signal state, nextState : state_type := waiting;
+    signal tick_counter, counter, lastShift,next_lastShift : integer := 0;
+    signal last_br : std_logic := '0';
+
+    type state_type is (waiting,data,shifting,loading,done);
+    signal state, nextState : state_type := waiting;
+
 begin
 
     clocked_process : process(clk)
     begin
         if rising_edge(clk) then
             state<=nextState;
-				lastShift<=next_lastShift;
+			lastShift<=next_lastShift;
         end if;
     end process;
 
@@ -61,8 +39,8 @@ begin
         load<='0';
         rx_done_tick<='0';
         shift<='0';
-		  next_lastShift<=lastShift;
-		  nextState<=state;
+		next_lastShift<=lastShift;
+		nextState<=state;
         case (state) is
             when waiting =>
                 if (data_in='0') then
@@ -87,7 +65,7 @@ begin
                 rx_done_tick<='1';
                 nextState<=waiting;
             when others => 
-					nextState<=waiting;
+				nextState<=waiting;
         end case;
     end process;
 
