@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF node_matrix_tb IS
    signal disp_loc_in : std_logic_vector(7 downto 0) := (others => '0');
    signal data_tick : std_logic := '0';
    signal data_in : std_logic_vector(7 downto 0) := (others => '0');
-   signal count : unsigned(7 downto 0) := (others=>'0');
+   signal count,jcount : unsigned(7 downto 0) := (others=>'0');
 
  	--Outputs
    signal in_path : std_logic;
@@ -101,88 +101,108 @@ BEGIN
 
       wait for clk_period*10;
       wait for clk_period/2;
-		 data_in<=comm_header;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for 8*clk_period;
-		 data_in<=comm_end_addr;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for 8*clk_period;
-		 data_in<="00000010";
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for 8*clk_period;
+		
+		jcount<=(others=>'0');
+		for J in 0 to 1 loop
+			jcount<=jcount+"01";
+			 data_in<=comm_header;
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+			 data_in<=comm_end_addr;
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+			 data_in<="00000010";
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+
+			 data_in<=comm_header;
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+			 data_in<=comm_beg_addr;
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+			 data_in<="00000001";
+			 data_tick<='1';
+			 wait for clk_period;
+			 data_tick<='0';
+			 wait for 8*clk_period;
+
+
+			for I in 0 to 255 loop
+			  data_in<=comm_header;
+			  data_tick<='1';
+			  wait for clk_period;
+			  data_tick<='0';
+			  wait for 8*clk_period;
+
+			  data_in<=comm_cell_w;
+			  data_tick<='1';
+			  wait for clk_period;
+			  data_tick<='0';
+			  wait for 8*clk_period;
+
+			  data_in<=std_logic_vector(count);
+			  data_tick<='1';
+			  wait for clk_period;
+			  data_tick<='0';
+			  wait for 8*clk_period;
+			  if (J=0) then
+				data_in<=std_logic_vector(count);
+			  else 
+				data_in<=std_logic_vector("11111111"-count);
+				end if;
+			  data_tick<='1';
+			  wait for clk_period;
+			  data_tick<='0';
+			  count<=count+"01";
+			  wait for 8*clk_period;
+					  -- insert stimulus here 
+		 end loop;
 
 		 data_in<=comm_header;
 		 data_tick<='1';
 		 wait for clk_period;
 		 data_tick<='0';
 		 wait for 8*clk_period;
-		 data_in<=comm_beg_addr;
+		 data_in<=comm_prog_beg;
 		 data_tick<='1';
 		 wait for clk_period;
 		 data_tick<='0';
-		 wait for 8*clk_period;
-		 data_in<="00000001";
+		 wait for clk_period;
+
+
+		 count<=(others=>'0');
+		disp_loc_in<=std_logic_vector(count);
+		  wait for 3*clk_period;
+		 for I in 0 to 255 loop
+			  count<=count+"01";
+			  wait for clk_period;
+			  disp_loc_in<=std_logic_vector(count);
+			  wait for 3*clk_period;
+		 end loop;
+		 data_in<=comm_header;
 		 data_tick<='1';
 		 wait for clk_period;
 		 data_tick<='0';
-		 wait for 8*clk_period;
-
-
-      for I in 0 to 255 loop
-        data_in<=comm_header;
-        data_tick<='1';
-        wait for clk_period;
-        data_tick<='0';
-        wait for 8*clk_period;
-
-        data_in<=comm_cell_w;
-        data_tick<='1';
-        wait for clk_period;
-        data_tick<='0';
-        wait for 8*clk_period;
-
-        data_in<=std_logic_vector(count);
-        data_tick<='1';
-        wait for clk_period;
-        data_tick<='0';
-        wait for 8*clk_period;
-        data_in<=std_logic_vector(count);
-        data_tick<='1';
-        wait for clk_period;
-		  data_tick<='0';
-        count<=count+"01";
-        wait for 8*clk_period;
-              -- insert stimulus here 
-    end loop;
-
-    data_in<=comm_header;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for 8*clk_period;
-    data_in<=comm_prog_beg;
-    data_tick<='1';
-    wait for clk_period;
-    data_tick<='0';
-    wait for clk_period;
-
-
-    count<=(others=>'0');
-	disp_loc_in<=std_logic_vector(count);
-	  wait for 3*clk_period;
-    for I in 0 to 255 loop
-		  count<=count+"01";
-		  wait for clk_period;
-        disp_loc_in<=std_logic_vector(count);
-        wait for 3*clk_period;
-    end loop;
-    wait;
+		 wait for clk_period;
+		 data_in<=comm_prog_end;
+		 data_tick<='1';
+		 wait for clk_period;
+		 data_tick<='0';
+		 wait for clk_period;
+		 wait for 300*clk_period;
+	 end loop;
+	 wait;
    end process;
 
 END;

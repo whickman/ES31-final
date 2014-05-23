@@ -43,13 +43,13 @@ architecture Behavioral of node_matrix is
     constant comm_prog_beg : std_logic_vector(7 downto 0) := "00000100";
     constant comm_prog_end : std_logic_vector(7 downto 0) := "00000101";
     
-    constant node_cdown_scale : integer := 1;
+    constant node_cdown_scale : integer := 3;
 
     type binary_array is array (0 to 255) of std_logic;
     type backtrace_array is array (0 to 255) of std_logic_vector(1 downto 0);
     type weight_array is array (0 to 255) of std_logic_vector(7 downto 0);
     type state_type is (waiting, command, re_w_addr, re_w_weight, 
-        re_beg, re_end, start, finish, resetting);
+        re_beg, re_end, start, finish);
     type back_state_type is (waiting, get_pointer, first_set_loc, set_loc, 
         go_N, go_E, go_S, go_W, done);
 
@@ -61,7 +61,7 @@ architecture Behavioral of node_matrix is
     signal path_vect_r, addr_r, addr_w, 
         beg_loc_vect, end_loc_vect : std_logic_vector(7 downto 0);
     signal pointer, next_pointer : std_logic_vector(1 downto 0);
-    signal reset, stopped, next_stopped, reached_end, next_reached_end, pinged_end, 
+    signal reset, stopped, next_stopped, pinged_end, 
         next_pinged_end, node_en, beg_loc_en, end_loc_en : std_logic := '0';
     signal disp_index, weight_index, btrace_index, beg_loc_index, end_loc_index : integer := 0;
     signal state, next_state : state_type := waiting;
@@ -117,7 +117,7 @@ begin
                 pings(I+16), 
                 pings(I-1), 
                 reset, 
-			    node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -134,7 +134,7 @@ begin
                 pings(I+16), 
                 pings(I-1), 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -151,7 +151,7 @@ begin
                 '0', 
                 pings(I-1), 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -168,7 +168,7 @@ begin
                 pings(I+16), 
                 '0', 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -185,7 +185,7 @@ begin
                 pings(I+16), 
                 pings(I-1), 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -202,7 +202,7 @@ begin
                 pings(I+16), 
                 '0', 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -219,7 +219,7 @@ begin
                 pings(I+16), 
                 pings(I-1), 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -236,7 +236,7 @@ begin
                 '0', 
                 '0', 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -253,7 +253,7 @@ begin
                 '0', 
                 pings(I-1), 
                 reset, 
-				node_en, 
+					 node_en, 
                 weights(I), 
                 pings(I), 
                 backtrace(I));
@@ -268,7 +268,7 @@ begin
 		end if;
 	end process;
 	 
-	node_en_process : process(clk_div)
+	node_en_process : process(clk_div,stopped)
 	begin
 		node_en<='0';
 		if ((clk_div=to_unsigned(0, (node_cdown_scale+1))) 
@@ -283,7 +283,6 @@ begin
             state<=next_state;
             back_state<=next_back_state;
             start_weights<=next_start_weights;
-            reached_end<=next_reached_end;
             pinged_end<=next_pinged_end;
             path_back<=next_path_back;
             pointer<=next_pointer;
@@ -292,7 +291,7 @@ begin
     end process;
 
 
-    next_state_process : process(state, data_in, data_tick, addr_r, 
+    next_state_process : process(state, data_in, data_tick, addr_r, stopped,
         weight_index, start_weights, beg_loc_index, beg_loc_r, end_loc_r)
     begin
         reset<='0';
@@ -302,15 +301,13 @@ begin
         next_stopped<=stopped;
         addr_w<=addr_r;
         beg_loc_w<=beg_loc_r;
-		end_loc_w<=end_loc_r;
+		  end_loc_w<=end_loc_r;
         case state is
             when waiting =>
                 if ((data_tick='1') and (data_in=comm_header)) then
                     next_state<=command;
                 end if;
             when command =>
-                next_stopped<='0';
-                reset<='1';
                 if (data_tick='1') then
                     case data_in is
                         when comm_cell_w =>
@@ -338,7 +335,11 @@ begin
                     next_state<=waiting;
                 end if;
             when re_beg =>
-                if (data_tick='1') then
+					next_stopped<='0';
+					if (stopped='1') then
+						reset<='1';
+					end if;
+               if (data_tick='1') then
 					beg_loc_w<=unsigned(data_in);
                     next_state<=waiting;
                 end if;
@@ -350,9 +351,6 @@ begin
             when start =>
                 start_ping(beg_loc_index)<='1';
                 next_state<=waiting;
-            when resetting =>
-                reset<='1';
-                next_state<=waiting;
             when finish =>
                 next_stopped<='1';
                 next_state<=waiting;
@@ -363,7 +361,7 @@ begin
 
     backtrace_state_process : process(back_state, state, 
         path_loc_r, beg_loc_r, end_loc_r, path_back, reset, 
-        pointer, btrace_index, backtrace, pinged_end, reached_end)
+        pointer, btrace_index, backtrace, pinged_end)
     begin
         path_loc_w<=path_loc_r;
         next_path_back<=path_back;
@@ -446,18 +444,11 @@ begin
 		weight_out<=weights(disp_index);
     end process;
 
-    btrace_finished_process : process(beg_loc_index, pings, state, reached_end)
-    begin
-        next_reached_end<='0';
-        if ((pings(beg_loc_index)='1') or (reached_end='1')) then
-            next_reached_end<='1';
-        end if; 
-    end process;
-
-    pinged_end_process : process(end_loc_index, pings, state, pinged_end)
+    pinged_end_process : process(end_loc_index, pings, state, pinged_end, reset)
     begin
         next_pinged_end<='0';
-        if ((pings(end_loc_index)='1') or (pinged_end='1')) then
+        if (reset='1') then NULL;
+		  elsif ((pings(end_loc_index)='1') or (pinged_end='1')) then
             next_pinged_end<='1';
         end if; 
     end process;
@@ -468,7 +459,7 @@ begin
     weight_index<=to_integer(unsigned(addr_r));
     beg_loc_r<=unsigned(beg_loc_vect);
     end_loc_r<=unsigned(end_loc_vect);
-	beg_loc_index<=to_integer(beg_loc_r);
-	end_loc_index<=to_integer(end_loc_r);
+	 beg_loc_index<=to_integer(beg_loc_r);
+	 end_loc_index<=to_integer(end_loc_r);
 
 end Behavioral;

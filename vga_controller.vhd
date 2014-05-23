@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity vga_controller is
 	port(clk_px			: in std_logic;
-       	  clk_en        : in std_logic;
+        clk_en        : in std_logic;
 		  color			: in std_logic_vector(7 downto 0);
 		  red			: out std_logic_vector(2 downto 0);
 		  green			: out std_logic_vector(2 downto 0);
