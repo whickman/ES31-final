@@ -1,6 +1,8 @@
 --Will Hickman
 --ENGS 31 Final Project
 
+--A general, 8-bit register
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

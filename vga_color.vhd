@@ -153,14 +153,16 @@ begin
 	    else cell_address <= "00000000";
 	       color_shade <= "11111111";
 	    end if;
-   
-		 if ((color_shade/="11111111") and (in_path='1')) then color<=green;
+
+        --The backtrace color
+   		if ((color_shade/="11111111") and (in_path='1')) then color<=green;
+        --Various weight colors
 	    elsif color_shade = "00000000" then color <= red;
 	    elsif color_shade < "00001000" then color <= yellow;
 	    elsif color_shade < "00010000" then color <= cyan;
-		 elsif color_shade < "00100000" then color <= blue;
-		 elsif color_shade < "01000000" then color <= dark_blu;
-		 elsif color_shade < "10000000" then color <= dark_pur;
+		elsif color_shade < "00100000" then color <= blue;
+		elsif color_shade < "01000000" then color <= dark_blu;
+		elsif color_shade < "10000000" then color <= dark_pur;
 	    elsif color_shade < "11111111" then color <= gray1;
 	    else color <= black;
 	    end if;

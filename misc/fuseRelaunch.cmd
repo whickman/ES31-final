@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/will/Code/VHDL/final/misc/node_matrix_tb_isim_beh.exe" -prj "/home/will/Code/VHDL/final/misc/node_matrix_tb_beh.prj" "work.node_matrix_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/will/Code/VHDL/final/misc/solver_tb_isim_beh.exe" -prj "/home/will/Code/VHDL/final/misc/solver_tb_beh.prj" "work.solver_tb" 

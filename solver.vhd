@@ -3,9 +3,10 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.All;
 
 entity solver is
-    Port ( clk_real : in  STD_LOGIC;
+    Port ( clk : in  STD_LOGIC;
            TXD : in  STD_LOGIC;
            red : out std_logic_vector(2 downto 0);
 		   green : out std_logic_vector(2 downto 0);
@@ -15,12 +16,6 @@ end solver;
 
 architecture Behavioral of solver is
 
-	component cbuff
-		port
-		 ( CLK_IN1 : in STD_LOGIC;
-		   CLK_OUT1 : out STD_LOGIC);
-	 end component;
-	
     component brg 
         Port ( clk : in  STD_LOGIC;
                br_tick16 : out  STD_LOGIC);
@@ -62,25 +57,21 @@ architecture Behavioral of solver is
 		  row,column : out INTEGER);
     end component;
 
-    signal br_tick_16, rx_done_tick, slow_clk, in_path : std_logic;
+    signal br_tick_16, rx_done_tick, slow_clk, in_path, vga_clk_en : std_logic;
     signal color, cell_address, rx_data,weight : std_logic_vector(7 downto 0);
     signal row, col : integer;
+    signal clk_counter : unsigned(1 downto 0) := (others=>'0');
 
 begin
 
-	cb : cbuff
-	PORT MAP (
-	clk_real,
-	slow_clk);
-
     br_gen : brg
     PORT MAP (
-    slow_clk,
+    clk,
     br_tick_16);
 
     s_rx : SerialRx
     PORT MAP (
-    slow_clk,
+    clk,
     TXD,
     br_tick_16,
     rx_data,
@@ -88,7 +79,7 @@ begin
 	 
     nm : node_matrix
     PORT MAP (
-    slow_clk,
+    clk,
     cell_address,
     rx_done_tick,
     rx_data,
@@ -106,8 +97,8 @@ begin
 
     v_cont : vga_controller
     PORT MAP (
-    slow_clk,
-    '1',
+    clk,
+    vga_clk_en,
     color,
     red,
     green,
@@ -116,6 +107,18 @@ begin
     vs,
     row,
     col);
+
+    --Enables the vga clock 1/4 of the time to match clock speeds
+    vga_clk_en_process : process(clk)
+    begin
+        if rising_edge(clk) then
+            vga_clk_en<='0';
+            if (clk_counter="00") then
+                vga_clk_en<='1';
+            end if;
+            clk_counter<=clk_counter+"01";
+        end if;
+    end process;
 
 end Behavioral;
 

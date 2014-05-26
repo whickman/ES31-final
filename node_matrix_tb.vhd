@@ -97,112 +97,117 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+    wait for 100 ns;	
 
-      wait for clk_period*10;
-      wait for clk_period/2;
-		
-		jcount<=(others=>'0');
-		for J in 0 to 1 loop
-			jcount<=jcount+"01";
-			 data_in<=comm_header;
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
-			 data_in<=comm_end_addr;
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
-			 data_in<="00000010";
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
+    wait for clk_period*10;
 
-			 data_in<=comm_header;
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
-			 data_in<=comm_beg_addr;
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
-			 data_in<="00000001";
-			 data_tick<='1';
-			 wait for clk_period;
-			 data_tick<='0';
-			 wait for 8*clk_period;
+    wait for clk_period/2;
+    jcount<=(others=>'0');
+    for J in 0 to 1 loop
+         --send the end address
+         data_in<=comm_header;
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
+         data_in<=comm_end_addr;
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
+         data_in<="00000010";
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
 
-
-			for I in 0 to 255 loop
-			  data_in<=comm_header;
-			  data_tick<='1';
-			  wait for clk_period;
-			  data_tick<='0';
-			  wait for 8*clk_period;
-
-			  data_in<=comm_cell_w;
-			  data_tick<='1';
-			  wait for clk_period;
-			  data_tick<='0';
-			  wait for 8*clk_period;
-
-			  data_in<=std_logic_vector(count);
-			  data_tick<='1';
-			  wait for clk_period;
-			  data_tick<='0';
-			  wait for 8*clk_period;
-			  if (J=0) then
-				data_in<=std_logic_vector(count);
-			  else 
-				data_in<=std_logic_vector("11111111"-count);
-				end if;
-			  data_tick<='1';
-			  wait for clk_period;
-			  data_tick<='0';
-			  count<=count+"01";
-			  wait for 8*clk_period;
-					  -- insert stimulus here 
-		 end loop;
-
-		 data_in<=comm_header;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for 8*clk_period;
-		 data_in<=comm_prog_beg;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for clk_period;
+         --send the start address
+         data_in<=comm_header;
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
+         data_in<=comm_beg_addr;
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
+         data_in<="00000001";
+         data_tick<='1';
+         wait for clk_period;
+         data_tick<='0';
+         wait for 8*clk_period;
 
 
-		 count<=(others=>'0');
-		disp_loc_in<=std_logic_vector(count);
-		  wait for 3*clk_period;
-		 for I in 0 to 255 loop
-			  count<=count+"01";
-			  wait for clk_period;
-			  disp_loc_in<=std_logic_vector(count);
-			  wait for 3*clk_period;
-		 end loop;
-		 data_in<=comm_header;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for clk_period;
-		 data_in<=comm_prog_end;
-		 data_tick<='1';
-		 wait for clk_period;
-		 data_tick<='0';
-		 wait for clk_period;
-		 wait for 300*clk_period;
-	 end loop;
-	 wait;
+         --send the weights
+     for I in 0 to 255 loop
+          data_in<=comm_header;
+          data_tick<='1';
+          wait for clk_period;
+          data_tick<='0';
+          wait for 8*clk_period;
+
+          data_in<=comm_cell_w;
+          data_tick<='1';
+          wait for clk_period;
+          data_tick<='0';
+          wait for 8*clk_period;
+
+          data_in<=std_logic_vector(count);
+          data_tick<='1';
+          wait for clk_period;
+          data_tick<='0';
+          wait for 8*clk_period;
+          if (J=0) then
+            data_in<=std_logic_vector(count);
+          else 
+            data_in<=std_logic_vector("11111111"-count);
+            end if;
+          data_tick<='1';
+          wait for clk_period;
+          data_tick<='0';
+          count<=count+"01";
+          wait for 8*clk_period;
+                  -- insert stimulus here 
+     end loop;
+    
+     --send the start signal
+     data_in<=comm_header;
+     data_tick<='1';
+     wait for clk_period;
+     data_tick<='0';
+     wait for 8*clk_period;
+     data_in<=comm_prog_beg;
+     data_tick<='1';
+     wait for clk_period;
+     data_tick<='0';
+     wait for clk_period;
+
+     --send display indices
+     count<=(others=>'0');
+     disp_loc_in<=std_logic_vector(count);
+     wait for 3*clk_period;
+     for I in 0 to 255 loop
+          count<=count+"01";
+          wait for clk_period;
+          disp_loc_in<=std_logic_vector(count);
+          wait for 3*clk_period;
+     end loop;
+
+     --send the end signal
+     data_in<=comm_header;
+     data_tick<='1';
+     wait for clk_period;
+     data_tick<='0';
+     wait for clk_period;
+     data_in<=comm_prog_end;
+     data_tick<='1';
+     wait for clk_period;
+     data_tick<='0';
+     wait for clk_period;
+     wait for 300*clk_period;
+ end loop;
+ wait;
    end process;
 
 END;

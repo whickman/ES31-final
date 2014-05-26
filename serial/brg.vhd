@@ -13,7 +13,7 @@ end brg;
 architecture Behavioral of brg is
 
 constant BAUDRATE : integer := 115200;
-constant CLOCKSPEED : integer := 25000000;
+constant CLOCKSPEED : integer := 100000000;
 constant M : integer := (CLOCKSPEED/(BAUDRATE*16)-1);
 signal counter : integer := 0;
 signal tick : std_logic := '0';

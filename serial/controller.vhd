@@ -17,55 +17,55 @@ end controller;
 
 architecture Behavioral of controller is
 
-    signal tick_counter, counter, lastShift,next_lastShift : integer := 0;
+    signal tick_counter, counter, last_shift,next_last_shift : integer := 0;
     signal last_br : std_logic := '0';
 
     type state_type is (waiting,data,shifting,loading,done);
-    signal state, nextState : state_type := waiting;
+    signal state, next_state : state_type := waiting;
 
 begin
 
     clocked_process : process(clk)
     begin
         if rising_edge(clk) then
-            state<=nextState;
-			lastShift<=next_lastShift;
+            state<=next_state;
+			last_shift<=next_last_shift;
         end if;
     end process;
 
-    state_logic : process(state,data_in,counter,lastShift)
+    state_logic : process(state,data_in,counter,last_shift)
     begin
         clr<='0';
         load<='0';
         rx_done_tick<='0';
         shift<='0';
-		next_lastShift<=lastShift;
-		nextState<=state;
+		next_last_shift<=last_shift;
+		next_state<=state;
         case (state) is
             when waiting =>
                 if (data_in='0') then
                     clr<='1';
-                    nextState<=data;
+                    next_state<=data;
                 end if;
             when data =>
-                if (counter>10) then
-                    nextState<=loading;
-                    next_lastShift<=0;
-                elsif (lastShift /= counter) then
-                    next_lastShift<=counter;
-                    nextState<=shifting;
+                if ((counter>=10) and (data_in='1')) then
+                    next_state<=loading;
+                    next_last_shift<=0;
+                elsif (last_shift /= counter) then
+                    next_last_shift<=counter;
+                    next_state<=shifting;
                 end if;
             when shifting =>      
                 shift<='1';
-                nextState<=data;
+                next_state<=data;
             when loading =>
                 load<='1';
-                nextState<=done;
+                next_state<=done;
             when done =>
                 rx_done_tick<='1';
-                nextState<=waiting;
+                next_state<=waiting;
             when others => 
-				nextState<=waiting;
+				next_state<=waiting;
         end case;
     end process;
 

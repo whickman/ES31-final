@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF solver_tb IS
  
     COMPONENT solver
     PORT(
-         clk_real : IN  std_logic;
+         clk : IN  std_logic;
          TXD : IN  std_logic;
          red : OUT  std_logic_vector(2 downto 0);
          green : OUT  std_logic_vector(2 downto 0);
@@ -53,7 +53,7 @@ ARCHITECTURE behavior OF solver_tb IS
     
 
    --Inputs
-   signal clk_real : std_logic := '0';
+   signal clk : std_logic := '0';
    signal TXD : std_logic := '0';
 
  	--Outputs
@@ -82,7 +82,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: solver PORT MAP (
-          clk_real => clk_real,
+          clk => clk,
           TXD => TXD,
           red => red,
           green => green,
@@ -94,9 +94,9 @@ BEGIN
    -- Clock process definitions
    clk_process :process
    begin
-		clk_real <= '0';
+		clk <= '0';
 		wait for clk_period/2;
-		clk_real <= '1';
+		clk <= '1';
 		wait for clk_period/2;
    end process;
  

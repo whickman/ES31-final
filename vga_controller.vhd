@@ -6,8 +6,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 entity vga_controller is
-	port(clk_px			: in std_logic;
-        clk_en        : in std_logic;
+	port( clk_px		: in std_logic;
+          clk_en        : in std_logic;
 		  color			: in std_logic_vector(7 downto 0);
 		  red			: out std_logic_vector(2 downto 0);
 		  green			: out std_logic_vector(2 downto 0);
@@ -18,7 +18,7 @@ end vga_controller;
 
 architecture Behavioral of vga_controller is
 
-	signal 	v_count,h_count: INTEGER := 0;
+	signal 	v_count,h_count : INTEGER := 0;
 	constant FRONT_PORCH_H 	: INTEGER := 16;
 	constant FRONT_PORCH_V 	: INTEGER := 2;
 	constant BACK_PORCH_H 	: INTEGER := 48;

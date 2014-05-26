@@ -27,7 +27,7 @@ begin
         end if;
     end process;
     
-    data_out<=reg(8 downto 1);
+    data_out<=reg(9 downto 2);
 
 end Behavioral;
 
