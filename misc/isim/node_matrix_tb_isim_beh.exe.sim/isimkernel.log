@@ -1,0 +1,29 @@
+Command line:
+   node_matrix_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48805
+
+Mon May 26 12:19:33 2014
+
+
+ Elaboration Time: 0.13 sec
+
+ Current Memory Usage: 245.723 Meg
+
+ Total Signals          : 4500
+ Total Nets             : 11516
+ Total Signal Drivers   : 2093
+ Total Blocks           : 776
+ Total Primitive Blocks : 262
+ Total Processes        : 1304
+ Total Traceable Variables  : 283
+ Total Scalar Nets and Variables : 12353
+Total Line Count : 9170
+
+ Total Simulation Time: 4.98 sec
+
+ Current Memory Usage: 321.225 Meg
+
+Tue May 27 15:42:18 2014
+

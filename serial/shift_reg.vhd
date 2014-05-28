@@ -12,7 +12,7 @@ entity shift_reg is
 end shift_reg;
 
 architecture Behavioral of shift_reg is
-signal reg : std_logic_vector(9 downto 0) := (others=>'1');
+signal reg : std_logic_vector(7 downto 0) := (others=>'1');
 begin
 
     clocked_process : process(clk)
@@ -21,13 +21,13 @@ begin
             if (clr='1') then
                 reg<=(others=>'1');
             elsif (shift='1') then
-                reg<=data_in & reg(9 downto 1);
+                reg<=data_in & reg(7 downto 1);
             else NULL;
             end if;
         end if;
     end process;
     
-    data_out<=reg(9 downto 2);
+    data_out<=reg(7 downto 0);
 
 end Behavioral;
 
